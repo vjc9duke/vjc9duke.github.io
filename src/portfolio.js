@@ -58,7 +58,9 @@ const skillsSection = {
     emoji(
       "📟 Programmed for microcontrollers and FPGAs in C, Assembly, and Verilog"
     ),
-    emoji("📱 Developed web and mobile apps using Flutter, Swift, TypeScript, JavaScript, and others"),
+    emoji(
+      "📱 Developed web and mobile apps using Flutter, Swift, TypeScript, JavaScript, and others"
+    ),
     emoji(
       "☁️ Worked with Cloud Technologies like AWS, Salesforce, and Azure"
     ),
