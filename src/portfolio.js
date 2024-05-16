@@ -83,20 +83,16 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "C++",
-      fontAwesomeClassname: "fab fa-cuttlefish"
-    },
-    {
-      skillName: "C",
+      skillName: "C#/C++/C",
       fontAwesomeClassname: "fab fa-cuttlefish"
     },
     {
       skillName: "Assembly",
-      fontAwesomeClassname: "fas fa-microchip"
+      fontAwesomeClassname: "fas fa-robot"
     },
     {
       skillName: "Verilog",
-      fontAwesomeClassname: "fab fa-vine"
+      fontAwesomeClassname: "fas fa-v"
     },
     {
       skillName: "JavaScript",
@@ -109,6 +105,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Swift",
       fontAwesomeClassname: "fab fa-swift"
+    },
+    {
+      skillName: "Matlab",
+      fontAwesomeClassname: "fas fa-square-root-alt"
     },
     {
       skillName: "MongoDB",
@@ -125,6 +125,46 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "PyTorch",
       fontAwesomeClassname: "fas fa-fire"
+    },
+    {
+      skillName: "Fusion 360",
+      fontAwesomeClassname: "fas fa-cube"
+    },
+    {
+      skillName: "SolidWorks",
+      fontAwesomeClassname: "fas fa-cube"
+    },
+    {
+      skillName: "KiCad",
+      fontAwesomeClassname: "fas fa-microchip"
+    },
+    {
+      skillName: "Photoshop",
+      fontAwesomeClassname: "fas fa-image"
+    },
+    {
+      skillName: "Illustrator",
+      fontAwesomeClassname: "fas fa-image"
+    },
+    {
+      skillName: "Figma",
+      fontAwesomeClassname: "fab fa-figma"
+    },
+    {
+      skillName: "3D Printing",
+      fontAwesomeClassname: "fas fa-print"
+    },
+    {
+      skillName: "Laser Cutting",
+      fontAwesomeClassname: "fas fa-scissors"
+    },
+    {
+      skillName: "CNC Milling",
+      fontAwesomeClassname: "fas fa-bore-hole"
+    },
+    {
+      skillName: "Soldering",
+      fontAwesomeClassname: "fas fa-pen"
     }
   ],
   display: true // Set false to hide this section, defaults to true
