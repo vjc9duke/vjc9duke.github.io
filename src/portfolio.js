@@ -36,7 +36,7 @@ const socialMediaLinks = {
   github: "https://github.com/vjc9duke",
   linkedin: "https://www.linkedin.com/in/vincent-j-chen/",
   gmail: "vzchen12@gmail.com",
-  phone: "440-318-4013",  // TODO: add support for phone number
+  phone: "440-318-4013", // TODO: add support for phone number
   // gitlab: "https://gitlab.com/saadpasta",
   // facebook: "https://www.facebook.com/saad.pasta7",
   // medium: "https://medium.com/@saadpasta",
@@ -61,15 +61,13 @@ const skillsSection = {
     emoji(
       "📱 Developed web and mobile apps using Flutter, Swift, TypeScript, JavaScript, and others"
     ),
-    emoji(
-      "☁️ Worked with Cloud Technologies like AWS, Salesforce, and Azure"
-    ),
+    emoji("☁️ Worked with Cloud Technologies like AWS, Salesforce, and Azure"),
     emoji(
       "💽 Configured and Ran Databases using Firebase, PostgreSQL, MonogDB, and XQuery"
     ),
     emoji(
       "🔩 Designed parts and products in SolidWorks, Fusion 360, and AutoCAD"
-    ),
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
