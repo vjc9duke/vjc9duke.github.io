@@ -273,7 +273,7 @@ const workExperiences = {
       company: "Ecolab",
       companylogo: require("./assets/images/ecolabLogo.png"),
       date: "May 2024 – August 2024",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Test",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
