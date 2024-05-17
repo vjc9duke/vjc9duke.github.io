@@ -53,27 +53,25 @@ const skillsSection = {
   subTitle: "TODO: something about mech, elec, cs interdiscipinary ",
   skills: [
     emoji(
-      "🖥 Developed apps and scripts in high level languages like Java, Python, and Matlab among others"
+      "🖥 Develop apps and scripts in high level languages like Java, Python, and Matlab among others"
     ),
     emoji(
-      "📟 Programmed for microcontrollers and FPGAs in C, Assembly, and Verilog"
+      "📟 Program for microcontrollers and FPGAs in C, Assembly, and Verilog"
     ),
     emoji(
-      "📱 Developed web and mobile apps using Flutter, Swift, TypeScript, JavaScript, and others"
+      "📱 Develop web and mobile apps using Flutter, Swift, TypeScript, JavaScript, and others"
     ),
-    emoji("☁️ Worked with Cloud Technologies like AWS, Salesforce, and Azure"),
+    emoji("☁️ Utilize Cloud Technologies like AWS, Salesforce, and Azure"),
     emoji(
-      "💽 Configured and Ran Databases using Firebase, PostgreSQL, MonogDB, and XQuery"
+      "💽 Configure and Ran Databases using Firebase, PostgreSQL, MonogDB, and XQuery"
     ),
-    emoji(
-      "🔩 Designed parts and products in SolidWorks, Fusion 360, and AutoCAD"
-    )
+    emoji("🔩 Design parts and products in SolidWorks, Fusion 360, and AutoCAD")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-  softwareSkills: [
+  programmingLanguages: [
     {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
@@ -111,12 +109,22 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-square-root-alt"
     },
     {
-      skillName: "MongoDB",
+      skillName: "PostgreSQL",
       fontAwesomeClassname: "fas fa-database"
-    },
+    }
+  ],
+  technologies: [
     {
       skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "Salesforce",
+      fontAwesomeClassname: "fab fa-salesforce"
+    },
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "Git",
@@ -125,6 +133,28 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "PyTorch",
       fontAwesomeClassname: "fas fa-fire"
+    },
+    {
+      skillName: "Pandas",
+      fontAwesomeClassname: "fas fa-table"
+    },
+    {
+      skillName: "Matplotlib",
+      fontAwesomeClassname: "fas fa-chart-simple"
+    },
+    {
+      skillName: "Numpy",
+      fontAwesomeClassname: "fas fa-calculator"
+    }
+  ],
+  software: [
+    {
+      skillName: "XCode",
+      fontAwesomeClassname: "fas fa-mobile-screen-button"
+    },
+    {
+      skillName: "Android Studio",
+      fontAwesomeClassname: "fas fa-mobile-screen"
     },
     {
       skillName: "Fusion 360",
@@ -149,7 +179,9 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Figma",
       fontAwesomeClassname: "fab fa-figma"
-    },
+    }
+  ],
+  handson: [
     {
       skillName: "3D Printing",
       fontAwesomeClassname: "fas fa-print"
@@ -167,6 +199,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-pen"
     }
   ],
+
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -176,23 +209,27 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "Duke University",
+      logo: require("./assets/images/dukeLogo.png"),
+      subHeader:
+        "Master of Engineering in Electrical and Computer Engineering (Upcoming)",
+      duration: "May 2025 - December 2025",
+      desc: "Master's coursework, etc." //,
+      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Duke University",
+      logo: require("./assets/images/dukeLogo.png"),
+      subHeader:
+        "BSE in Electrical and Computer Engineering, BS in Computer Science, Latin Minor",
+      duration: "August 2021 - May 2025",
+      desc: "[TODO]: description of what I did here",
+      descBullets: [
+        "4.0 GPA",
+        "Dean's List with Distinction",
+        "2x Outstanding Undergraduate TA (Computer Science)",
+        "Outstanding Undergraduate TA (Electrical and Computer Engineering)"
+      ]
     }
   ]
 };
@@ -203,16 +240,24 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Backend Development",
+      progressPercentage: "95%"
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "3D Modeling and Building",
+      progressPercentage: "87%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Computer Hardware Design",
+      progressPercentage: "83%"
+    },
+    {
+      Stack: "Frontend/App Development",
+      progressPercentage: "72%"
+    },
+    {
+      Stack: "Machine Learning",
+      progressPercentage: "59%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -224,10 +269,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      role: "Intern - Global Engineering",
+      company: "Ecolab",
+      companylogo: require("./assets/images/ecolabLogo.png"),
+      date: "May 2024 – August 2024",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -235,17 +280,17 @@ const workExperiences = {
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
+      role: "Intern - Robotics Engineer",
+      company: "Picasso Intelligence",
+      companylogo: require("./assets/images/piLogo.png"),
+      date: "August 2023 - May 2024",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
+      role: "Intern - Analysis Software",
+      company: "Onto Innovation",
+      companylogo: require("./assets/images/ontoLogo.png"),
+      date: "May 2023 - August 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
@@ -256,14 +301,14 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Personal Projects",
+  subtitle: "[TODO] subtitle]",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
@@ -350,7 +395,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -374,7 +419,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -393,7 +438,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -406,7 +451,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -415,25 +460,24 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  subtitle: "[TODO] insert something ehre",
+  number: "+1 (440) 318-4013",
+  email_address: "vzchen12@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

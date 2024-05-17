@@ -41,8 +41,9 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
+                    href={greeting.resumeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="download-link-button"
                   >
                     <Button text="Download my resume" />
@@ -62,7 +63,7 @@ export default function Greeting() {
             )} */}
             <img
               alt="person smiling"
-              src={require("../../assets/images/profile_picture.jpg")}
+              src={require("../../assets/images/profilepicture.png")}
             ></img>
           </div>
         </div>
