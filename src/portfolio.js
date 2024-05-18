@@ -307,30 +307,211 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Personal Projects",
+  title: "Featured Projects",
   subtitle: "[TODO] subtitle]",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/thumbnails/library.png"),
+      projectName: "Library Patron Counter",
+      projectDesc: "[TODO] description",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Learn More",
+          url: ""
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/thumbnails/laser.png"),
+      projectName: "Laser Tag Kit",
+      projectDesc: "[TODO] description",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Learn More",
+          url: ""
         }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/thumbnails/robot.png"),
+      projectName: "Duke Robotics",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+const multiDiscProjects = {
+  title: "Multidisciplinary Projects",
+  subtitle: "[TODO] subtitle]",
+  projects: [
+    {
+      image: require("./assets/images/thumbnails/turn.png"),
+      projectName: "Auto Turntable",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/thumbnails/laptop.png"),
+      projectName: "Mini Laptop",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/thumbnails/350.png"),
+      projectName: "Candy Tank",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+const softwareProjects = {
+  title: "Software Projects",
+  subtitle: "[TODO] subtitle]",
+  projects: [
+    {
+      image: require("./assets/images/thumbnails/autotester.png"),
+      projectName: "Assembly Autotester",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/thumbnails/chess.png"),
+      projectName: "Java Chess Application",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/thumbnails/pi.png"),
+      projectName: "Picasso Intelligence Website",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/thumbnails/database.png"),
+      projectName: "Anonymous Chatting App",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+const mechProjects = {
+  title: "Mechanical Projects",
+  subtitle: "[TODO] subtitle]",
+  projects: [
+    {
+      image: require("./assets/images/thumbnails/laptop.png"),
+      projectName: "Fidget Cube",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/thumbnails/laptop.png"),
+      projectName: "Google Home Mount",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/thumbnails/laptop.png"),
+      projectName: "Desk Hooks",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/thumbnails/laptop.png"),
+      projectName: "CNC Laptop Stand",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/thumbnails/laptop.png"),
+      projectName: "Watch Charging Station",
+      projectDesc: "[TODO] description",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: ""
+        }
+        //  you can add extra buttons here.
       ]
     }
   ],
@@ -490,6 +671,9 @@ export {
   workExperiences,
   openSource,
   bigProjects,
+  multiDiscProjects,
+  softwareProjects,
+  mechProjects,
   achievementSection,
   blogSection,
   talkSection,
