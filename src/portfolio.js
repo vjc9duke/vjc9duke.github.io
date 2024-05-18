@@ -436,7 +436,7 @@ const softwareProjects = {
     },
     {
       image: require("./assets/images/thumbnails/database.png"),
-      projectName: "Anonymous Chatting App",
+      projectName: "UChat Anonymous Chatting App",
       projectDesc: "[TODO] description",
       footerLink: [
         {
@@ -455,7 +455,7 @@ const mechProjects = {
   subtitle: "[TODO] subtitle]",
   projects: [
     {
-      image: require("./assets/images/thumbnails/laptop.png"),
+      image: require("./assets/images/thumbnails/cube.png"),
       projectName: "Fidget Cube",
       projectDesc: "[TODO] description",
       footerLink: [
@@ -467,7 +467,7 @@ const mechProjects = {
       ]
     },
     {
-      image: require("./assets/images/thumbnails/laptop.png"),
+      image: require("./assets/images/thumbnails/home.png"),
       projectName: "Google Home Mount",
       projectDesc: "[TODO] description",
       footerLink: [
@@ -479,8 +479,8 @@ const mechProjects = {
       ]
     },
     {
-      image: require("./assets/images/thumbnails/laptop.png"),
-      projectName: "Desk Hooks",
+      image: require("./assets/images/thumbnails/hook.png"),
+      projectName: "Desk Hook",
       projectDesc: "[TODO] description",
       footerLink: [
         {
@@ -491,8 +491,8 @@ const mechProjects = {
       ]
     },
     {
-      image: require("./assets/images/thumbnails/laptop.png"),
-      projectName: "CNC Laptop Stand",
+      image: require("./assets/images/thumbnails/laptopstand.png"),
+      projectName: "CNC\'d Laptop Stand",
       projectDesc: "[TODO] description",
       footerLink: [
         {
@@ -503,7 +503,7 @@ const mechProjects = {
       ]
     },
     {
-      image: require("./assets/images/thumbnails/laptop.png"),
+      image: require("./assets/images/thumbnails/rook.png"),
       projectName: "Watch Charging Station",
       projectDesc: "[TODO] description",
       footerLink: [
