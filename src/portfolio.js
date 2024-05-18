@@ -492,7 +492,7 @@ const mechProjects = {
     },
     {
       image: require("./assets/images/thumbnails/laptopstand.png"),
-      projectName: "CNC\'d Laptop Stand",
+      projectName: "CNC'd Laptop Stand",
       projectDesc: "[TODO] description",
       footerLink: [
         {
