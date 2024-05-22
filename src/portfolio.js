@@ -50,7 +50,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "TODO: something about mech, elec, cs interdiscipinary ",
+  subTitle:
+    "Passionate about mechanical, electrical, and software development and everything in between | Experienced across CAD, low-level languages, high-level languages, and cloud technologies",
   skills: [
     emoji(
       "🖥 Develop apps and scripts in high level languages like Java, Python, and Matlab among others"
@@ -213,8 +214,7 @@ const educationInfo = {
       logo: require("./assets/images/dukeLogo.png"),
       subHeader:
         "Master of Engineering in Electrical and Computer Engineering (Upcoming)",
-      duration: "May 2025 - December 2025",
-      desc: "Master's coursework, etc." //,
+      duration: "May 2025 - December 2025"
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     },
     {
@@ -223,7 +223,7 @@ const educationInfo = {
       subHeader:
         "BSE in Electrical and Computer Engineering, BS in Computer Science, Latin Minor",
       duration: "August 2021 - May 2025",
-      desc: "[TODO]: description of what I did here",
+      // desc: "Description of what I did here",
       descBullets: [
         "4.0 GPA",
         "Dean's List with Distinction",
@@ -273,10 +273,11 @@ const workExperiences = {
       company: "Ecolab",
       companylogo: require("./assets/images/ecolabLogo.png"),
       date: "May 2024 – August 2024",
-      desc: "Test",
+      // desc: "Test",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Utilized AutoCAD to design the physical layout and electrical wiring of a remote testing and simulation laboratory",
+        "Managed installation, wiring, and setup of programmable logic controllers and cellular communication modules ",
+        "Developed, tested, and deployed simulator software with B&R development tools that interfaces with Ecolab’s existing Advanced Polymer Activation Systems software to enable remote technicians to analyze equipment in the field"
       ]
     },
     {
@@ -284,14 +285,22 @@ const workExperiences = {
       company: "Picasso Intelligence",
       companylogo: require("./assets/images/piLogo.png"),
       date: "August 2023 - May 2024",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Developed software and hardware components for mechatronics projects, including a Python app for smart actuator control and visualization, as well as mechanical and electrical assembly of a high-output cooling vest for Veterans Affairs",
+        "Rebuilt and documented website codebase to increase maintainability and allow easier addition of new products",
+        "Managed several business-related operations, such as interviewing and onboarding new members, constructing promotional materials, and building a product catalog using software such as Figma and Photoshop"
+      ]
     },
     {
       role: "Intern - Analysis Software",
       company: "Onto Innovation",
       companylogo: require("./assets/images/ontoLogo.png"),
       date: "May 2023 - August 2023",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Improved distributed computing reliability for AI Diffract, a 3D modeling software for semiconductor optics simulations",
+        "Developed and implemented a solution for inconsistent results on refractive index calculations for transistors",
+        "Built new UI features using WinUI and refactored legacy C++ code to be more readable and to increase memory safety"
+      ]
     }
   ]
 };
@@ -308,15 +317,17 @@ const openSource = {
 
 const bigProjects = {
   title: "Featured Projects",
-  subtitle: "[TODO] subtitle]",
+  subtitle: "Recent projects that showcase a diverse range of skills",
   projects: [
     {
       image: require("./assets/images/thumbnails/library.png"),
       projectName: "Library Patron Counter",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "I designed, fabricated, and programmed a patron counter for the Duke Libraries, containing low-power sensing components and an edge server.",
+      mainSkills: "Fusion 360, KiCad, Python, C, 3D printing, soldering",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Under Construction",
           url: ""
         }
         //  you can add extra buttons here.
@@ -325,10 +336,12 @@ const bigProjects = {
     {
       image: require("./assets/images/thumbnails/laser.png"),
       projectName: "Laser Tag Kit",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "Working with a team of engineers, I led the PCB design and software development of an at-home laser tag kit.",
+      mainSkills: "KiCad, Python, C, soldering",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Under Construction",
           url: ""
         }
         //  you can add extra buttons here.
@@ -337,11 +350,17 @@ const bigProjects = {
     {
       image: require("./assets/images/thumbnails/robot.png"),
       projectName: "Duke Robotics",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "As the mechanical lead, I manage overarching decisions regarding the physical assembly of the robot, delegation of tasks, and the onboarding of new mechanical members.",
+      mainSkills: "leadership, SolidWorks",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Under Construction",
           url: ""
+        },
+        {
+          name: "Team Website",
+          url: "https://duke-robotics.com/"
         }
         //  you can add extra buttons here.
       ]
@@ -352,15 +371,18 @@ const bigProjects = {
 
 const multiDiscProjects = {
   title: "Multidisciplinary Projects",
-  subtitle: "[TODO] subtitle]",
+  subtitle: "Projects that span mechanical, electrical, and software work",
   projects: [
     {
       image: require("./assets/images/thumbnails/turn.png"),
       projectName: "Auto Turntable",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "I modeled, built, and programmed a small turntable with a stepper motor, LEDs, and surface mount resistors.",
+      mainSkills:
+        "Fusion 360, KiCad, C, surface-mount soldering, 3D printing, laser cutting/engraving",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Under construction",
           url: ""
         }
         //  you can add extra buttons here.
@@ -369,10 +391,12 @@ const multiDiscProjects = {
     {
       image: require("./assets/images/thumbnails/laptop.png"),
       projectName: "Mini Laptop",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "I created and programmed a custom Arduino-based laptop with a working display and keyboard.",
+      mainSkills: "Fusion 360, C, 3D printing, laser cutting/engraving",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Under construction",
           url: ""
         }
         //  you can add extra buttons here.
@@ -381,10 +405,12 @@ const multiDiscProjects = {
     {
       image: require("./assets/images/thumbnails/350.png"),
       projectName: "Candy Tank",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "In a team of two, I interfaced my five-stage pipelined Verilog processor with various I/O devices (stepper motors, PWM servos, gyroscope, joystick) to create a controllable tank.",
+      mainSkills: "Verilog, Xilinx Vivado, Fusion 360, circuit wiring",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Under construction",
           url: ""
         }
         //  you can add extra buttons here.
@@ -396,16 +422,18 @@ const multiDiscProjects = {
 
 const softwareProjects = {
   title: "Software Projects",
-  subtitle: "[TODO] subtitle]",
+  subtitle: "Projects focused on software design and programming",
   projects: [
     {
       image: require("./assets/images/thumbnails/autotester.png"),
       projectName: "Assembly Autotester",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "As a Digital Systems teaching assistant, I wrote a Python program that allows MIPS assembly files to be automatically tested against Verilog processors to facilitate the development of new test cases and assist student debugging.",
+      mainSkills: "Python, Assembly, Verilog",
       footerLink: [
         {
-          name: "Learn More",
-          url: ""
+          name: "Git Repository",
+          url: "https://github.com/vjc9duke/assembly-autotester"
         }
         //  you can add extra buttons here.
       ]
@@ -413,11 +441,13 @@ const softwareProjects = {
     {
       image: require("./assets/images/thumbnails/chess.png"),
       projectName: "Java Chess Application",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "I, along with seven other team members, developed a Java chess app with a focus on using OOP design principles. I led the implementation of chess variation and user-defined variation support.",
+      mainSkills: "Java, Git, design principles",
       footerLink: [
         {
-          name: "Learn More",
-          url: ""
+          name: "Git Repository (My Contributions)",
+          url: "https://gitfront.io/r/user-4226062/8eBccXDeUwHx/308-final/tree/src/main/java/oogasalad/GamePlayer/"
         }
         //  you can add extra buttons here.
       ]
@@ -425,11 +455,13 @@ const softwareProjects = {
     {
       image: require("./assets/images/thumbnails/pi.png"),
       projectName: "Picasso Intelligence Website",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "I refactored and documented the codebase for Picasso Intelligence's product website, drastically reducing duplicated code and providing a no-code way to add new products via JSON files.",
+      mainSkills: "TypeScript, React, Firebase, XCode",
       footerLink: [
         {
-          name: "Learn More",
-          url: ""
+          name: "Website",
+          url: "https://picassointelligence.com/"
         }
         //  you can add extra buttons here.
       ]
@@ -437,11 +469,13 @@ const softwareProjects = {
     {
       image: require("./assets/images/thumbnails/database.png"),
       projectName: "UChat Anonymous Chatting App",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "In a team of five, I developed a proof-of-concept anonymous chatting app using React and Firebase.",
+      mainSkills: "",
       footerLink: [
         {
-          name: "Learn More",
-          url: ""
+          name: "Git Repository",
+          url: "https://github.com/Ydz0616/UChat"
         }
         //  you can add extra buttons here.
       ]
@@ -452,15 +486,17 @@ const softwareProjects = {
 
 const mechProjects = {
   title: "Mechanical Projects",
-  subtitle: "[TODO] subtitle]",
+  subtitle: "Projects focused on CAD and fabrication",
   projects: [
     {
       image: require("./assets/images/thumbnails/cube.png"),
       projectName: "Fidget Cube",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "3D printed cube with inserts for low profile mechanical switches",
+      mainSkills: "",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Gallery (Under Construction)",
           url: ""
         }
         //  you can add extra buttons here.
@@ -469,10 +505,11 @@ const mechProjects = {
     {
       image: require("./assets/images/thumbnails/home.png"),
       projectName: "Google Home Mount",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "Custom mounting bracket for speaker system in my garage gym",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Gallery (Under Construction)",
           url: ""
         }
         //  you can add extra buttons here.
@@ -481,10 +518,11 @@ const mechProjects = {
     {
       image: require("./assets/images/thumbnails/hook.png"),
       projectName: "Desk Hook",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "Bespoke hook fitted to my desk; holes headphones, hats, etc. and can be modified to support different use cases",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Gallery (Under Construction)",
           url: ""
         }
         //  you can add extra buttons here.
@@ -493,10 +531,11 @@ const mechProjects = {
     {
       image: require("./assets/images/thumbnails/laptopstand.png"),
       projectName: "CNC'd Laptop Stand",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "Wooden, angled laptop stand fabricated using a CNC router. Also sanded, painted, and polished.",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Gallery (Under Construction)",
           url: ""
         }
         //  you can add extra buttons here.
@@ -505,10 +544,11 @@ const mechProjects = {
     {
       image: require("./assets/images/thumbnails/rook.png"),
       projectName: "Watch Charging Station",
-      projectDesc: "[TODO] description",
+      projectDesc:
+        "3D printed casing for my Galaxy Watch charger in the shape of a rook. Comes with an attachment on top for an Apple Watch charger.",
       footerLink: [
         {
-          name: "Learn More",
+          name: "Gallery (Under Construction)",
           url: ""
         }
         //  you can add extra buttons here.
@@ -646,7 +686,6 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "[TODO] insert something ehre",
   number: "+1 (440) 318-4013",
   email_address: "vzchen12@gmail.com"
 };
