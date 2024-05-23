@@ -69,8 +69,7 @@ export default function StartupProject() {
                       : "project-card project-card-light"
                   }
                 >
-                  <span>
-                  </span>
+                  <span></span>
                   {project.image ? (
                     <div className="project-image">
                       <img

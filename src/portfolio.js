@@ -292,7 +292,7 @@ const workExperiences = {
       ]
     },
     {
-      role: "Intern - Analysis Software",
+      role: "Intern - Software Engineering",
       company: "Onto Innovation",
       companylogo: require("./assets/images/ontoLogo.png"),
       date: "May 2023 - August 2023",
@@ -301,6 +301,50 @@ const workExperiences = {
         "Developed and implemented a solution for inconsistent results on refractive index calculations for transistors",
         "Built new UI features using WinUI and refactored legacy C++ code to be more readable and to increase memory safety"
       ]
+    },
+    {
+      role: "Intern - Software Engineering",
+      company: "nCino",
+      companylogo: require("./assets/images/ncinoLogo.png"),
+      date: "May 2022 – January 2023",
+      descBullets: []
+    },
+    {
+      role: "Intern - Software Engineering",
+      company: "E-Sentience",
+      companylogo: require("./assets/images/esentLogo.png"),
+      date: "May 2022 – August 2022",
+      descBullets: []
+    }
+  ]
+};
+
+const otherExperiences = {
+  display: true, //Set it to true to show workExperiences Section
+  experience: [
+    {
+      role: "Electrical and Computer Engineering Teaching Assistant",
+      company: "Duke University",
+      companylogo: require("./assets/images/dukeLogo.png"),
+      date: "August 2023 - Present",
+      descBullets: ["Digital Systems", "Outstanding Undergraduate TA Award"]
+    },
+    {
+      role: "Computer Science Teaching Assistant",
+      company: "Duke University",
+      companylogo: require("./assets/images/dukeLogo.png"),
+      date: "August 2022 – May 2024",
+      descBullets: [
+        "Advanced Software Design and Implementation",
+        "2x Outstanding Undergraduate TA Award"
+      ]
+    },
+    {
+      role: "Undergraduate Researcher (Software Engineering)",
+      company: "ACkER Lab",
+      companylogo: require("./assets/images/ackerLogo.png"),
+      date: "January 2023 – May 2024",
+      descBullets: []
     }
   ]
 };
@@ -721,6 +765,7 @@ export {
   educationInfo,
   techStack,
   workExperiences,
+  otherExperiences,
   openSource,
   bigProjects,
   multiDiscProjects,
