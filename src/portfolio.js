@@ -36,7 +36,7 @@ const socialMediaLinks = {
   github: "https://github.com/vjc9duke",
   linkedin: "https://www.linkedin.com/in/vincent-j-chen/",
   gmail: "vzchen12@gmail.com",
-  phone: "440-318-4013", // TODO: add support for phone number
+  phone: "440-318-4013",
   // gitlab: "https://gitlab.com/saadpasta",
   // facebook: "https://www.facebook.com/saad.pasta7",
   // medium: "https://medium.com/@saadpasta",
@@ -324,11 +324,18 @@ const bigProjects = {
       projectName: "Library Patron Counter",
       projectDesc:
         "I designed, fabricated, and programmed a patron counter for the Duke Libraries, containing low-power sensing components and an edge server.",
-      mainSkills: "Fusion 360, KiCad, Python, C, 3D printing, soldering",
+      mainSkills: [
+        "Fusion 360: 3D modeling",
+        "KiCad: PCB design",
+        "Python: edge server codebase",
+        "C: sensing node codebase",
+        "3D printing: custom part fabrication",
+        "Soldering: PCB assembly"
+      ],
       footerLink: [
         {
           name: "Under Construction",
-          url: ""
+          url: "https://www.google.com/"
         }
         //  you can add extra buttons here.
       ]
@@ -338,7 +345,7 @@ const bigProjects = {
       projectName: "Laser Tag Kit",
       projectDesc:
         "Working with a team of engineers, I led the PCB design and software development of an at-home laser tag kit.",
-      mainSkills: "KiCad, Python, C, soldering",
+      mainSkills: ["KiCad", "Python", "C", "Soldering"],
       footerLink: [
         {
           name: "Under Construction",
@@ -352,7 +359,7 @@ const bigProjects = {
       projectName: "Duke Robotics",
       projectDesc:
         "As the mechanical lead, I manage overarching decisions regarding the physical assembly of the robot, delegation of tasks, and the onboarding of new mechanical members.",
-      mainSkills: "leadership, SolidWorks",
+      mainSkills: ["Leadership", "SolidWorks"],
       footerLink: [
         {
           name: "Under Construction",
@@ -378,8 +385,14 @@ const multiDiscProjects = {
       projectName: "Auto Turntable",
       projectDesc:
         "I modeled, built, and programmed a small turntable with a stepper motor, LEDs, and surface mount resistors.",
-      mainSkills:
-        "Fusion 360, KiCad, C, surface-mount soldering, 3D printing, laser cutting/engraving",
+      mainSkills: [
+        "Fusion 360",
+        "KiCad",
+        "C",
+        "Surface-mount soldering",
+        "3D printing",
+        "Laser cutting/engraving"
+      ],
       footerLink: [
         {
           name: "Under construction",

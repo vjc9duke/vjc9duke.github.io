@@ -13,11 +13,46 @@
   font-weight: 700;
   margin: 15px 0 0 0;
 }
+
+.card-skills-title {
+  color: $skillColor;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+}
+
+.card-skills-title-dark {
+  color: $skillColorDark;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+}
+
 .card-subtitle {
   color: $cardSubtitle;
   font-size: 17px;
   line-height: 1.5rem;
 }
+
+.skill-color {
+  color: $skillColor;
+  font-weight: bold;
+}
+
+.skill-color-dark {
+  color: $skillColorDark;
+  font-weight: bold;
+}
+
+.card-skills-subtitle {
+  color: $cardSubtitle;
+  font-size: 17px;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -70,10 +105,10 @@
   color: $lightBackground3;
   vertical-align: middle;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 8px;
   display: inline-flex;
-  font-size: 0.75rem;
-  height: 2em;
+  font-size: 0.9rem;
+  height: 2.5em;
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
@@ -81,6 +116,10 @@
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
+}
+
+.project-card-footer span.project-tag:hover {
+  background-color: $buttonHover;
 }
 
 @media (max-width: 768px) {

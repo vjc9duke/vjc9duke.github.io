@@ -9,6 +9,27 @@ import {
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
+const GetDescBullets = ({descBullets, isDark}) => {
+  return descBullets
+    ? descBullets.map((item, i) => {
+        const parts = item.split(":");
+        return (
+          <li
+            key={i}
+            className={
+              isDark ? "dark-mode card-skills-subtitle" : "card-skills-subtitle"
+            }
+          >
+            <span className={isDark ? "skill-color-dark" : "skill-color"}>
+              {parts[0]}
+            </span>
+            {parts[1] ? `:${parts[1]}` : ""}
+          </li>
+        );
+      })
+    : null;
+};
+
 export default function StartupProject() {
   function openUrlInNewTab(url) {
     if (!url) {
@@ -48,6 +69,8 @@ export default function StartupProject() {
                       : "project-card project-card-light"
                   }
                 >
+                  <span>
+                  </span>
                   {project.image ? (
                     <div className="project-image">
                       <img
@@ -70,6 +93,32 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                    {project.mainSkills ? (
+                      <div className="main-skills">
+                        <h5
+                          className={
+                            isDark
+                              ? "card-skills-title-dark"
+                              : "card-skills-title"
+                          }
+                        >
+                          {"Main Skills"}
+                        </h5>
+                        <ul>
+                          <GetDescBullets
+                            descBullets={project.mainSkills}
+                            isDark={isDark}
+                          />
+                        </ul>
+                        {/* <p
+                          className={
+                            isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                          }
+                        >
+                          {project.mainSkills}
+                        </p> */}
+                      </div>
+                    ) : null}
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
