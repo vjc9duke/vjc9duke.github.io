@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import "./SoftwareSkill.scss";
 import {skillsSection} from "../../portfolio";
 
@@ -19,6 +19,14 @@ const scrollToTarget = targetID => {
 };
 
 export function ProgLang() {
+  const [showList, setShowList] = useState(false);
+  const [selectedSkills, setSelectedSkills] = useState([]);
+
+  const handleClick = (skills) => {
+    setShowList(true);
+    setSelectedSkills(skills.targetID);
+  };
+
   return (
     <div>
       <div className="software-skills-main-div">
@@ -29,11 +37,7 @@ export function ProgLang() {
                 key={i}
                 className="software-skill-inline"
                 name={skills.skillName}
-                onClick={() =>
-                  scrollToTarget(
-                    skills.targetID[0].toLowerCase().replace(/\s+/g, "-")
-                  )
-                }
+                onClick={() => handleClick(skills)}
                 style={{cursor: "pointer"}}
               >
                 <i className={skills.fontAwesomeClassname}></i>
@@ -43,6 +47,15 @@ export function ProgLang() {
           })}
         </ul>
       </div>
+      {showList && (
+        <div className="rounded-rectangle">
+          <ul>
+            {selectedSkills.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
