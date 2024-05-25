@@ -76,7 +76,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java",
-      targetID: ["Java Chess Application"]
+      targetID: ["Java Chess Application", "Picasso Intelligence Website"]
     },
     {
       skillName: "Python",

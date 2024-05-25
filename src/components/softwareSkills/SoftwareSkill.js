@@ -1,32 +1,30 @@
-import {React, useState} from "react";
+import {React, useContext} from "react";
 import "./SoftwareSkill.scss";
 import {skillsSection} from "../../portfolio";
+import StyleContext from "../../contexts/StyleContext";
 
-const scrollToTarget = targetID => {
-  const targetDiv = document.getElementById(targetID);
+const scrollToTarget = (targetID, isDark) => {
+  const targetDiv = document.getElementById(targetID[0]);
   if (targetDiv) {
     // Scroll to the target div
     targetDiv.scrollIntoView({behavior: "smooth"});
-
-    // Add the glowing class to apply the glow effect
-    targetDiv.classList.add("glowing");
-
-    // Remove the glowing class after 2 seconds
-    setTimeout(function () {
-      targetDiv.classList.remove("glowing");
-    }, 2000);
   }
+  targetID.forEach(function (id) {
+    const div = document.getElementById(id);
+    if (div) {
+      const glowingClass = isDark ? "glowing-dark" : "glowing-light";
+      div.classList.add(glowingClass);
+
+      // Remove the glowing class after 2 seconds
+      setTimeout(function () {
+        div.classList.remove(glowingClass);
+      }, 10000);
+    }
+  });
 };
 
 export function ProgLang() {
-  const [showList, setShowList] = useState(false);
-  const [selectedSkills, setSelectedSkills] = useState([]);
-
-  const handleClick = (skills) => {
-    setShowList(true);
-    setSelectedSkills(skills.targetID);
-  };
-
+  const {isDark} = useContext(StyleContext);
   return (
     <div>
       <div className="software-skills-main-div">
@@ -37,7 +35,13 @@ export function ProgLang() {
                 key={i}
                 className="software-skill-inline"
                 name={skills.skillName}
-                onClick={() => handleClick(skills)}
+                onClick={() =>
+                  scrollToTarget(
+                    skills.targetID.map(id =>
+                      id.toLocaleLowerCase().replace(/\s+/g, "-")
+                    ), isDark
+                  )
+                }
                 style={{cursor: "pointer"}}
               >
                 <i className={skills.fontAwesomeClassname}></i>
@@ -47,15 +51,6 @@ export function ProgLang() {
           })}
         </ul>
       </div>
-      {showList && (
-        <div className="rounded-rectangle">
-          <ul>
-            {selectedSkills.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      )}
     </div>
   );
 }

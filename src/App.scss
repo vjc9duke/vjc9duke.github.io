@@ -29,18 +29,40 @@
   color: $subTitle;
 }
 
-@keyframes glow {
+@keyframes glow-dark {
   0% {
-    box-shadow: 0 0 5px $skillColor;
+    box-shadow: 0 0 0 $skillColor; /* Start with no glow */
   }
-  50% {
-    box-shadow: 0 0 20px $skillColor;
+  20% {
+    box-shadow: 0 0 20px $skillColor; /* Fade out glow within last 2 seconds */
   }
-  100% {
-    box-shadow: 0 0 5px $skillColor;
+  80% {
+    box-shadow: 0 0 20px $skillColor; /* Start with no glow */
+  }
+  90% {
+    box-shadow: 0px 10px 30px -15px $darkBoxShadow; /* End with no glow */
   }
 }
 
-.glowing {
-  animation: glow 2s ease-in-out;
+@keyframes glow-light {
+  0% {
+    box-shadow: 0 0 0 $skillColor; /* Start with no glow */
+  }
+  20% {
+    box-shadow: 0 0 20px $skillColor; /* Fade out glow within last 2 seconds */
+  }
+  80% {
+    box-shadow: 0 0 20px $skillColor; /* Start with no glow */
+  }
+  90% {
+    box-shadow: 0px 10px 30px -15px $lightBoxShadowDark; /* End with no glow */
+  }
+}
+
+.glowing-dark {
+  animation: glow-dark 10s ease-in; /* Total animation duration is 10 seconds */
+}
+
+.glowing-light {
+  animation: glow-light 10s ease-in; /* Total animation duration is 10 seconds */
 }
