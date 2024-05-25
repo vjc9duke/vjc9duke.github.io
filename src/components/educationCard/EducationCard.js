@@ -26,6 +26,7 @@ export default function EducationCard({school}) {
           {school.logo && (
             <div className="education-card-left">
               <img
+                id={school.id}
                 crossOrigin={"anonymous"}
                 ref={imgRef}
                 className="education-roundedimg"

@@ -189,22 +189,26 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "PyTorch",
       fontAwesomeClassname: "fas fa-fire",
-      targetID: [] // TODO: go to education panel?
+      targetID: ["duke-undergrad"],
+      targetBlock: "center"
     },
     {
       skillName: "Pandas",
       fontAwesomeClassname: "fas fa-table",
-      targetID: [] // TODO: go to education panel?
+      targetID: ["duke-undergrad"],
+      targetBlock: "center"
     },
     {
       skillName: "Matplotlib",
       fontAwesomeClassname: "fas fa-chart-simple",
-      targetID: [] // TODO: go to education panel?
+      targetID: ["duke-undergrad"],
+      targetBlock: "center"
     },
     {
       skillName: "Numpy",
       fontAwesomeClassname: "fas fa-calculator",
-      targetID: [] // TODO: go to education panel?
+      targetID: ["duke-undergrad"],
+      targetBlock: "center"
     }
   ],
   software: [
@@ -312,8 +316,9 @@ const educationInfo = {
       logo: require("./assets/images/dukeLogo.png"),
       subHeader:
         "Master of Engineering in Electrical and Computer Engineering (Upcoming)",
-      duration: "May 2025 - December 2025"
+      duration: "May 2025 - December 2025",
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      id: "duke-grad"
     },
     {
       schoolName: "Duke University",
@@ -327,7 +332,8 @@ const educationInfo = {
         "Dean's List with Distinction",
         "🏅🏅 2x Outstanding Undergraduate TA (Computer Science)",
         "🏅 Outstanding Undergraduate TA (Electrical and Computer Engineering)"
-      ]
+      ],
+      id: "duke-undergrad"
     }
   ]
 };

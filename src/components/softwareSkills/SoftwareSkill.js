@@ -4,6 +4,7 @@ import {skillsSection} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 let target = "skills";
+let targetIDs = [];
 
 export function GetSkillButton() {
   function ReturnEvent() {
@@ -14,6 +15,15 @@ export function GetSkillButton() {
       inline: "nearest"
     });
     document.getElementById("skillButton").style.visibility = "hidden";
+
+    // Remove glowing effect
+    targetIDs.forEach(function (id) {
+      const div = document.getElementById(id);
+      if (div) {
+        div.classList.remove("glowing-dark");
+        div.classList.remove("glowing-light");
+      }
+    });
   }
 
   return (
@@ -28,12 +38,13 @@ function configSkillButton(newTarget) {
   target = newTarget;
 }
 
-const scrollToTarget = (title, targetID, isDark) => {
+const scrollToTarget = (title, targetID, blockTarget, isDark) => {
   const targetDiv = document.getElementById(targetID[0]);
   if (targetDiv) {
     // Scroll to the target div
-    targetDiv.scrollIntoView({behavior: "smooth"});
+    targetDiv.scrollIntoView({behavior: "smooth", block: blockTarget});
   }
+  targetIDs = targetID;
   targetID.forEach(function (id) {
     const div = document.getElementById(id);
     if (div) {
@@ -75,6 +86,7 @@ const mapSkills = (title, skills, isDark) => {
                     skills.targetID.map(id =>
                       id.toLowerCase().replace(/\s+/g, "-")
                     ),
+                    skills.targetBlock ?? "start",
                     isDark
                   )
                 }
