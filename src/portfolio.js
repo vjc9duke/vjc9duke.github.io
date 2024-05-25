@@ -221,54 +221,54 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Fusion 360",
       fontAwesomeClassname: "fas fa-cube",
-      targetID: []
+      targetID: ["Library Patron Counter", "Auto Turntable", "Mini Laptop", "Candy Tank", "Fidget Cube", "Desk Hook", "Google Home Mount", "CNC'd Laptop Stand", "Watch Charging Station"]
     },
     {
       skillName: "SolidWorks",
       fontAwesomeClassname: "fas fa-cube",
-      targetID: []
+      targetID: ["Duke Robotics"]
     },
     {
       skillName: "KiCad",
       fontAwesomeClassname: "fas fa-microchip",
-      targetID: []
+      targetID: ["Library Patron Counter", "Laser Tag Kit", "Auto Turntable"]
     },
     {
       skillName: "Photoshop",
       fontAwesomeClassname: "fas fa-image",
-      targetID: []
+      targetID: ["Picasso Intelligence"]
     },
     {
       skillName: "Illustrator",
       fontAwesomeClassname: "fas fa-image",
-      targetID: []
+      targetID: ["Duke Robotics"]
     },
     {
       skillName: "Figma",
       fontAwesomeClassname: "fab fa-figma",
-      targetID: []
+      targetID: ["Picasso Intelligence", "E-Sentience"]
     }
   ],
   handson: [
     {
       skillName: "3D Printing",
       fontAwesomeClassname: "fas fa-print",
-      targetID: []
+      targetID: ["Library Patron Counter", "Duke Robotics", "Auto Turntable", "Mini Laptop", "Candy Tank", "Fidget Cube", "Desk Hook", "Google Home Mount", "Watch Charging Station"]
     },
     {
       skillName: "Laser Cutting",
       fontAwesomeClassname: "fas fa-scissors",
-      targetID: []
+      targetID: ["Library Patron Counter", "Duke Robotics", "Auto Turntable", "Mini Laptop", "Candy Tank", "Desk Hook"]
     },
     {
       skillName: "CNC Milling",
       fontAwesomeClassname: "fas fa-bore-hole",
-      targetID: []
+      targetID: ["CNC'd Laptop Stand"]
     },
     {
       skillName: "Soldering",
       fontAwesomeClassname: "fas fa-pen",
-      targetID: []
+      targetID: ["Library Patron Counter", "Laser Tag Kit", "Auto Turntable"]
     }
   ],
 
@@ -556,6 +556,8 @@ const multiDiscProjects = {
         "Xilinx Vivado: Verilog synthesis and deployment",
         "Git: version control and collaboration",
         "Fusion 360: 3D modeling",
+        "3D printing: custom part fabrication",
+        "Laser cutting/engraving: custom part fabrication",
         "Circuit wiring: project assembly"
       ],
       footerLink: [
