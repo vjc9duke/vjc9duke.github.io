@@ -89,6 +89,9 @@ export default function Skills() {
           </div>
         </Fade>
       </div>
+      <div id="popup" class="popup">
+        Scroll down for more
+      </div>
     </div>
   );
 }

@@ -21,6 +21,14 @@ const scrollToTarget = (targetID, isDark) => {
       }, 10000);
     }
   });
+  // Scroll down for more if more than one target id
+  if (targetID.length > 1) {
+    var popup = document.getElementById("popup");
+    popup.classList.add("show");
+    setTimeout(function () {
+      popup.classList.remove("show");
+    }, 5000);
+  }
 };
 
 export function ProgLang() {

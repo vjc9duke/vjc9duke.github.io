@@ -76,27 +76,45 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java",
-      targetID: ["Java Chess Application", "Picasso Intelligence Website"]
+      targetID: ["Java Chess Application"]
     },
     {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python",
-      targetID: []
+      targetID: [
+        "Picasso Intelligence",
+        "Library Patron Counter",
+        "ACkER Lab",
+        "Laser Tag Kit",
+        "Assembly Autotester",
+        "Picasso Intelligence Website"
+      ]
     },
     {
       skillName: "C#/C++/C",
       fontAwesomeClassname: "fab fa-cuttlefish",
-      targetID: []
+      targetID: [
+        "Ecolab",
+        "Onto Innovation",
+        "Library Patron Counter",
+        "Laser Tag Kit",
+        "Auto Turntable",
+        "Mini Laptop"
+      ]
     },
     {
       skillName: "Assembly",
       fontAwesomeClassname: "fas fa-robot",
-      targetID: []
+      targetID: ["Candy Tank", "Assembly Autotester"] //TODO: Add ECE TA?
     },
     {
       skillName: "Verilog",
       fontAwesomeClassname: "fas fa-v",
-      targetID: []
+      targetID: [
+        "Electrical and Computer Engineering Teaching Assistant",
+        "Candy Tank",
+        "Assembly Autotester"
+      ]
     },
     {
       skillName: "JavaScript",
@@ -510,7 +528,8 @@ const multiDiscProjects = {
       projectDesc:
         "In a team of two, I interfaced my five-stage pipelined Verilog processor with various I/O devices (stepper motors, PWM servos, gyroscope, joystick) to create a controllable tank.",
       mainSkills: [
-        "Verilog: FPGA programming",
+        "Verilog: FPGA hardware design and layout",
+        "Assembly: FPGA instructions",
         "Xilinx Vivado: Verilog synthesis and deployment",
         "Git: version control and collaboration",
         "Fusion 360: 3D modeling",

@@ -33,7 +33,7 @@
   0% {
     box-shadow: 0 0 0 $skillColor; /* Start with no glow */
   }
-  20% {
+  15% {
     box-shadow: 0 0 20px $skillColor; /* Fade out glow within last 2 seconds */
   }
   80% {
@@ -48,7 +48,7 @@
   0% {
     box-shadow: 0 0 0 $skillColor; /* Start with no glow */
   }
-  20% {
+  15% {
     box-shadow: 0 0 20px $skillColor; /* Fade out glow within last 2 seconds */
   }
   80% {
