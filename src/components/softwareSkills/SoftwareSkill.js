@@ -39,7 +39,8 @@ export function ProgLang() {
                   scrollToTarget(
                     skills.targetID.map(id =>
                       id.toLocaleLowerCase().replace(/\s+/g, "-")
-                    ), isDark
+                    ),
+                    isDark
                   )
                 }
                 style={{cursor: "pointer"}}
