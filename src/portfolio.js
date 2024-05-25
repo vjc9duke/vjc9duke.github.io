@@ -105,7 +105,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Assembly",
       fontAwesomeClassname: "fas fa-robot",
-      targetID: ["Candy Tank", "Assembly Autotester"] //TODO: Add ECE TA?
+      targetID: [ "Electrical and Computer Engineering Teaching Assistant", "Candy Tank", "Assembly Autotester"] 
     },
     {
       skillName: "Verilog",
@@ -119,81 +119,86 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js",
-      targetID: []
+      targetID: ["Picasso Intelligence", "Picasso Intelligence Website"]
     },
     {
       skillName: "HTML-5",
       fontAwesomeClassname: "fab fa-html5",
-      targetID: []
+      targetID: ["Picasso Intelligence", "Picasso Intelligence Website"]
+    },
+    {
+      skillName: "Flutter/Dart",
+      fontAwesomeClassname: "fas fa-dove",
+      targetID: ["E-Sentience"]
     },
     {
       skillName: "Swift",
       fontAwesomeClassname: "fab fa-swift",
-      targetID: []
+      targetID: ["ACkER Lab"]
     },
     {
       skillName: "Matlab",
       fontAwesomeClassname: "fas fa-square-root-alt",
-      targetID: []
+      targetID: ["ACkER Lab"]
     },
     {
       skillName: "PostgreSQL",
       fontAwesomeClassname: "fas fa-database",
-      targetID: []
+      targetID: ["UChat Anonymous Chatting App"]
     }
   ],
   technologies: [
     {
       skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws",
-      targetID: []
+      targetID: ["nCino"]
     },
     {
       skillName: "Salesforce",
       fontAwesomeClassname: "fab fa-salesforce",
-      targetID: []
+      targetID: ["nCino"]
     },
     {
       skillName: "MongoDB",
       fontAwesomeClassname: "fas fa-database",
-      targetID: []
+      targetID: ["UChat Anonymous Chatting App"]
     },
     {
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git",
-      targetID: []
+      targetID: ["Ecolab", "Picasso Intelligence", "Onto Innovation", "nCino", "E-Sentience", "Library Patron Counter", "Laser Tag Kit", "Candy Tank", "Assembly Autotester", "Java Chess Application", "ACkER Lab", "Picasso Intelligence Website", "UChat Anonymous Chatting App"]
     },
     {
       skillName: "PyTorch",
       fontAwesomeClassname: "fas fa-fire",
-      targetID: []
+      targetID: [] // TODO: go to education panel? 
     },
     {
       skillName: "Pandas",
       fontAwesomeClassname: "fas fa-table",
-      targetID: []
+      targetID: [] // TODO: go to education panel? 
     },
     {
       skillName: "Matplotlib",
       fontAwesomeClassname: "fas fa-chart-simple",
-      targetID: []
+      targetID: [] // TODO: go to education panel? 
     },
     {
       skillName: "Numpy",
       fontAwesomeClassname: "fas fa-calculator",
-      targetID: []
+      targetID: [] // TODO: go to education panel? 
     }
   ],
   software: [
     {
       skillName: "XCode",
       fontAwesomeClassname: "fas fa-mobile-screen-button",
-      targetID: []
+      targetID: ["ACkER Lab", "UChat Anonymous Chatting App"]
     },
     {
       skillName: "Android Studio",
       fontAwesomeClassname: "fas fa-mobile-screen",
-      targetID: []
+      targetID: ["E-Sentience"]
     },
     {
       skillName: "Fusion 360",

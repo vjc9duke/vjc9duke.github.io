@@ -31,13 +31,12 @@ const scrollToTarget = (targetID, isDark) => {
   }
 };
 
-export function ProgLang() {
-  const {isDark} = useContext(StyleContext);
+const mapSkills = (skills, isDark) => {
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons">
-          {skillsSection.programmingLanguages.map((skills, i) => {
+          {skills.map((skills, i) => {
             return (
               <li
                 key={i}
@@ -64,71 +63,22 @@ export function ProgLang() {
   );
 }
 
+export function ProgLang() {
+  const {isDark} = useContext(StyleContext);
+  return mapSkills(skillsSection.programmingLanguages, isDark);
+}
+
 export function Technology() {
-  return (
-    <div>
-      <div className="software-skills-main-div">
-        <ul className="dev-icons">
-          {skillsSection.technologies.map((skills, i) => {
-            return (
-              <li
-                key={i}
-                className="software-skill-inline"
-                name={skills.skillName}
-              >
-                <i className={skills.fontAwesomeClassname}></i>
-                <p>{skills.skillName}</p>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </div>
-  );
+  const {isDark} = useContext(StyleContext);
+  return mapSkills(skillsSection.technologies, isDark);
 }
 
 export function Software() {
-  return (
-    <div>
-      <div className="software-skills-main-div">
-        <ul className="dev-icons">
-          {skillsSection.software.map((skills, i) => {
-            return (
-              <li
-                key={i}
-                className="software-skill-inline"
-                name={skills.skillName}
-              >
-                <i className={skills.fontAwesomeClassname}></i>
-                <p>{skills.skillName}</p>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </div>
-  );
+  const {isDark} = useContext(StyleContext);
+  return mapSkills(skillsSection.software, isDark);
 }
 
 export function HandsOn() {
-  return (
-    <div>
-      <div className="software-skills-main-div">
-        <ul className="dev-icons">
-          {skillsSection.handson.map((skills, i) => {
-            return (
-              <li
-                key={i}
-                className="software-skill-inline"
-                name={skills.skillName}
-              >
-                <i className={skills.fontAwesomeClassname}></i>
-                <p>{skills.skillName}</p>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </div>
-  );
+  const {isDark} = useContext(StyleContext);
+  return mapSkills(skillsSection.handson, isDark);
 }
