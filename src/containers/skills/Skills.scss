@@ -63,7 +63,7 @@
   }
 }
 
-.popup {
+.popup-light {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -78,7 +78,26 @@
   animation: fadeInOut 5s ease-in-out;
 }
 
-.popup.show {
+.popup-dark {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(171, 171, 171, 0.1);
+  z-index: 1000; /* Ensure it shows on top of everything */
+  animation: fadeInOut 5s ease-in-out;
+}
+
+.popup-dark.show {
+  display: block;
+}
+
+.popup-light.show {
   display: block;
 }
 

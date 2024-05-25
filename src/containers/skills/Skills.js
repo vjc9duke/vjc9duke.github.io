@@ -93,7 +93,7 @@ export default function Skills() {
           </div>
         </Fade>
       </div>
-      <div id="popup" class="popup">
+      <div id="popup" class={isDark ? "popup-dark" : "popup-light"}>
         Scroll down for more
       </div>
     </div>
