@@ -221,7 +221,17 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Fusion 360",
       fontAwesomeClassname: "fas fa-cube",
-      targetID: ["Library Patron Counter", "Auto Turntable", "Mini Laptop", "Candy Tank", "Fidget Cube", "Desk Hook", "Google Home Mount", "CNC'd Laptop Stand", "Watch Charging Station"]
+      targetID: [
+        "Library Patron Counter",
+        "Auto Turntable",
+        "Mini Laptop",
+        "Candy Tank",
+        "Fidget Cube",
+        "Desk Hook",
+        "Google Home Mount",
+        "CNC'd Laptop Stand",
+        "Watch Charging Station"
+      ]
     },
     {
       skillName: "SolidWorks",
@@ -253,12 +263,29 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "3D Printing",
       fontAwesomeClassname: "fas fa-print",
-      targetID: ["Library Patron Counter", "Duke Robotics", "Auto Turntable", "Mini Laptop", "Candy Tank", "Fidget Cube", "Desk Hook", "Google Home Mount", "Watch Charging Station"]
+      targetID: [
+        "Library Patron Counter",
+        "Duke Robotics",
+        "Auto Turntable",
+        "Mini Laptop",
+        "Candy Tank",
+        "Fidget Cube",
+        "Desk Hook",
+        "Google Home Mount",
+        "Watch Charging Station"
+      ]
     },
     {
       skillName: "Laser Cutting",
       fontAwesomeClassname: "fas fa-scissors",
-      targetID: ["Library Patron Counter", "Duke Robotics", "Auto Turntable", "Mini Laptop", "Candy Tank", "Desk Hook"]
+      targetID: [
+        "Library Patron Counter",
+        "Duke Robotics",
+        "Auto Turntable",
+        "Mini Laptop",
+        "Candy Tank",
+        "Desk Hook"
+      ]
     },
     {
       skillName: "CNC Milling",
