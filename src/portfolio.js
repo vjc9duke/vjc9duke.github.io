@@ -450,7 +450,7 @@ const multiDiscProjects = {
       projectName: "Mini Laptop",
       projectDesc:
         "I created and programmed a custom Arduino-based laptop with a working display and keyboard.",
-      mainSkills: "Fusion 360, C, 3D printing, laser cutting/engraving",
+      mainSkills: ["Fusion 360", "C", "3D printing", "Laser cutting/engraving"],
       footerLink: [
         {
           name: "Under construction",
@@ -464,7 +464,7 @@ const multiDiscProjects = {
       projectName: "Candy Tank",
       projectDesc:
         "In a team of two, I interfaced my five-stage pipelined Verilog processor with various I/O devices (stepper motors, PWM servos, gyroscope, joystick) to create a controllable tank.",
-      mainSkills: "Verilog, Xilinx Vivado, Fusion 360, circuit wiring",
+      mainSkills: ["Verilog", "Xilinx Vivado", "Fusion 360", "Circuit wiring"],
       footerLink: [
         {
           name: "Under construction",
@@ -486,7 +486,7 @@ const softwareProjects = {
       projectName: "Assembly Autotester",
       projectDesc:
         "As a Digital Systems teaching assistant, I wrote a Python program that allows MIPS assembly files to be automatically tested against Verilog processors to facilitate the development of new test cases and assist student debugging.",
-      mainSkills: "Python, Assembly, Verilog",
+      mainSkills: ["Python", "Assembly", "Verilog"],
       footerLink: [
         {
           name: "Git Repository",
@@ -500,7 +500,7 @@ const softwareProjects = {
       projectName: "Java Chess Application",
       projectDesc:
         "I, along with seven other team members, developed a Java chess app with a focus on using OOP design principles. I led the implementation of chess variation and user-defined variation support.",
-      mainSkills: "Java, Git, design principles",
+      mainSkills: ["Java", "Git", "Design principles"],
       footerLink: [
         {
           name: "Git Repository (My Contributions)",
@@ -514,7 +514,7 @@ const softwareProjects = {
       projectName: "Picasso Intelligence Website",
       projectDesc:
         "I refactored and documented the codebase for Picasso Intelligence's product website, drastically reducing duplicated code and providing a no-code way to add new products via JSON files.",
-      mainSkills: "TypeScript, React, Firebase, XCode",
+      mainSkills: ["HTML", "CSS", "JavaScript", "Git"],
       footerLink: [
         {
           name: "Website",
@@ -528,7 +528,7 @@ const softwareProjects = {
       projectName: "UChat Anonymous Chatting App",
       projectDesc:
         "In a team of five, I developed a proof-of-concept anonymous chatting app using React and Firebase.",
-      mainSkills: "",
+      mainSkills: ["TypeScript", "React", "Firebase", "Git", "XCode"],
       footerLink: [
         {
           name: "Git Repository",
