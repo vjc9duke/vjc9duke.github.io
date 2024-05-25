@@ -15,6 +15,7 @@ export default function Top() {
       document.getElementById("topButton").style.visibility = "visible";
     } else {
       document.getElementById("topButton").style.visibility = "hidden";
+      document.getElementById("skillButton").style.visibility = "hidden";
     }
   }
   window.onscroll = function () {

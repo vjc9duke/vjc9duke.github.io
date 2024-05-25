@@ -3,7 +3,32 @@ import "./SoftwareSkill.scss";
 import {skillsSection} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
-const scrollToTarget = (targetID, isDark) => {
+let target = "skills";
+
+export function GetSkillButton() {
+  function ReturnEvent() {
+    const targetDiv = document.getElementById(target); // Replace "yourTargetDivId" with the actual ID of your target div
+    targetDiv.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "nearest"
+    });
+    document.getElementById("skillButton").style.visibility = "hidden";
+  }
+
+  return (
+    <button onClick={ReturnEvent} id="skillButton" title="Go back">
+      <i className="fas fa-chevron-left" aria-hidden="true"></i>
+    </button>
+  );
+}
+
+function configSkillButton(newTarget) {
+  document.getElementById("skillButton").style.visibility = "visible";
+  target = newTarget;
+}
+
+const scrollToTarget = (title, targetID, isDark) => {
   const targetDiv = document.getElementById(targetID[0]);
   if (targetDiv) {
     // Scroll to the target div
@@ -29,9 +54,11 @@ const scrollToTarget = (targetID, isDark) => {
       popup.classList.remove("show");
     }, 5000);
   }
+
+  configSkillButton("skills-" + title);
 };
 
-const mapSkills = (skills, isDark) => {
+const mapSkills = (title, skills, isDark) => {
   return (
     <div>
       <div className="software-skills-main-div">
@@ -44,8 +71,9 @@ const mapSkills = (skills, isDark) => {
                 name={skills.skillName}
                 onClick={() =>
                   scrollToTarget(
+                    title,
                     skills.targetID.map(id =>
-                      id.toLocaleLowerCase().replace(/\s+/g, "-")
+                      id.toLowerCase().replace(/\s+/g, "-")
                     ),
                     isDark
                   )
@@ -61,24 +89,24 @@ const mapSkills = (skills, isDark) => {
       </div>
     </div>
   );
-}
+};
 
 export function ProgLang() {
   const {isDark} = useContext(StyleContext);
-  return mapSkills(skillsSection.programmingLanguages, isDark);
+  return mapSkills("languages", skillsSection.programmingLanguages, isDark);
 }
 
 export function Technology() {
   const {isDark} = useContext(StyleContext);
-  return mapSkills(skillsSection.technologies, isDark);
+  return mapSkills("technologies", skillsSection.technologies, isDark);
 }
 
 export function Software() {
   const {isDark} = useContext(StyleContext);
-  return mapSkills(skillsSection.software, isDark);
+  return mapSkills("software", skillsSection.software, isDark);
 }
 
 export function HandsOn() {
   const {isDark} = useContext(StyleContext);
-  return mapSkills(skillsSection.handson, isDark);
+  return mapSkills("hands-on", skillsSection.handson, isDark);
 }

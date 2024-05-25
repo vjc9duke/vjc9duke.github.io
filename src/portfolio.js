@@ -105,7 +105,11 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Assembly",
       fontAwesomeClassname: "fas fa-robot",
-      targetID: [ "Electrical and Computer Engineering Teaching Assistant", "Candy Tank", "Assembly Autotester"] 
+      targetID: [
+        "Electrical and Computer Engineering Teaching Assistant",
+        "Candy Tank",
+        "Assembly Autotester"
+      ]
     },
     {
       skillName: "Verilog",
@@ -166,27 +170,41 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git",
-      targetID: ["Ecolab", "Picasso Intelligence", "Onto Innovation", "nCino", "E-Sentience", "Library Patron Counter", "Laser Tag Kit", "Candy Tank", "Assembly Autotester", "Java Chess Application", "ACkER Lab", "Picasso Intelligence Website", "UChat Anonymous Chatting App"]
+      targetID: [
+        "Ecolab",
+        "Picasso Intelligence",
+        "Onto Innovation",
+        "nCino",
+        "E-Sentience",
+        "Library Patron Counter",
+        "Laser Tag Kit",
+        "Candy Tank",
+        "Assembly Autotester",
+        "Java Chess Application",
+        "ACkER Lab",
+        "Picasso Intelligence Website",
+        "UChat Anonymous Chatting App"
+      ]
     },
     {
       skillName: "PyTorch",
       fontAwesomeClassname: "fas fa-fire",
-      targetID: [] // TODO: go to education panel? 
+      targetID: [] // TODO: go to education panel?
     },
     {
       skillName: "Pandas",
       fontAwesomeClassname: "fas fa-table",
-      targetID: [] // TODO: go to education panel? 
+      targetID: [] // TODO: go to education panel?
     },
     {
       skillName: "Matplotlib",
       fontAwesomeClassname: "fas fa-chart-simple",
-      targetID: [] // TODO: go to education panel? 
+      targetID: [] // TODO: go to education panel?
     },
     {
       skillName: "Numpy",
       fontAwesomeClassname: "fas fa-calculator",
-      targetID: [] // TODO: go to education panel? 
+      targetID: [] // TODO: go to education panel?
     }
   ],
   software: [

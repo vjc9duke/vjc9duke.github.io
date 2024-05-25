@@ -30,3 +30,24 @@
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
 }
+
+#skillButton {
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: $buttonColor;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 25px;
+}
+
+#skillButton:hover {
+  background-color: $topButtonHover;
+  transition: all ease-in-out 0.2s;
+}

@@ -64,24 +64,28 @@ export default function Skills() {
           <div className="skills-text-div">
             <p
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
+              id="skills-languages"
             >
               {"Languages"}
             </p>
             <ProgLang />
             <p
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
+              id="skills-technologies"
             >
               {"Technologies"}
             </p>
             <Technology />
             <p
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
+              id="skills-software"
             >
               {"Software"}
             </p>
             <Software />
             <p
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
+              id="skills-hands-on"
             >
               {"Hands-on"}
             </p>
