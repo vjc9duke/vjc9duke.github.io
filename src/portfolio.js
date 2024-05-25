@@ -390,7 +390,13 @@ const bigProjects = {
       projectName: "Laser Tag Kit",
       projectDesc:
         "Working with a team of engineers, I led the PCB design and software development of an at-home laser tag kit.",
-      mainSkills: ["Python: control hub programming", "C: microcontroller programming", "Git: version control and collaboration", "KiCad: PCB design",  "Soldering: circuit assembly"],
+      mainSkills: [
+        "Python: control hub programming",
+        "C: microcontroller programming",
+        "Git: version control and collaboration",
+        "KiCad: PCB design",
+        "Soldering: circuit assembly"
+      ],
       footerLink: [
         {
           name: "Under Construction",
@@ -404,7 +410,10 @@ const bigProjects = {
       projectName: "Duke Robotics",
       projectDesc:
         "As the mechanical lead, I manage overarching decisions regarding the physical assembly of the robot, delegation of tasks, and the onboarding of new mechanical members.",
-      mainSkills: ["Leadership: onboarding, training, and task delegation", "SolidWorks: 3D modeling"],
+      mainSkills: [
+        "Leadership: onboarding, training, and task delegation",
+        "SolidWorks: 3D modeling"
+      ],
       footerLink: [
         {
           name: "Under Construction",
@@ -451,7 +460,12 @@ const multiDiscProjects = {
       projectName: "Mini Laptop",
       projectDesc:
         "I created and programmed a custom Arduino-based laptop with a working display and keyboard.",
-      mainSkills: ["C: microcontroller programming", "Fusion 360: 3D modeling", "3D printing: custom part fabrication", "Laser cutting/engraving: custom part fabrication"],
+      mainSkills: [
+        "C: microcontroller programming",
+        "Fusion 360: 3D modeling",
+        "3D printing: custom part fabrication",
+        "Laser cutting/engraving: custom part fabrication"
+      ],
       footerLink: [
         {
           name: "Under construction",
@@ -465,7 +479,13 @@ const multiDiscProjects = {
       projectName: "Candy Tank",
       projectDesc:
         "In a team of two, I interfaced my five-stage pipelined Verilog processor with various I/O devices (stepper motors, PWM servos, gyroscope, joystick) to create a controllable tank.",
-      mainSkills: ["Verilog: FPGA programming", "Xilinx Vivado: Verilog synthesis and deployment", "Git: version control and collaboration", "Fusion 360: 3D modeling", "Circuit wiring: project assembly"],
+      mainSkills: [
+        "Verilog: FPGA programming",
+        "Xilinx Vivado: Verilog synthesis and deployment",
+        "Git: version control and collaboration",
+        "Fusion 360: 3D modeling",
+        "Circuit wiring: project assembly"
+      ],
       footerLink: [
         {
           name: "Under construction",
@@ -487,7 +507,12 @@ const softwareProjects = {
       projectName: "Assembly Autotester",
       projectDesc:
         "As a Digital Systems teaching assistant, I wrote a Python program that allows MIPS assembly files to be automatically tested against Verilog processors to facilitate the development of new test cases and assist student debugging.",
-      mainSkills: ["Python: software development", "Assembly: test cases", "Verilog: processor testing", "Git: version control"],
+      mainSkills: [
+        "Python: software development",
+        "Assembly: test cases",
+        "Verilog: processor testing",
+        "Git: version control"
+      ],
       footerLink: [
         {
           name: "Git Repository",
@@ -501,7 +526,11 @@ const softwareProjects = {
       projectName: "Java Chess Application",
       projectDesc:
         "I, along with seven other team members, developed a Java chess app with a focus on using OOP design principles. I led the implementation of chess variation and user-defined variation support.",
-      mainSkills: ["Java: software development", "Git: version control and collaboration", "Design principles: application of MVC, design patterns, etc."],
+      mainSkills: [
+        "Java: software development",
+        "Git: version control and collaboration",
+        "Design principles: application of MVC, design patterns, etc."
+      ],
       footerLink: [
         {
           name: "Git Repository (My Contributions)",
@@ -515,7 +544,12 @@ const softwareProjects = {
       projectName: "Picasso Intelligence Website",
       projectDesc:
         "I refactored and documented the codebase for Picasso Intelligence's product website, drastically reducing duplicated code and providing a no-code way to add new products via JSON files.",
-      mainSkills: ["JavaScript: custom functionality", "HTML: website structure", "CSS: website styling", "Git: version control"],
+      mainSkills: [
+        "JavaScript: custom functionality",
+        "HTML: website structure",
+        "CSS: website styling",
+        "Git: version control"
+      ],
       footerLink: [
         {
           name: "Website",
@@ -529,7 +563,13 @@ const softwareProjects = {
       projectName: "UChat Anonymous Chatting App",
       projectDesc:
         "In a team of five, I developed a proof-of-concept anonymous chatting app using React and Firebase.",
-      mainSkills: ["TypeScript: software development", "React: app framework", "Firebase: backend database", "Git: version control and collboration", "XCode: iOS testing and deployment"],
+      mainSkills: [
+        "TypeScript: software development",
+        "React: app framework",
+        "Firebase: backend database",
+        "Git: version control and collboration",
+        "XCode: iOS testing and deployment"
+      ],
       footerLink: [
         {
           name: "Git Repository",
@@ -559,7 +599,10 @@ const mechProjects = {
         }
         //  you can add extra buttons here.
       ],
-      mainSkills: ["Fusion 360: 3D modeling", "3D printing: custom part fabrication"]
+      mainSkills: [
+        "Fusion 360: 3D modeling",
+        "3D printing: custom part fabrication"
+      ]
     },
     {
       image: require("./assets/images/thumbnails/hook.png"),
@@ -573,7 +616,11 @@ const mechProjects = {
         }
         //  you can add extra buttons here.
       ],
-      mainSkills: ["Fusion 360: 3D modeling", "3D printing: custom part fabrication", "Laser cutting/engraving: custom part fabrication"]
+      mainSkills: [
+        "Fusion 360: 3D modeling",
+        "3D printing: custom part fabrication",
+        "Laser cutting/engraving: custom part fabrication"
+      ]
     },
     {
       image: require("./assets/images/thumbnails/home.png"),
@@ -587,7 +634,10 @@ const mechProjects = {
         }
         //  you can add extra buttons here.
       ],
-      mainSkills: ["Fusion 360: 3D modeling", "3D printing: custom part fabrication"]
+      mainSkills: [
+        "Fusion 360: 3D modeling",
+        "3D printing: custom part fabrication"
+      ]
     },
     {
       image: require("./assets/images/thumbnails/laptopstand.png"),
@@ -601,7 +651,11 @@ const mechProjects = {
         }
         //  you can add extra buttons here.
       ],
-      mainSkills: ["Fusion 360: 3D modeling", "CNC milling: custom part fabrication", "Woodworking: assembly and finish"]
+      mainSkills: [
+        "Fusion 360: 3D modeling",
+        "CNC milling: custom part fabrication",
+        "Woodworking: assembly and finish"
+      ]
     },
     {
       image: require("./assets/images/thumbnails/rook.png"),
@@ -615,7 +669,10 @@ const mechProjects = {
         }
         //  you can add extra buttons here.
       ],
-      mainSkills: ["Fusion 360: 3D modeling", "3D printing: custom part fabrication"]
+      mainSkills: [
+        "Fusion 360: 3D modeling",
+        "3D printing: custom part fabrication"
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
