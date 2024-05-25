@@ -63,6 +63,7 @@ const GetProjectsDiv = ({projects}) => {
                     ? "dark-mode project-card project-card-dark"
                     : "project-card project-card-light"
                 }
+                id={project.projectName.toLowerCase().replace(/\s+/g, "-")}
               >
                 <span></span>
                 {project.image ? (

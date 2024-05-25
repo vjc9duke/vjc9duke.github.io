@@ -75,129 +75,159 @@ https://fontawesome.com/icons?d=gallery */
   programmingLanguages: [
     {
       skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
+      fontAwesomeClassname: "fab fa-java",
+      targetID: ["Java Chess Application"]
     },
     {
       skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
+      fontAwesomeClassname: "fab fa-python",
+      targetID: []
     },
     {
       skillName: "C#/C++/C",
-      fontAwesomeClassname: "fab fa-cuttlefish"
+      fontAwesomeClassname: "fab fa-cuttlefish",
+      targetID: []
     },
     {
       skillName: "Assembly",
-      fontAwesomeClassname: "fas fa-robot"
+      fontAwesomeClassname: "fas fa-robot",
+      targetID: []
     },
     {
       skillName: "Verilog",
-      fontAwesomeClassname: "fas fa-v"
+      fontAwesomeClassname: "fas fa-v",
+      targetID: []
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "fab fa-js",
+      targetID: []
     },
     {
       skillName: "HTML-5",
-      fontAwesomeClassname: "fab fa-html5"
+      fontAwesomeClassname: "fab fa-html5",
+      targetID: []
     },
     {
       skillName: "Swift",
-      fontAwesomeClassname: "fab fa-swift"
+      fontAwesomeClassname: "fab fa-swift",
+      targetID: []
     },
     {
       skillName: "Matlab",
-      fontAwesomeClassname: "fas fa-square-root-alt"
+      fontAwesomeClassname: "fas fa-square-root-alt",
+      targetID: []
     },
     {
       skillName: "PostgreSQL",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: "fas fa-database",
+      targetID: []
     }
   ],
   technologies: [
     {
       skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
+      fontAwesomeClassname: "fab fa-aws",
+      targetID: []
     },
     {
       skillName: "Salesforce",
-      fontAwesomeClassname: "fab fa-salesforce"
+      fontAwesomeClassname: "fab fa-salesforce",
+      targetID: []
     },
     {
       skillName: "MongoDB",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: "fas fa-database",
+      targetID: []
     },
     {
       skillName: "Git",
-      fontAwesomeClassname: "fab fa-git"
+      fontAwesomeClassname: "fab fa-git",
+      targetID: []
     },
     {
       skillName: "PyTorch",
-      fontAwesomeClassname: "fas fa-fire"
+      fontAwesomeClassname: "fas fa-fire",
+      targetID: []
     },
     {
       skillName: "Pandas",
-      fontAwesomeClassname: "fas fa-table"
+      fontAwesomeClassname: "fas fa-table",
+      targetID: []
     },
     {
       skillName: "Matplotlib",
-      fontAwesomeClassname: "fas fa-chart-simple"
+      fontAwesomeClassname: "fas fa-chart-simple",
+      targetID: []
     },
     {
       skillName: "Numpy",
-      fontAwesomeClassname: "fas fa-calculator"
+      fontAwesomeClassname: "fas fa-calculator",
+      targetID: []
     }
   ],
   software: [
     {
       skillName: "XCode",
-      fontAwesomeClassname: "fas fa-mobile-screen-button"
+      fontAwesomeClassname: "fas fa-mobile-screen-button",
+      targetID: []
     },
     {
       skillName: "Android Studio",
-      fontAwesomeClassname: "fas fa-mobile-screen"
+      fontAwesomeClassname: "fas fa-mobile-screen",
+      targetID: []
     },
     {
       skillName: "Fusion 360",
-      fontAwesomeClassname: "fas fa-cube"
+      fontAwesomeClassname: "fas fa-cube",
+      targetID: []
     },
     {
       skillName: "SolidWorks",
-      fontAwesomeClassname: "fas fa-cube"
+      fontAwesomeClassname: "fas fa-cube",
+      targetID: []
     },
     {
       skillName: "KiCad",
-      fontAwesomeClassname: "fas fa-microchip"
+      fontAwesomeClassname: "fas fa-microchip",
+      targetID: []
     },
     {
       skillName: "Photoshop",
-      fontAwesomeClassname: "fas fa-image"
+      fontAwesomeClassname: "fas fa-image",
+      targetID: []
     },
     {
       skillName: "Illustrator",
-      fontAwesomeClassname: "fas fa-image"
+      fontAwesomeClassname: "fas fa-image",
+      targetID: []
     },
     {
       skillName: "Figma",
-      fontAwesomeClassname: "fab fa-figma"
+      fontAwesomeClassname: "fab fa-figma",
+      targetID: []
     }
   ],
   handson: [
     {
       skillName: "3D Printing",
-      fontAwesomeClassname: "fas fa-print"
+      fontAwesomeClassname: "fas fa-print",
+      targetID: []
     },
     {
       skillName: "Laser Cutting",
-      fontAwesomeClassname: "fas fa-scissors"
+      fontAwesomeClassname: "fas fa-scissors",
+      targetID: []
     },
     {
       skillName: "CNC Milling",
-      fontAwesomeClassname: "fas fa-bore-hole"
+      fontAwesomeClassname: "fas fa-bore-hole",
+      targetID: []
     },
     {
       skillName: "Soldering",
-      fontAwesomeClassname: "fas fa-pen"
+      fontAwesomeClassname: "fas fa-pen",
+      targetID: []
     }
   ],
 
@@ -225,10 +255,10 @@ const educationInfo = {
       duration: "August 2021 - May 2025",
       // desc: "Description of what I did here",
       descBullets: [
-        "4.0 GPA",
+        "GPA: 4.0/4.0",
         "Dean's List with Distinction",
-        "2x Outstanding Undergraduate TA (Computer Science)",
-        "Outstanding Undergraduate TA (Electrical and Computer Engineering)"
+        "🏅🏅 2x Outstanding Undergraduate TA (Computer Science)",
+        "🏅 Outstanding Undergraduate TA (Electrical and Computer Engineering)"
       ]
     }
   ]
@@ -545,6 +575,7 @@ const softwareProjects = {
       projectDesc:
         "I refactored and documented the codebase for Picasso Intelligence's product website, drastically reducing duplicated code and providing a no-code way to add new products via JSON files.",
       mainSkills: [
+        // eslint-disable-next-line
         "JavaScript: custom functionality",
         "HTML: website structure",
         "CSS: website styling",
@@ -591,7 +622,6 @@ const mechProjects = {
       projectName: "Fidget Cube",
       projectDesc:
         "3D printed cube with inserts for low profile mechanical switches",
-      mainSkills: "",
       footerLink: [
         {
           name: "Gallery (Under Construction)",

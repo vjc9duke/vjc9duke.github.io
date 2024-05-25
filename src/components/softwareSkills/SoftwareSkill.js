@@ -2,6 +2,22 @@ import React from "react";
 import "./SoftwareSkill.scss";
 import {skillsSection} from "../../portfolio";
 
+const scrollToTarget = targetID => {
+  const targetDiv = document.getElementById(targetID);
+  if (targetDiv) {
+    // Scroll to the target div
+    targetDiv.scrollIntoView({behavior: "smooth"});
+
+    // Add the glowing class to apply the glow effect
+    targetDiv.classList.add("glowing");
+
+    // Remove the glowing class after 2 seconds
+    setTimeout(function () {
+      targetDiv.classList.remove("glowing");
+    }, 2000);
+  }
+};
+
 export function ProgLang() {
   return (
     <div>
@@ -13,6 +29,12 @@ export function ProgLang() {
                 key={i}
                 className="software-skill-inline"
                 name={skills.skillName}
+                onClick={() =>
+                  scrollToTarget(
+                    skills.targetID[0].toLowerCase().replace(/\s+/g, "-")
+                  )
+                }
+                style={{cursor: "pointer"}}
               >
                 <i className={skills.fontAwesomeClassname}></i>
                 <p>{skills.skillName}</p>
