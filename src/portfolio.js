@@ -967,7 +967,8 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   number: "+1 (440) 318-4013",
-  email_address: "vzchen12@gmail.com"
+  email_address: "vzchen12@gmail.com",
+  location: "Seattle, WA"
 };
 
 // Twitter Section

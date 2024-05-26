@@ -49,6 +49,9 @@ export default function Contact() {
               </a>
               <br />
               <br />
+              <a className="contact-detail-email">{contactInfo.location}</a>
+              <br />
+              <br />
               <SocialMedia />
             </div>
           </div>
