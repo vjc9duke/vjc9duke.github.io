@@ -39,10 +39,13 @@
 }
 
 .project-card {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   background-color: $lightBackground2;
-  padding: 1.5rem;
+  padding-top: 2rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   justify-content: center;
