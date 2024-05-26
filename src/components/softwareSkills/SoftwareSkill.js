@@ -110,7 +110,7 @@ export function Technology() {
 
 export function Software() {
   const {isDark} = useContext(StyleContext);
-  return mapSkills("software", skillsSection.software, isDark);
+  return mapSkills("applications", skillsSection.software, isDark);
 }
 
 export function HandsOn() {

@@ -78,9 +78,9 @@ export default function Skills() {
             <Technology />
             <p
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-              id="skills-software"
+              id="skills-applications"
             >
-              {"Software"}
+              {"Applications"}
             </p>
             <Software />
             <p
