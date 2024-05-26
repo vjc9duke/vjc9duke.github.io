@@ -49,8 +49,6 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : null;
   };
 
-  console.log(JSON.stringify(cardInfo));
-
   return (
     <div
       className={isDark ? "experience-card-dark" : "experience-card"}

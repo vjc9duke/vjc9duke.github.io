@@ -54,7 +54,7 @@ const skillsSection = {
     "Passionate about mechanical, electrical, and software development and everything in between | Experienced across CAD, low-level languages, high-level languages, and cloud technologies",
   skills: [
     emoji(
-      "🖥 Develop apps and scripts in high level languages like Java, Python, and Matlab among others"
+      "🖥 Develop apps and scripts in high level languages like Java, Python, and MATLAB among others"
     ),
     emoji(
       "📟 Program for microcontrollers and FPGAs in C, Assembly, and Verilog"
@@ -150,7 +150,7 @@ https://fontawesome.com/icons?d=gallery */
       targetID: ["ACkER Lab"]
     },
     {
-      skillName: "Matlab",
+      skillName: "MATLAB",
       fontAwesomeClassname: "fas fa-square-root-alt",
       targetID: ["ACkER Lab"]
     },
@@ -195,6 +195,7 @@ https://fontawesome.com/icons?d=gallery */
         "Candy Tank",
         "Assembly Autotester",
         "Java Chess Application",
+        "Computer Science Teaching Assistant",
         "ACkER Lab",
         "Picasso Intelligence Website",
         "UChat Anonymous Chatting App"
@@ -396,17 +397,12 @@ const workExperiences = {
       company: "Ecolab",
       companylogo: require("./assets/images/ecolabLogo.png"),
       date: "May 2024 – August 2024",
-      // desc: "Test",
-      descBullets: [
-        "Utilized AutoCAD to design the physical layout and electrical wiring of a remote testing and simulation laboratory",
-        "Managed installation, wiring, and setup of programmable logic controllers and cellular communication modules ",
-        "Developed, tested, and deployed simulator software with B&R development tools that interfaces with Ecolab’s existing Advanced Polymer Activation Systems software to enable remote technicians to analyze equipment in the field"
-      ],
+      desc: "I first designed, built, and wired a custom control panel to emulate a polymer activation system. Then, I developed simulation software to enable remote analysis of customer equipment.,",
       mainSkills: [
         "C: PLC programming",
         "B&R Studio: PLC development and deployment",
         "Git: version control and collaboration",
-        "AutoCAD: 2D and 3D modeling"
+        "AutoCAD: electrical and mechanical layout"
       ]
     },
     {
@@ -414,14 +410,10 @@ const workExperiences = {
       company: "Picasso Intelligence",
       companylogo: require("./assets/images/piLogo.png"),
       date: "August 2023 - May 2024",
-      descBullets: [
-        "Developed software and hardware components for mechatronics projects, including a Python app for smart actuator control and visualization, as well as mechanical and electrical assembly of a high-output cooling vest for Veterans Affairs",
-        "Rebuilt and documented website codebase to increase maintainability and allow easier addition of new products",
-        "Managed several business-related operations, such as interviewing and onboarding new members, constructing promotional materials, and building a product catalog using software such as Figma and Photoshop"
-      ],
+      desc: "I developed actuator control software, worked on cooling vest hardware, and refactored the company website. I also aided in team development activities like interviewing candidates and creating a product catalog.",
       mainSkills: [
-        "C: actuator programming",
-        "Python: actuator UI development",
+        "C: actuator app development",
+        "Python: actuator app development",
         "JavaScript: custom functionality",
         "HTML: website structure",
         "CSS: website styling",
@@ -435,11 +427,7 @@ const workExperiences = {
       company: "Onto Innovation",
       companylogo: require("./assets/images/ontoLogo.png"),
       date: "May 2023 - August 2023",
-      descBullets: [
-        "Improved distributed computing reliability for AI Diffract, a 3D modeling software for semiconductor optics simulations",
-        "Developed and implemented a solution for inconsistent results on refractive index calculations for transistors",
-        "Built new UI features using WinUI and refactored legacy C++ code to be more readable and to increase memory safety"
-      ],
+      desc: "I developed a solution to eliminate a distributed computing error for AI Diffract, a refraction simulation software, and added a couple QOL UI features. I also helped refactor some legacy C++ code to improve maintainability and decrease the possibility of memory leaks.",
       mainSkills: [
         "C++: software development",
         "Git: version control and collaboration"
@@ -450,6 +438,7 @@ const workExperiences = {
       company: "nCino",
       companylogo: require("./assets/images/ncinoLogo.png"),
       date: "May 2022 – January 2023",
+      desc: "I leveraged AWS services such as Lambda, DynamoDB, and API Gateway to build a data-sharing system integrated with nCino's core MTRANS data mapping service. I also composed documentation for future developers and developed comprehensive testing suites.",
       mainSkills: [
         "AWS: cloud development and management",
         "Salesforce: core app integration",
@@ -466,7 +455,7 @@ const workExperiences = {
       company: "E-Sentience",
       companylogo: require("./assets/images/esentLogo.png"),
       date: "May 2022 – August 2022",
-      descBullets: [],
+      desc:"I first developed a UI mockup for a cross-platform fitness app in Figma. Then, I developed the core part of the app in Flutter, using Git to manage version control and track tasks.",
       mainSkills: [
         "Flutter/Dart: app development",
         "Git: version control and collaboration",
@@ -485,7 +474,7 @@ const otherExperiences = {
       company: "Duke University",
       companylogo: require("./assets/images/dukeLogo.png"),
       date: "August 2023 - Present",
-      descBullets: ["Digital Systems", "Outstanding Undergraduate TA Award"]
+      descBullets: ["Lead a lab section for Duke's Digital Systems course,  covering concepts such as Verilog, FPGA programming, and electromechanical integration ", "🏅 Outstanding Undergraduate TA Award"]
     },
     {
       role: "Computer Science Teaching Assistant",
@@ -493,8 +482,8 @@ const otherExperiences = {
       companylogo: require("./assets/images/dukeLogo.png"),
       date: "August 2022 – May 2024",
       descBullets: [
-        "Advanced Software Design and Implementation",
-        "2x Outstanding Undergraduate TA Award"
+        "Individually mentored students for Duke's Advanced Software Design course, covering topics such as OOP design principles, design patterns, and best Git practices",
+        "🏅🏅 2x Outstanding Undergraduate TA Award"
       ]
     },
     {
@@ -502,7 +491,14 @@ const otherExperiences = {
       company: "ACkER Lab",
       companylogo: require("./assets/images/ackerLogo.png"),
       date: "January 2023 – May 2024",
-      descBullets: []
+      desc: "I built an iPadOS app that administers and automatically scores cognitive tests and led the first round of validation trials for.  I also worked on a MATLAB preprocessing script that filters out noisy heart rate data and an automatic data import script that eliminated hours of manual input.",
+      mainSkills: [
+        "MATLAB: data preprocessing",
+        "Python: script development",
+        "Swift: app development",
+        "Git: version control and collaboration",
+        "XCode: app testing and deployment",
+      ]
     }
   ]
 };
