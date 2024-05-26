@@ -87,3 +87,7 @@
   display: inline-block; /* Inline-block to fit the content */
   color: $textColorDark;
 }
+
+pre {
+  line-height: 1; /* Adjust the value as needed */
+}
