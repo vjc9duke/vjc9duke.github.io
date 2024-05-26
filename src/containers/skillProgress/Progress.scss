@@ -15,7 +15,6 @@
   border-bottom-right-radius: 6px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: $progressBarSpanBG;
   position: relative;
   overflow: hidden;
 }
@@ -67,4 +66,24 @@
     display: none;
     order: 2;
   }
+}
+
+.small-space {
+  margin-right: 4px; /* Adjust the value to your desired space */
+}
+
+.info-box-light {
+  background-color: rgba(165, 135, 202, 0.6); // 54, 206, 220, 0.35
+  border-radius: 8px; /* Rounded corners */
+  padding: 0px 20px 0px 20px;
+  display: inline-block; /* Inline-block to fit the content */
+  color: $textColor;
+}
+
+.info-box-dark {
+  background-color: rgba(165, 135, 202, 0.7); // rgba(165, 135, 202, 0.7)
+  border-radius: 8px; /* Rounded corners */
+  padding: 0px 20px 0px 20px;
+  display: inline-block; /* Inline-block to fit the content */
+  color: $textColorDark;
 }
