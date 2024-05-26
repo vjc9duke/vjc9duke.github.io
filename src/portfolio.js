@@ -455,7 +455,7 @@ const workExperiences = {
       company: "E-Sentience",
       companylogo: require("./assets/images/esentLogo.png"),
       date: "May 2022 – August 2022",
-      desc:"I first developed a UI mockup for a cross-platform fitness app in Figma. Then, I developed the core part of the app in Flutter, using Git to manage version control and track tasks.",
+      desc: "I first developed a UI mockup for a cross-platform fitness app in Figma. Then, I developed the core part of the app in Flutter, using Git to manage version control and track tasks.",
       mainSkills: [
         "Flutter/Dart: app development",
         "Git: version control and collaboration",
@@ -474,7 +474,10 @@ const otherExperiences = {
       company: "Duke University",
       companylogo: require("./assets/images/dukeLogo.png"),
       date: "August 2023 - Present",
-      descBullets: ["Lead a lab section for Duke's Digital Systems course,  covering concepts such as Verilog, FPGA programming, and electromechanical integration ", "🏅 Outstanding Undergraduate TA Award"]
+      descBullets: [
+        "Lead a lab section for Duke's Digital Systems course,  covering concepts such as Verilog, FPGA programming, and electromechanical integration ",
+        "🏅 Outstanding Undergraduate TA Award"
+      ]
     },
     {
       role: "Computer Science Teaching Assistant",
@@ -497,7 +500,7 @@ const otherExperiences = {
         "Python: script development",
         "Swift: app development",
         "Git: version control and collaboration",
-        "XCode: app testing and deployment",
+        "XCode: app testing and deployment"
       ]
     }
   ]
