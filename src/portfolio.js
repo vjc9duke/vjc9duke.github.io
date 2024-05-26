@@ -862,7 +862,7 @@ const mechProjects = {
         "3D printed casing for my Galaxy Watch charger in the shape of a rook. Comes with an attachment on top for an Apple Watch charger.",
       footerLink: [
         {
-          name: "Gallery", // TODO
+          name: "Gallery test", // TODO
           url: ""
         }
         //  you can add extra buttons here.
