@@ -475,8 +475,12 @@ const otherExperiences = {
       companylogo: require("./assets/images/dukeLogo.png"),
       date: "August 2023 - Present",
       descBullets: [
-        "Lead a lab section for Duke's Digital Systems course,  covering concepts such as Verilog, FPGA programming, and electromechanical integration ",
+        "I lead a lab section for Duke's Digital Systems course, covering concepts such as Verilog, FPGA programming, and electromechanical integration ",
         "🏅 Outstanding Undergraduate TA Award"
+      ],
+      mainSkills: [
+        "Lab instruction: guidance on computer architecture concepts and FPGA programming",
+        "Project mentorship: assistance on Verilog programming and electromechanical integration"
       ]
     },
     {
@@ -485,8 +489,12 @@ const otherExperiences = {
       companylogo: require("./assets/images/dukeLogo.png"),
       date: "August 2022 – May 2024",
       descBullets: [
-        "Individually mentored students for Duke's Advanced Software Design course, covering topics such as OOP design principles, design patterns, and best Git practices",
+        "I individually mentored students for Duke's Advanced Software Design course, covering topics such as OOP design principles, design patterns, and best Git practices",
         "🏅🏅 2x Outstanding Undergraduate TA Award"
+      ],
+      mainSkills: [
+        "Mentorship: individual student guidance",
+        "Grading: qualitative feedback for student code, Git practices, and teamwork"
       ]
     },
     {
