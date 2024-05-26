@@ -544,10 +544,17 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "Under Construction",
+          name: "Gallery",  // TODO 
+          url: "https://www.google.com/"
+        },
+        {
+          name: "Code Repository",  // TODO 
+          url: "https://www.google.com/"
+        },
+        {
+          name: "Project Report",  // TODO 
           url: "https://www.google.com/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
@@ -564,10 +571,13 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "Under Construction",
-          url: ""
+          name: "Gallery",  // TODO 
+          url: "https://www.google.com/"
+        },
+        {
+          name: "Code Repository",  // TODO 
+          url: "https://www.google.com/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
@@ -581,12 +591,16 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "Under Construction",
+          name: "Gallery", // TODO
           url: ""
         },
         {
           name: "Team Website",
           url: "https://duke-robotics.com/"
+        },
+        {
+          name: "Competition Website", 
+          url: "https://robonation.org/about/"
         }
         //  you can add extra buttons here.
       ]
@@ -614,7 +628,11 @@ const multiDiscProjects = {
       ],
       footerLink: [
         {
-          name: "Under construction",
+          name: "Gallery", // TODO
+          url: ""
+        },
+        {
+          name: "Code Repository", // TODO
           url: ""
         }
         //  you can add extra buttons here.
@@ -633,7 +651,11 @@ const multiDiscProjects = {
       ],
       footerLink: [
         {
-          name: "Under construction",
+          name: "Gallery", // TODO
+          url: ""
+        },
+        {
+          name: "Code Repository", // TODO
           url: ""
         }
         //  you can add extra buttons here.
@@ -656,7 +678,15 @@ const multiDiscProjects = {
       ],
       footerLink: [
         {
-          name: "Under construction",
+          name: "Gallery", // TODO
+          url: ""
+        },
+        {
+          name: "Final Presentation", // TODO
+          url: ""
+        },
+        {
+          name: "Code Repository", // TODO
           url: ""
         }
         //  you can add extra buttons here.
@@ -683,7 +713,7 @@ const softwareProjects = {
       ],
       footerLink: [
         {
-          name: "Git Repository",
+          name: "Code Repository",
           url: "https://github.com/vjc9duke/assembly-autotester"
         }
         //  you can add extra buttons here.
@@ -701,7 +731,7 @@ const softwareProjects = {
       ],
       footerLink: [
         {
-          name: "Git Repository (My Contributions)",
+          name: "Code Repository (My Section)",
           url: "https://gitfront.io/r/user-4226062/8eBccXDeUwHx/308-final/tree/src/main/java/oogasalad/GamePlayer/"
         }
         //  you can add extra buttons here.
@@ -741,7 +771,7 @@ const softwareProjects = {
       ],
       footerLink: [
         {
-          name: "Git Repository",
+          name: "Code Repository",
           url: "https://github.com/Ydz0616/UChat"
         }
         //  you can add extra buttons here.
@@ -762,7 +792,7 @@ const mechProjects = {
         "3D printed cube with inserts for low profile mechanical switches",
       footerLink: [
         {
-          name: "Gallery (Under Construction)",
+          name: "Gallery", // TODO
           url: ""
         }
         //  you can add extra buttons here.
@@ -779,7 +809,7 @@ const mechProjects = {
         "Bespoke hook fitted to my desk; holes headphones, hats, etc. and can be modified to support different use cases",
       footerLink: [
         {
-          name: "Gallery (Under Construction)",
+          name: "Gallery", // TODO
           url: ""
         }
         //  you can add extra buttons here.
@@ -797,7 +827,7 @@ const mechProjects = {
         "Custom mounting bracket for speaker system in my garage gym",
       footerLink: [
         {
-          name: "Gallery (Under Construction)",
+          name: "Gallery", // TODO
           url: ""
         }
         //  you can add extra buttons here.
@@ -814,7 +844,7 @@ const mechProjects = {
         "Wooden, angled laptop stand fabricated using a CNC router. Also sanded, painted, and polished.",
       footerLink: [
         {
-          name: "Gallery (Under Construction)",
+          name: "Gallery", // TODO
           url: ""
         }
         //  you can add extra buttons here.
@@ -832,7 +862,7 @@ const mechProjects = {
         "3D printed casing for my Galaxy Watch charger in the shape of a rook. Comes with an attachment on top for an Apple Watch charger.",
       footerLink: [
         {
-          name: "Gallery (Under Construction)",
+          name: "Gallery", // TODO
           url: ""
         }
         //  you can add extra buttons here.
