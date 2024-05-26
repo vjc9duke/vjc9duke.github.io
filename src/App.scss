@@ -33,10 +33,10 @@
   0% {
     box-shadow: 0 0 0 $skillColor; /* Start with no glow */
   }
-  15% {
+  7% {
     box-shadow: 0 0 20px $skillColor; /* Fade out glow within last 2 seconds */
   }
-  80% {
+  83% {
     box-shadow: 0 0 20px $skillColor; /* Start with no glow */
   }
   90% {
@@ -48,10 +48,10 @@
   0% {
     box-shadow: 0 0 0 $skillColor; /* Start with no glow */
   }
-  15% {
+  5% {
     box-shadow: 0 0 20px $skillColor; /* Fade out glow within last 2 seconds */
   }
-  80% {
+  85% {
     box-shadow: 0 0 20px $skillColor; /* Start with no glow */
   }
   90% {
@@ -60,11 +60,11 @@
 }
 
 .glowing-dark {
-  animation: glow-dark 10s ease-in; /* Total animation duration is 10 seconds */
+  animation: glow-dark 20s ease-in; /* Total animation duration is 10 seconds */
 }
 
 .glowing-light {
-  animation: glow-light 10s ease-in; /* Total animation duration is 10 seconds */
+  animation: glow-light 20s ease-in; /* Total animation duration is 10 seconds */
 }
 
 .card-skills-title {

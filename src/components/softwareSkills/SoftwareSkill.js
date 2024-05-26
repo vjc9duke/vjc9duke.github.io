@@ -50,11 +50,6 @@ const scrollToTarget = (title, targetID, blockTarget, isDark) => {
     if (div) {
       const glowingClass = isDark ? "glowing-dark" : "glowing-light";
       div.classList.add(glowingClass);
-
-      // Remove the glowing class after 2 seconds
-      setTimeout(function () {
-        div.classList.remove(glowingClass);
-      }, 10000);
     }
   });
   // Scroll down for more if more than one target id
