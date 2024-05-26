@@ -544,15 +544,15 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "Gallery",  // TODO 
+          name: "Gallery", // TODO
           url: "https://www.google.com/"
         },
         {
-          name: "Code Repository",  // TODO 
+          name: "Code Repository", // TODO
           url: "https://www.google.com/"
         },
         {
-          name: "Project Report",  // TODO 
+          name: "Project Report", // TODO
           url: "https://www.google.com/"
         }
       ]
@@ -571,11 +571,11 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "Gallery",  // TODO 
+          name: "Gallery", // TODO
           url: "https://www.google.com/"
         },
         {
-          name: "Code Repository",  // TODO 
+          name: "Code Repository", // TODO
           url: "https://www.google.com/"
         }
       ]
@@ -599,7 +599,7 @@ const bigProjects = {
           url: "https://duke-robotics.com/"
         },
         {
-          name: "Competition Website", 
+          name: "Competition Website",
           url: "https://robonation.org/about/"
         }
         //  you can add extra buttons here.
