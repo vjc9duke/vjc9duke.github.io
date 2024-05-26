@@ -30,6 +30,27 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : null;
   };
 
+  const GetSkillBullets = ({descBullets, isDark}) => {
+    return descBullets
+      ? descBullets.map((item, i) => {
+          const parts = item.split(":");
+          return (
+            <li
+              key={i}
+              className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+            >
+              <span className={isDark ? "skill-color-dark" : "skill-color"}>
+                {parts[0]}
+              </span>
+              {parts[1] ? `:${parts[1]}` : ""}
+            </li>
+          );
+        })
+      : null;
+  };
+
+  console.log(JSON.stringify(cardInfo));
+
   return (
     <div
       className={isDark ? "experience-card-dark" : "experience-card"}
@@ -85,6 +106,24 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
+        {cardInfo.mainSkills ? (
+          <div className="main-skills">
+            <h5
+              className={
+                isDark ? "card-skills-title-dark" : "card-skills-title"
+              }
+              style={{textAlign: "center", fontSize: "25px"}}
+            >
+              {"Main Skills"}
+            </h5>
+            <ul>
+              <GetSkillBullets
+                descBullets={cardInfo.mainSkills}
+                isDark={isDark}
+              />
+            </ul>
+          </div>
+        ) : null}
       </div>
     </div>
   );

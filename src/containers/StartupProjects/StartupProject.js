@@ -105,13 +105,6 @@ const GetProjectsDiv = ({projects}) => {
                           isDark={isDark}
                         />
                       </ul>
-                      {/* <p
-                          className={
-                            isDark ? "dark-mode card-subtitle" : "card-subtitle"
-                          }
-                        >
-                          {project.mainSkills}
-                        </p> */}
                     </div>
                   ) : null}
                   {project.footerLink ? (

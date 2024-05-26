@@ -26,7 +26,8 @@ export function WorkExperience() {
                         date: card.date,
                         companylogo: card.companylogo,
                         role: card.role,
-                        descBullets: card.descBullets
+                        descBullets: card.descBullets,
+                        mainSkills: card.mainSkills
                       }}
                     />
                   );
@@ -62,7 +63,8 @@ export function OtherExperience() {
                         date: card.date,
                         companylogo: card.companylogo,
                         role: card.role,
-                        descBullets: card.descBullets
+                        descBullets: card.descBullets,
+                        mainSkills: card.mainSkills
                       }}
                     />
                   );

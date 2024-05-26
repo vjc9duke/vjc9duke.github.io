@@ -121,9 +121,18 @@ https://fontawesome.com/icons?d=gallery */
       ]
     },
     {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fas fa-scroll",
+      targetID: ["nCino", "UChat Anonymous Chatting App"]
+    },
+    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js",
-      targetID: ["Picasso Intelligence", "Picasso Intelligence Website"]
+      targetID: [
+        "Picasso Intelligence",
+        "nCino",
+        "Picasso Intelligence Website"
+      ]
     },
     {
       skillName: "HTML-5",
@@ -160,6 +169,11 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Salesforce",
       fontAwesomeClassname: "fab fa-salesforce",
+      targetID: ["nCino"]
+    },
+    {
+      skillName: "DynamoDB",
+      fontAwesomeClassname: "fas fa-database",
       targetID: ["nCino"]
     },
     {
@@ -241,6 +255,11 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "SolidWorks",
       fontAwesomeClassname: "fas fa-cube",
       targetID: ["Duke Robotics"]
+    },
+    {
+      skillName: "AutoCAD",
+      fontAwesomeClassname: "fas fa-vector-square",
+      targetID: ["Ecolab"]
     },
     {
       skillName: "KiCad",
@@ -382,6 +401,12 @@ const workExperiences = {
         "Utilized AutoCAD to design the physical layout and electrical wiring of a remote testing and simulation laboratory",
         "Managed installation, wiring, and setup of programmable logic controllers and cellular communication modules ",
         "Developed, tested, and deployed simulator software with B&R development tools that interfaces with Ecolab’s existing Advanced Polymer Activation Systems software to enable remote technicians to analyze equipment in the field"
+      ],
+      mainSkills: [
+        "C: PLC programming",
+        "B&R Studio: PLC development and deployment",
+        "Git: version control and collaboration",
+        "AutoCAD: 2D and 3D modeling"
       ]
     },
     {
@@ -393,6 +418,16 @@ const workExperiences = {
         "Developed software and hardware components for mechatronics projects, including a Python app for smart actuator control and visualization, as well as mechanical and electrical assembly of a high-output cooling vest for Veterans Affairs",
         "Rebuilt and documented website codebase to increase maintainability and allow easier addition of new products",
         "Managed several business-related operations, such as interviewing and onboarding new members, constructing promotional materials, and building a product catalog using software such as Figma and Photoshop"
+      ],
+      mainSkills: [
+        "C: actuator programming",
+        "Python: actuator UI development",
+        "JavaScript: custom functionality",
+        "HTML: website structure",
+        "CSS: website styling",
+        "Git: version control and collaboration",
+        "Figma: promotional materials",
+        "Photoshop: promotional materials"
       ]
     },
     {
@@ -404,6 +439,10 @@ const workExperiences = {
         "Improved distributed computing reliability for AI Diffract, a 3D modeling software for semiconductor optics simulations",
         "Developed and implemented a solution for inconsistent results on refractive index calculations for transistors",
         "Built new UI features using WinUI and refactored legacy C++ code to be more readable and to increase memory safety"
+      ],
+      mainSkills: [
+        "C++: software development",
+        "Git: version control and collaboration"
       ]
     },
     {
@@ -411,14 +450,29 @@ const workExperiences = {
       company: "nCino",
       companylogo: require("./assets/images/ncinoLogo.png"),
       date: "May 2022 – January 2023",
-      descBullets: []
+      mainSkills: [
+        "AWS: cloud development and management",
+        "Salesforce: core app integration",
+        "DynamoDB: database management",
+        "TypeScript: AWS Lambda development",
+        "JavaScript: core app development",
+        "Git: version control and collaboration",
+        "Jest: testing framework",
+        "Postman: API testing"
+      ]
     },
     {
       role: "Intern - Software Engineering",
       company: "E-Sentience",
       companylogo: require("./assets/images/esentLogo.png"),
       date: "May 2022 – August 2022",
-      descBullets: []
+      descBullets: [],
+      mainSkills: [
+        "Flutter/Dart: app development",
+        "Git: version control and collaboration",
+        "Android Studio: app testing and deployment",
+        "Figma: UI mockup"
+      ]
     }
   ]
 };

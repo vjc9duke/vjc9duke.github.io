@@ -66,3 +66,19 @@
 .glowing-light {
   animation: glow-light 10s ease-in; /* Total animation duration is 10 seconds */
 }
+
+.card-skills-title {
+  color: $skillColor;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+}
+
+.card-skills-title-dark {
+  color: $skillColorDark;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+}
