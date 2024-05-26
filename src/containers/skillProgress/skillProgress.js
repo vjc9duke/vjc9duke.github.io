@@ -23,9 +23,9 @@ export default function StackProgress() {
                   } else if (parseInt(exp.progressPercentage, 10) < 70) {
                     return "#ffb750";
                   } else if (parseInt(exp.progressPercentage, 10) < 85) {
-                    return "#8fe968";
+                    return "#80d262";
                   } else {
-                    return "#36CEDC";
+                    return "#42a5f5";
                   }
                 })()
               };
@@ -45,12 +45,12 @@ export default function StackProgress() {
                 {"  "}
                 <i
                   class="fa-solid fa-circle small-space"
-                  style={{color: "#36CEDC"}}
+                  style={{color: "#42a5f5"}}
                 ></i>
                 Expert{"  "}
                 <i
                   class="fa-solid fa-circle small-space"
-                  style={{color: "#8fe968"}}
+                  style={{color: "#80d262"}}
                 ></i>
                 Advanced{"  "}
                 <i

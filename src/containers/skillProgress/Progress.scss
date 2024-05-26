@@ -74,7 +74,7 @@
 
 .info-box-light {
   background-color: rgba(165, 135, 202, 0.6); // 54, 206, 220, 0.35
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 10px; /* Rounded corners */
   padding: 0px 20px 0px 20px;
   display: inline-block; /* Inline-block to fit the content */
   color: $textColor;
@@ -82,7 +82,7 @@
 
 .info-box-dark {
   background-color: rgba(165, 135, 202, 0.7); // rgba(165, 135, 202, 0.7)
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 10px; /* Rounded corners */
   padding: 0px 20px 0px 20px;
   display: inline-block; /* Inline-block to fit the content */
   color: $textColorDark;
