@@ -40,30 +40,41 @@ export default function StackProgress() {
             })}
             <p>&nbsp;</p>
             <div className={isDark ? "info-box-dark" : "info-box-light"}>
-              <pre>
-                <i class="fa-solid fa-circle-info"></i>
-                {"  "}
-                <i
-                  class="fa-solid fa-circle small-space"
-                  style={{color: "#42a5f5"}}
-                ></i>
-                Expert{"  "}
-                <i
-                  class="fa-solid fa-circle small-space"
-                  style={{color: "#80d262"}}
-                ></i>
-                Advanced{"  "}
-                <i
-                  class="fa-solid fa-circle small-space"
-                  style={{color: "#ffb750"}}
-                ></i>
-                Intermediate{"  "}
-                <i
-                  class="fa-solid fa-circle small-space"
-                  style={{color: "#fe797b"}}
-                ></i>
-                Beginner
-              </pre>
+              <div className="info-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div className="info-content">
+                <pre>
+                  <span class="circle-span">
+                    <i
+                      class="fa-solid fa-circle small-space"
+                      style={{color: "#42a5f5"}}
+                    ></i>
+                    Expert{"  "}
+                  </span>
+                  <span class="circle-span">
+                    <i
+                      class="fa-solid fa-circle small-space"
+                      style={{color: "#80d262"}}
+                    ></i>
+                    Advanced{"  "}
+                  </span>
+                  <span class="circle-span">
+                    <i
+                      class="fa-solid fa-circle small-space"
+                      style={{color: "#ffb750"}}
+                    ></i>
+                    Intermediate{"  "}
+                  </span>
+                  <span class="circle-span">
+                    <i
+                      class="fa-solid fa-circle small-space"
+                      style={{color: "#fe797b"}}
+                    ></i>
+                    Beginner
+                  </span>
+                </pre>
+              </div>
             </div>
           </div>
 

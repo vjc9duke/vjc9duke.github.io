@@ -49,6 +49,7 @@ export default function Contact() {
               </a>
               <br />
               <br />
+              {/*eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a className="contact-detail-email">{contactInfo.location}</a>
               <br />
               <br />
