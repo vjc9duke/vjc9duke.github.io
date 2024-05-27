@@ -139,7 +139,7 @@ export default function StartupProject() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <Fade bottom duration={1000} distance="20px" fraction="0.05">
       <GetProjectsDiv projects={bigProjects} />
       <GetProjectsDiv projects={multiDiscProjects} />
       <GetProjectsDiv projects={softwareProjects} />
