@@ -9,10 +9,11 @@ export function WorkExperience() {
   const {isDark} = useContext(StyleContext);
   if (workExperiences.display) {
     return (
-      <div id="experience">
-        <Fade bottom duration={1000} distance="20px">
-          <div className="experience-container" id="workExperience">
+      <div>
+        <div id="internship">
+          <div className="experience-container" id="internshipContainer">
             <div>
+            <Fade bottom duration={1000} distance="20px">
               <h1 className="experience-heading">Internships</h1>
               <div className="experience-cards-div">
                 {workExperiences.experience.map((card, i) => {
@@ -33,22 +34,12 @@ export function WorkExperience() {
                   );
                 })}
               </div>
+              </Fade>
             </div>
           </div>
-        </Fade>
-      </div>
-    );
-  }
-  return null;
-}
-
-export function OtherExperience() {
-  const {isDark} = useContext(StyleContext);
-  if (otherExperiences.display) {
-    return (
-      <div id="experience">
-        <Fade bottom duration={1000} distance="20px">
-          <div className="experience-container" id="workExperience">
+        </div>
+        <div id="otherExperience">
+          <div className="experience-container" id="otherExperienceContainer">
             <div>
               <h1 className="experience-heading">Other Work Experience</h1>
               <div className="experience-cards-div">
@@ -72,8 +63,7 @@ export function OtherExperience() {
               </div>
             </div>
           </div>
-        </Fade>
-      </div>
+        </div></div>
     );
   }
   return null;
