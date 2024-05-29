@@ -552,7 +552,7 @@ const bigProjects = {
           url: "https://gitfront.io/r/vzchen12/UNpA3DKFZE8x/patron-counter/"
         },
         {
-          name: "Project Reports", 
+          name: "Project Reports",
           url: "https://drive.google.com/drive/folders/1YfgzoODL0tuZnu1O9ZjlZLNMBajfBd_y?usp=drive_link"
         }
       ]
@@ -575,11 +575,11 @@ const bigProjects = {
           url: ""
         },
         {
-          name: "Control Hub Repository", 
+          name: "Control Hub Repository",
           url: "https://github.com/vjc9duke/laser-tag-hub"
         },
         {
-          name: "Microcontroller Repository", 
+          name: "Microcontroller Repository",
           url: "https://drive.google.com/drive/folders/11wB_0B5jFPhh-wsaUemmA5tbX7PcPUwa?usp=sharing"
         }
       ]
@@ -636,7 +636,7 @@ const multiDiscProjects = {
           url: ""
         },
         {
-          name: "Project Repository", 
+          name: "Project Repository",
           url: "https://drive.google.com/drive/folders/1h6wmmpmsol9Kt3RwvbTfrpdYKEORiaBt?usp=sharing"
         }
         //  you can add extra buttons here.
@@ -659,7 +659,7 @@ const multiDiscProjects = {
           url: ""
         },
         {
-          name: "Project Repository", 
+          name: "Project Repository",
           url: "https://drive.google.com/drive/folders/1SCvuaQmR-wGKt6g1g63BmEzOezEiuqll?usp=sharing"
         }
         //  you can add extra buttons here.
@@ -686,11 +686,11 @@ const multiDiscProjects = {
           url: ""
         },
         {
-          name: "Final Report", 
+          name: "Final Report",
           url: "https://drive.google.com/drive/folders/1_Z2xYIUV9wx06B4IwAvXH5mowS1NROVu?usp=sharing"
         },
         {
-          name: "Project Repository", 
+          name: "Project Repository",
           url: "https://gitfront.io/r/vzchen12/TtpPNDatzmQ7/candy-tank-software/"
         },
         {
