@@ -548,12 +548,12 @@ const bigProjects = {
           url: "https://www.google.com/"
         },
         {
-          name: "Code Repository", // TODO
-          url: "https://www.google.com/"
+          name: "Code Repository",
+          url: "https://gitfront.io/r/vzchen12/UNpA3DKFZE8x/patron-counter/"
         },
         {
-          name: "Project Report", // TODO
-          url: "https://www.google.com/"
+          name: "Project Reports", 
+          url: "https://drive.google.com/drive/folders/1YfgzoODL0tuZnu1O9ZjlZLNMBajfBd_y?usp=drive_link"
         }
       ]
     },
@@ -572,11 +572,15 @@ const bigProjects = {
       footerLink: [
         {
           name: "Gallery", // TODO
-          url: "https://www.google.com/"
+          url: ""
         },
         {
-          name: "Code Repository", // TODO
-          url: "https://www.google.com/"
+          name: "Control Hub Repository", 
+          url: "https://github.com/vjc9duke/laser-tag-hub"
+        },
+        {
+          name: "Microcontroller Repository", 
+          url: "https://drive.google.com/drive/folders/11wB_0B5jFPhh-wsaUemmA5tbX7PcPUwa?usp=sharing"
         }
       ]
     },
@@ -632,8 +636,8 @@ const multiDiscProjects = {
           url: ""
         },
         {
-          name: "Code Repository", // TODO
-          url: ""
+          name: "Project Repository", 
+          url: "https://drive.google.com/drive/folders/1h6wmmpmsol9Kt3RwvbTfrpdYKEORiaBt?usp=sharing"
         }
         //  you can add extra buttons here.
       ]
@@ -655,8 +659,8 @@ const multiDiscProjects = {
           url: ""
         },
         {
-          name: "Code Repository", // TODO
-          url: ""
+          name: "Project Repository", 
+          url: "https://drive.google.com/drive/folders/1SCvuaQmR-wGKt6g1g63BmEzOezEiuqll?usp=sharing"
         }
         //  you can add extra buttons here.
       ]
@@ -682,12 +686,16 @@ const multiDiscProjects = {
           url: ""
         },
         {
-          name: "Final Presentation", // TODO
-          url: ""
+          name: "Final Report", 
+          url: "https://drive.google.com/drive/folders/1_Z2xYIUV9wx06B4IwAvXH5mowS1NROVu?usp=sharing"
         },
         {
-          name: "Code Repository", // TODO
-          url: ""
+          name: "Project Repository", 
+          url: "https://gitfront.io/r/vzchen12/TtpPNDatzmQ7/candy-tank-software/"
+        },
+        {
+          name: "Processor Repository",
+          url: "https://gitfront.io/r/user-4226062/xhqb4TY5mNGB/processor/"
         }
         //  you can add extra buttons here.
       ]
@@ -862,7 +870,7 @@ const mechProjects = {
         "3D printed casing for my Galaxy Watch charger in the shape of a rook. Comes with an attachment on top for an Apple Watch charger.",
       footerLink: [
         {
-          name: "Gallery test", // TODO
+          name: "Gallery", // TODO
           url: ""
         }
         //  you can add extra buttons here.
