@@ -397,7 +397,7 @@ const workExperiences = {
       company: "Ecolab",
       companylogo: require("./assets/images/ecolabLogo.png"),
       date: "May 2024 – August 2024",
-      desc: "I first designed, built, and wired a custom control panel to emulate a polymer activation system. Then, I developed simulation software to enable remote analysis of customer equipment.,",
+      desc: "I first designed, built, and wired a custom control panel to emulate a polymer activation system. Then, I developed simulation software to enable remote analysis of customer equipment.",
       mainSkills: [
         "C: PLC programming",
         "B&R Studio: PLC development and deployment",
@@ -406,7 +406,7 @@ const workExperiences = {
       ]
     },
     {
-      role: "Intern - Robotics Engineer",
+      role: "Intern - Robotics and Software Engineering",
       company: "Picasso Intelligence",
       companylogo: require("./assets/images/piLogo.png"),
       date: "August 2023 - May 2024",
