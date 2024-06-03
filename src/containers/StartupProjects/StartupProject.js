@@ -116,7 +116,8 @@ const GetProjectsDiv = ({projects}) => {
                             className={
                               isDark ? "dark-mode project-tag" : "project-tag"
                             }
-                            onClick={() => openUrlInNewTab(link.url)}
+                            // onClick={() => link.pics ? openGallery(link.pics) : openUrlInNewTab(link.url)}
+                            onClick={() => openGallery(link.pics)}
                           >
                             {link.name}
                           </span>
@@ -133,6 +134,37 @@ const GetProjectsDiv = ({projects}) => {
     </div>
   );
 };
+
+function test() {
+  const redSquare = document.createElement('div');
+        
+  // Add the 'red-square' class to the new div
+  redSquare.classList.add('red-square');
+  
+  // Append the new div to the body
+  document.body.appendChild(redSquare);
+}
+
+
+function openGallery(images) {
+    const galleryHTML = `
+        <div id="galleryOverlay">
+            <div id="galleryContainer">
+                ${images.map(src => `
+                    <img src="${src}" class="galleryImage" />
+                `).join('')}
+                <button id="closeGalleryButton">Close</button>
+            </div>
+        </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', galleryHTML);
+
+    document.getElementById('closeGalleryButton').onclick = () => {
+        document.getElementById('galleryOverlay').remove();
+    };
+
+}
 
 export default function StartupProject() {
   if (!bigProjects.display) {

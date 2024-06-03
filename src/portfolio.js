@@ -545,7 +545,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Gallery", // TODO
-          url: "https://www.google.com/"
+          // pics: ["./assets/images/lpc/"]
         },
         {
           name: "Code Repository",
@@ -836,7 +836,7 @@ const mechProjects = {
       footerLink: [
         {
           name: "Gallery", // TODO
-          url: ""
+          pics: ["./assets/images/ghome/rw.png"]
         }
         //  you can add extra buttons here.
       ],
