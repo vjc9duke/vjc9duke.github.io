@@ -20,6 +20,7 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import {GetSkillButton} from "../components/softwareSkills/SoftwareSkill";
+import CloseButton from "../components/closeButton/CloseButton";
 import "./Main.scss";
 
 const Main = () => {
@@ -68,6 +69,7 @@ const Main = () => {
             <Footer />
             <GetSkillButton />
             <ScrollToTopButton />
+            <CloseButton />
           </>
         )}
       </StyleProvider>

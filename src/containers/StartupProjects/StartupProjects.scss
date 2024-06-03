@@ -185,3 +185,13 @@
   max-height: 80%; // Adjust according to your design
   overflow-y: auto;
 }
+
+.gallery-img {
+  max-width: 100%; /* Scale down if too large */
+  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Maintain aspect ratio */
+  max-height: 800px; /* Scale down if too large */
+  min-width: 300px; /* Scale up if too small */
+  min-height: 300px; /* Scale up if too small */
+  border-radius: 10px;
+}

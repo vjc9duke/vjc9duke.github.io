@@ -836,7 +836,10 @@ const mechProjects = {
       footerLink: [
         {
           name: "Gallery", // TODO
-          pics: [/*"./assets/images/ghome/rw.png"*/require("./assets/images/thumbnails/home.png")]
+          pics: [
+            require("./assets/images/ghome/rw.png"),
+            require("./assets/images/thumbnails/home.png")
+          ]
         }
         //  you can add extra buttons here.
       ],
