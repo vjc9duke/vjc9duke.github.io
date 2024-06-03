@@ -8,6 +8,11 @@ import {
 } from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import lightGallery from 'lightgallery';
+
+// Plugins
+import lgThumbnail from 'lightgallery/plugins/thumbnail'
+import lgZoom from 'lightgallery/plugins/zoom'
 
 const GetDescBullets = ({descBullets, isDark}) => {
   return descBullets
@@ -136,34 +141,53 @@ const GetProjectsDiv = ({projects}) => {
 };
 
 function test() {
-  const redSquare = document.createElement('div');
-        
+  const redSquare = document.createElement("div");
+
   // Add the 'red-square' class to the new div
-  redSquare.classList.add('red-square');
-  
+  redSquare.classList.add("red-square");
+
   // Append the new div to the body
   document.body.appendChild(redSquare);
 }
 
-
 function openGallery(images) {
-    const galleryHTML = `
-        <div id="galleryOverlay">
-            <div id="galleryContainer">
-                ${images.map(src => `
-                    <img src="${src}" class="galleryImage" />
-                `).join('')}
-                <button id="closeGalleryButton">Close</button>
-            </div>
-        </div>
-    `;
+  var imageSrc = images[0]; // Image source
+  console.log(imageSrc);
+  var image = document.getElementById('popupImage');
 
-    document.body.insertAdjacentHTML('beforeend', galleryHTML);
+  // If image element doesn't exist, create it
+  if (!image) {
+    image = document.createElement('img');
+    image.id = 'popupImage';
+    image.src = imageSrc;
+    image.alt = 'Pop-up Image';
+    document.body.appendChild(image);
+  }
 
-    document.getElementById('closeGalleryButton').onclick = () => {
-        document.getElementById('galleryOverlay').remove();
-    };
+  image.classList.add('red-square');
+  // Toggle image visibility
+  if (image.style.display === 'none') {
+    image.style.display = 'block';
+  } else {
+    image.style.display = 'none';
+  }
 
+  // const galleryPopuip = document.createElement('div');
+  // galleryPopuip.classList.add('popup');
+
+  // const gallery = `
+  //     <div id="lightgallery">
+  //       ${images.map(image => `
+  //         <a href="${image}" data-lg-size="1600-2400">
+  //           <img alt="test" src="${image}" />
+  //         </a>
+  //       `).join('')}
+  //     </div>
+  // `;
+
+  // galleryPopuip.innerHTML = gallery;
+
+  // document.body.appendChild(galleryPopuip);
 }
 
 export default function StartupProject() {
