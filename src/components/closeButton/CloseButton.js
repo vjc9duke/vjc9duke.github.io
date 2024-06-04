@@ -17,9 +17,8 @@ export default function GetCloseGalleryButton() {
       onClick={closeGallery}
       id="close-btn"
       title="Close Gallery"
-      className="close-btn-light"
-    >
-      <i className="fas fa-times" aria-hidden="true"></i> Close Gallery
+      className="close-btn-dark"
+    > Close Gallery
     </button>
   );
 }

@@ -146,7 +146,7 @@ function openGallery(images) {
   galleryPopup.id = "galleryPopup";
 
   const gallery = `
-    <div id="gallery">
+    <div id="gallery" class="horizontal-scroll">
     ${images
       .map(
         image => `
