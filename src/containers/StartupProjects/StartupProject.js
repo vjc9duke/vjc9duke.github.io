@@ -121,8 +121,11 @@ const GetProjectsDiv = ({projects}) => {
                             className={
                               isDark ? "dark-mode project-tag" : "project-tag"
                             }
-                            // onClick={() => link.pics ? openGallery(link.pics) : openUrlInNewTab(link.url)}
-                            onClick={() => openGallery(link.pics)}
+                            onClick={() =>
+                              link.pics
+                                ? openGallery(link.pics, isDark)
+                                : openUrlInNewTab(link.url)
+                            }
                           >
                             {link.name}
                           </span>
@@ -140,38 +143,150 @@ const GetProjectsDiv = ({projects}) => {
   );
 };
 
-function openGallery(images) {
+function openGallery(images, isDark) {
+  // Create the overlay for the blur effect
+  const overlay = document.createElement("div");
+  overlay.classList.add("blur-overlay");
+  overlay.id = "blurOverlay";
+
   const galleryPopup = document.createElement("div");
   galleryPopup.classList.add("popup");
+  galleryPopup.classList.add(isDark ? "dark" : "light");
   galleryPopup.id = "galleryPopup";
 
   const gallery = `
-    <div id="gallery" class="horizontal-scroll">
-    ${images
-      .map(
-        image => `
-      <a href="${image}" data-lg-size="1600-2400">
-        <img class="gallery-img" alt="test" src="${image}" />
+  <div id="gallery" class="horizontal-scroll">
+  ${images
+    .map(
+      image => `
+    <div class="gallery-item">
+      <a>
+        <img class="gallery-img" alt="test" src="${image.pic}" />
       </a>
-    `
-      )
-      .join("")}
-  </div>
-  `;
+      <div class="caption ${isDark ? "darkc" : "lightc"}">${image.caption}</div>
+    </div>
+  `
+    )
+    .join("")}
+</div>
+`;
 
   galleryPopup.innerHTML = gallery;
 
+  document.body.appendChild(overlay);
   document.body.appendChild(galleryPopup);
 
+  // Prevent scrolling on the body
+  document.body.style.overflow = "hidden";
+
   const closeButton = document.getElementById("closeGalleryButton");
-  if (closeButton) {
-    closeButton.style.display = "block";
-  }
-  var popup = document.getElementById("close-btn");
+  // var popup = document.getElementById("close-btn");
+  // popup.classList.add("show");
+
+  // Trigger fade-in effect
+  requestAnimationFrame(() => {
+    overlay.classList.add("visible");
+    galleryPopup.classList.add("visible");
+    closeButton.classList.add("visible");
+  });
+
+  // Add event listener to overlay to close the gallery when clicked
+  overlay.addEventListener("click", closeGallery);
+
+  // Prevent clicks inside the galleryPopup from closing the gallery
+  galleryPopup.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+
+  // Add event listener for horizontal scrolling
+  const galleryElement = document.getElementById("gallery");
+  galleryElement.addEventListener("wheel", function (event) {
+    if (event.deltaY !== 0) {
+      galleryElement.scrollLeft += event.deltaY;
+      event.preventDefault();
+    }
+  });
+
+  // Add event listener for horizontal scrolling
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  galleryElement.addEventListener("mousedown", function (event) {
+    isDown = true;
+    startX = event.pageX - galleryElement.offsetLeft;
+    scrollLeft = galleryElement.scrollLeft;
+  });
+  galleryElement.addEventListener("mouseleave", function () {
+    isDown = false;
+  });
+  galleryElement.addEventListener("mouseup", function () {
+    isDown = false;
+  });
+  galleryElement.addEventListener("mousemove", function (event) {
+    if (!isDown) return;
+    event.preventDefault();
+    const x = event.pageX - galleryElement.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust the scrolling speed
+    galleryElement.scrollLeft = scrollLeft - walk;
+  });
+
+  // Add tip popup
+  var popup = document.getElementById("tip");
   popup.classList.add("show");
+  setTimeout(function () {
+    popup.classList.remove("show");
+  }, 5000);
 }
 
-export default function StartupProject() {
+function closeGallery() {
+  // FIXME: duplicated with close button code
+  const overlay = document.getElementById("blurOverlay");
+  const galleryPopup = document.getElementById("galleryPopup");
+  const closeButton = document.getElementById("closeGalleryButton");
+  if (overlay) {
+    overlay.classList.remove("visible");
+    overlay.addEventListener("transitionend", () => {
+      if (overlay.parentElement) overlay.parentElement.removeChild(overlay);
+      document.body.style.overflow = "";
+    });
+  }
+
+  if (galleryPopup) {
+    galleryPopup.classList.remove("visible");
+    galleryPopup.addEventListener("transitionend", () => {
+      if (galleryPopup.parentElement)
+        galleryPopup.parentElement.removeChild(galleryPopup);
+    });
+  }
+
+  if (closeButton) {
+    closeButton.classList.remove("visible");
+  }
+}
+
+export function CloseGalleryButton() {
+  const {isDark} = useContext(StyleContext);
+  return (
+    <div>
+      <button
+        onClick={closeGallery}
+        id="closeGalleryButton"
+        title="Close Gallery"
+        className="close-btn-dark" // TODO: add different modes
+      >
+        {" "}
+        Close Gallery
+      </button>
+      <div id="tip" className={isDark ? "tip-dark" : "tip-light"}>
+        Scroll or drag to see more{" "}
+        <i className="fas fa-angles-right arrow-icon"></i>
+      </div>
+    </div>
+  );
+}
+
+export function StartupProject() {
   if (!bigProjects.display) {
     return null;
   }

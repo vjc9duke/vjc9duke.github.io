@@ -5,7 +5,10 @@ import Skills from "./skills/Skills";
 import StackProgress from "./skillProgress/skillProgress";
 import {WorkExperience} from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
-import StartupProject from "./StartupProjects/StartupProject";
+import {
+  CloseGalleryButton,
+  StartupProject
+} from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
@@ -20,7 +23,6 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import {GetSkillButton} from "../components/softwareSkills/SoftwareSkill";
-import CloseButton from "../components/closeButton/CloseButton";
 import "./Main.scss";
 
 const Main = () => {
@@ -69,7 +71,7 @@ const Main = () => {
             <Footer />
             <GetSkillButton />
             <ScrollToTopButton />
-            <CloseButton />
+            <CloseGalleryButton />
           </>
         )}
       </StyleProvider>

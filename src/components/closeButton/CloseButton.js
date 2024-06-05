@@ -8,6 +8,13 @@ export default function GetCloseGalleryButton() {
     if (galleryDiv) {
       galleryDiv.remove();
     }
+
+    const overlay = document.getElementById("blurOverlay");
+
+    // Delete gallery div
+    if (overlay) {
+      overlay.remove();
+    }
     var closeButton = document.getElementById("close-btn");
     closeButton.classList.remove("show");
   }
@@ -18,7 +25,9 @@ export default function GetCloseGalleryButton() {
       id="close-btn"
       title="Close Gallery"
       className="close-btn-dark"
-    > Close Gallery
+    >
+      {" "}
+      Close Gallery
     </button>
   );
 }

@@ -122,14 +122,30 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #2F2F2F;
+  background-color: #2f2f2f;
   border-radius: 20px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 5px;
   z-index: 999; // Ensure it's on top of other elements
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 80%; // Adjust according to your design
   max-height: 80%; // Adjust according to your design
   overflow-y: hidden;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s; /* Fade effect */
+}
+
+.dark {
+  background-color: #2f2f2f;
+}
+
+.light {
+  background-color: #ccc;
+}
+
+.popup.visible {
+  opacity: 1; /* Show when visible class is added */
 }
 
 .horizontal-scroll {
@@ -139,15 +155,122 @@
 }
 
 .horizontal-scroll a {
-  margin-right: 30px; /* Add some space between images */
+  margin-right: 20px; /* Add some space between images */
 }
 
 .gallery-img {
-  max-width: 100%;
-  height: auto;
   width: auto;
-  max-height: 800px;
-  min-width: 300px;
-  min-height: 300px;
+  max-height: 70vh;
+  object-fit: contain; /* Ensures the image keeps its aspect ratio */
   border-radius: 10px;
+  user-select: none;
+}
+
+#gallery img {
+  pointer-events: none; /* Disable pointer events on the image */
+}
+
+#gallery {
+  cursor: pointer; /* Change cursor to pointer when hovering */
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  z-index: 998; /* Ensure it sits behind the popup but above other content */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s; /* Fade effect */
+}
+
+.blur-overlay.visible {
+  opacity: 1; /* Show when visible class is added */
+}
+
+.close-btn-dark {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #db5856;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-color: transparent;
+  cursor: pointer;
+  // box-shadow: 0 0 10px rgba(171, 171, 171, 0.1);
+  z-index: 1000; /* Ensure it shows on top of everything */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s; /* Fade effect */
+}
+
+.close-btn-dark.visible {
+  opacity: 1;
+}
+
+.caption {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #fff;
+  user-select: none;
+}
+
+.darkc {
+  color: #fff;
+}
+
+.lightc {
+  color: #000;
+}
+
+.gallery-item {
+  padding-bottom: 15px;
+  user-select: none;
+}
+
+.tip-light {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ccc;
+  color: $textColor;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(58, 58, 58, 0.1);
+  z-index: 2000; /* Ensure it shows on top of everything */
+  animation: fadeInOut 5s ease-in-out;
+}
+
+.tip-dark {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: $textColorDark;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(171, 171, 171, 0.1);
+  z-index: 2000; /* Ensure it shows on top of everything */
+  animation: fadeInOut 5s ease-in-out;
+}
+
+.tip-dark.show {
+  display: block;
+}
+
+.tip-light.show {
+  display: block;
+}
+
+.arrow-icon {
+  position: relative;
+  top: 1px; /* Adjust this value as needed to align the icon */
 }

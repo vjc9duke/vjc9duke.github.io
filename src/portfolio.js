@@ -837,8 +837,14 @@ const mechProjects = {
         {
           name: "Gallery", // TODO
           pics: [
-            require("./assets/images/ghome/rw.png"),
-            require("./assets/images/thumbnails/home.png")
+            {
+              pic: require("./assets/images/ghome/rw.png"),
+              caption: "Real World Picture"
+            },
+            {
+              pic: require("./assets/images/thumbnails/home.png"),
+              caption: "CAD Model"
+            }
           ]
         }
         //  you can add extra buttons here.
