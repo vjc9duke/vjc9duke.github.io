@@ -162,22 +162,26 @@
 .vertical-scroll {
   overflow-y: auto; /* Enable horizontal scrollbar */
   width: 80vw;
+  // -ms-overflow-style: none;
+  // scrollbar-width: none;
 }
+
+// .vertical-scroll::-webkit-scrollbar {
+//   display: none;
+// }
 
 .vertical-scroll a {
   height: 100%;
-  margin-bottom: 30px; /* Add some space between images */
 }
 
 /* Media query to switch to vertical scrolling on small screens */
 @media (max-width: 768px) {
-
   #gallery {
     width: 100%;
   }
 
   .gallery-item {
-    padding: 0; 
+    padding: 0;
     margin: 0;
     max-width: calc(100% - 10px);
   }
@@ -189,13 +193,30 @@
   }
 
   .popup {
-    padding-bottom: 0px;
-    padding-right: 10px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    padding: 0px;
+    // padding-bottom: 0px;
+    // padding-right: 10px;
+    // border-top-right-radius: 0px;
+    // border-bottom-right-radius: 0px;
     // border-radius: 0px;
+    box-sizing: border-box
   }
-  
+
+  .dark {
+    border-top: 20px solid #2f2f2f; /* Adjust the color as needed */
+    border-left: 20px solid #2f2f2f; /* Adjust the color as needed */
+    border-right: 10px solid #2f2f2f; /* Adjust the color as needed */
+    border-bottom: 20px solid #2f2f2f; /* Adjust the color as needed */
+
+  }
+
+  .light {
+    border-top: 20px solid #ccc; /* Adjust the color as needed */
+    border-left: 20px solid #ccc; /* Adjust the color as needed */
+    border-right: 10px solid #ccc; /* Adjust the color as needed */
+    border-bottom: 20px solid #ccc; /* Adjust the color as needed */
+  }
+
   .tip-dark {
     top: 10px;
   }

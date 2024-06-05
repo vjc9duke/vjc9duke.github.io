@@ -152,27 +152,28 @@ function openGallery(images, isDark) {
   const galleryPopup = document.createElement("div");
   galleryPopup.classList.add("popup");
   galleryPopup.classList.add(isDark ? "dark" : "light");
-  if(window.innerWidth <= 768) galleryPopup.classList.add("vertical-scroll");
   galleryPopup.id = "galleryPopup";
+  if(window.innerWidth <= 768) galleryPopup.classList.add("vertical-scroll");
 
-  const gallery = `
-  <div id="gallery" ${window.innerWidth > 768 ? "class=\"horizontal-scroll\"" : ""}>
-  ${images
-    .map(
-      image => `
-    <div class="gallery-item">
-      <a>
-        <img class="gallery-img" alt="test" src="${image.pic}" />
-      </a>
-      <div class="caption ${isDark ? "darkc" : "lightc"}">${image.caption}</div>
-    </div>
-  `
-    )
-    .join("")}
-</div>
-`;
-
-  galleryPopup.innerHTML = gallery;
+    const gallery = `
+    <div id="gallery" ${
+      window.innerWidth > 768 ? 'class="horizontal-scroll"' : "vertical-scroll"
+    }>
+    ${images
+      .map(
+        image => `
+      <div class="gallery-item">
+        <a>
+          <img class="gallery-img" alt="test" src="${image.pic}" />
+        </a>
+        <div class="caption ${isDark ? "darkc" : "lightc"}">${image.caption}</div>
+      </div>
+    `
+      )
+      .join("")}
+  </div>
+  `;
+   galleryPopup.innerHTML = gallery;
 
   document.body.appendChild(overlay);
   document.body.appendChild(galleryPopup);
@@ -282,14 +283,15 @@ export function CloseGalleryButton() {
         Close Gallery
       </button>
       <div id="tip" className={isDark ? "tip-dark" : "tip-light"}>
-      {window.innerWidth > 768 ? 
+        {window.innerWidth > 768 ? (
           <div>
             Scroll or drag <i className="fas fa-angle-right arrow-icon"></i>
           </div>
-          : <div>
+        ) : (
+          <div>
             Swipe down <i className="fas fa-angle-down arrow-icon"></i>
-            </div>}
-
+          </div>
+        )}
       </div>
     </div>
   );
