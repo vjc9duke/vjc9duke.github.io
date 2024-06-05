@@ -124,9 +124,10 @@
   transform: translate(-50%, -50%);
   background-color: #2f2f2f;
   border-radius: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 5px;
+  padding-top: 20px; /* Adds space at the top */
+  padding-left: 20px; /* Adds space on the left */
+  padding-right: 20px; /* Adds space on the right */
+  padding-bottom: 5px; /* Adds space at the bottom */
   z-index: 999; // Ensure it's on top of other elements
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 80%; // Adjust according to your design
@@ -158,9 +159,54 @@
   margin-right: 20px; /* Add some space between images */
 }
 
+.vertical-scroll {
+  overflow-y: auto; /* Enable horizontal scrollbar */
+  width: 80vw;
+}
+
+.vertical-scroll a {
+  height: 100%;
+  margin-bottom: 30px; /* Add some space between images */
+}
+
+/* Media query to switch to vertical scrolling on small screens */
+@media (max-width: 768px) {
+
+  #gallery {
+    width: 100%;
+  }
+
+  .gallery-item {
+    padding: 0; 
+    margin: 0;
+    max-width: calc(100% - 10px);
+  }
+
+  .gallery-img {
+    max-height: auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .popup {
+    padding-bottom: 0px;
+    padding-right: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    // border-radius: 0px;
+  }
+  
+  .tip-dark {
+    top: 10px;
+  }
+  .tip-light {
+    top: 10px;
+  }
+}
+
 .gallery-img {
-  width: auto;
-  max-height: 70vh;
+  max-height: 70vh; /* Ensures the image does not exceed 70% of the viewport height */
+  width: auto; /* Allows the image to maintain its aspect ratio */
   object-fit: contain; /* Ensures the image keeps its aspect ratio */
   border-radius: 10px;
   user-select: none;

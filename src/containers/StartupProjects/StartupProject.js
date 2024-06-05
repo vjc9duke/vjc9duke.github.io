@@ -152,10 +152,11 @@ function openGallery(images, isDark) {
   const galleryPopup = document.createElement("div");
   galleryPopup.classList.add("popup");
   galleryPopup.classList.add(isDark ? "dark" : "light");
+  if(window.innerWidth <= 768) galleryPopup.classList.add("vertical-scroll");
   galleryPopup.id = "galleryPopup";
 
   const gallery = `
-  <div id="gallery" class="horizontal-scroll">
+  <div id="gallery" ${window.innerWidth > 768 ? "class=\"horizontal-scroll\"" : ""}>
   ${images
     .map(
       image => `
@@ -201,9 +202,11 @@ function openGallery(images, isDark) {
   // Add event listener for horizontal scrolling
   const galleryElement = document.getElementById("gallery");
   galleryElement.addEventListener("wheel", function (event) {
-    if (event.deltaY !== 0) {
-      galleryElement.scrollLeft += event.deltaY;
-      event.preventDefault();
+    if (window.innerWidth > 768) {
+      if (event.deltaY !== 0) {
+        galleryElement.scrollLeft += event.deltaY;
+        event.preventDefault();
+      }
     }
   });
 
@@ -279,8 +282,14 @@ export function CloseGalleryButton() {
         Close Gallery
       </button>
       <div id="tip" className={isDark ? "tip-dark" : "tip-light"}>
-        Scroll or drag to see more{" "}
-        <i className="fas fa-angles-right arrow-icon"></i>
+      {window.innerWidth > 768 ? 
+          <div>
+            Scroll or drag <i className="fas fa-angle-right arrow-icon"></i>
+          </div>
+          : <div>
+            Swipe down <i className="fas fa-angle-down arrow-icon"></i>
+            </div>}
+
       </div>
     </div>
   );

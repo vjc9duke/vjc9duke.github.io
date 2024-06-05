@@ -844,6 +844,22 @@ const mechProjects = {
             {
               pic: require("./assets/images/thumbnails/home.png"),
               caption: "CAD Model"
+            },
+            {
+              pic: require("./assets/images/thumbnails/home.png"),
+              caption: "CAD Model"
+            },
+            {
+              pic: require("./assets/images/thumbnails/home.png"),
+              caption: "CAD Model"
+            },
+            {
+              pic: require("./assets/images/thumbnails/home.png"),
+              caption: "CAD Model"
+            },
+            {
+              pic: require("./assets/images/thumbnails/home.png"),
+              caption: "CAD Model"
             }
           ]
         }
