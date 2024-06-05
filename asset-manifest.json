@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.370c186a.css",
-    "main.js": "/static/js/main.63c5fdbf.js",
+    "main.css": "/static/css/main.05c6c96d.css",
+    "main.js": "/static/js/main.3cecb10b.js",
     "static/css/64.a6e6d109.chunk.css": "/static/css/64.a6e6d109.chunk.css",
     "static/js/64.471de529.chunk.js": "/static/js/64.471de529.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.165c892a.chunk.js": "/static/js/769.165c892a.chunk.js",
+    "static/media/rw.png": "/static/media/rw.5b222d640df87856b3dd.png",
     "static/media/robot.png": "/static/media/robot.2bfe400ef5466ad44811.png",
     "static/media/laptop.png": "/static/media/laptop.2b1dbb71bd7e1f3402c7.png",
     "static/media/350.png": "/static/media/350.ae04819225593d723e4f.png",
@@ -39,15 +40,15 @@
     "static/media/pwaLogo.webp": "/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.370c186a.css.map": "/static/css/main.370c186a.css.map",
-    "main.63c5fdbf.js.map": "/static/js/main.63c5fdbf.js.map",
+    "main.05c6c96d.css.map": "/static/css/main.05c6c96d.css.map",
+    "main.3cecb10b.js.map": "/static/js/main.3cecb10b.js.map",
     "64.a6e6d109.chunk.css.map": "/static/css/64.a6e6d109.chunk.css.map",
     "64.471de529.chunk.js.map": "/static/js/64.471de529.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
     "769.165c892a.chunk.js.map": "/static/js/769.165c892a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.370c186a.css",
-    "static/js/main.63c5fdbf.js"
+    "static/css/main.05c6c96d.css",
+    "static/js/main.3cecb10b.js"
   ]
 }
