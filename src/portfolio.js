@@ -633,7 +633,16 @@ const multiDiscProjects = {
       footerLink: [
         {
           name: "Gallery", // TODO
-          url: ""
+          pics: [
+            {
+              pic: require("./assets/images/autoturn/rw1.png"),
+              caption: "Real World Picture"
+            },
+            {
+              pic: require("./assets/images/autoturn/rw2.png"),
+              caption: "Real World Picture"
+            }
+          ]
         },
         {
           name: "Project Repository",
@@ -656,7 +665,20 @@ const multiDiscProjects = {
       footerLink: [
         {
           name: "Gallery", // TODO
-          url: ""
+          pics: [
+            {
+              pic: require("./assets/images/minilaptop/rw1.png"),
+              caption: "Real World Picture"
+            },
+            {
+              pic: require("./assets/images/minilaptop/rw2.png"),
+              caption: "Real World Picture"
+            },
+            {
+              pic: require("./assets/images/minilaptop/rw3.png"),
+              caption: "Real World Picture"
+            }
+          ]
         },
         {
           name: "Project Repository",
@@ -801,7 +823,16 @@ const mechProjects = {
       footerLink: [
         {
           name: "Gallery", // TODO
-          url: ""
+          pics: [
+            {
+              pic: require("./assets/images/cube/rw1.png"),
+              caption: "Real World Picture"
+            },
+            {
+              pic: require("./assets/images/cube/rw2.png"),
+              caption: "Real World Picture"
+            }
+          ]
         }
         //  you can add extra buttons here.
       ],
@@ -840,26 +871,6 @@ const mechProjects = {
             {
               pic: require("./assets/images/ghome/rw.png"),
               caption: "Real World Picture"
-            },
-            {
-              pic: require("./assets/images/thumbnails/home.png"),
-              caption: "CAD Model"
-            },
-            {
-              pic: require("./assets/images/thumbnails/home.png"),
-              caption: "CAD Model"
-            },
-            {
-              pic: require("./assets/images/thumbnails/home.png"),
-              caption: "CAD Model"
-            },
-            {
-              pic: require("./assets/images/thumbnails/home.png"),
-              caption: "CAD Model"
-            },
-            {
-              pic: require("./assets/images/thumbnails/home.png"),
-              caption: "CAD Model"
             }
           ]
         }
@@ -878,7 +889,16 @@ const mechProjects = {
       footerLink: [
         {
           name: "Gallery", // TODO
-          url: ""
+          pics: [
+            {
+              pic: require("./assets/images/laptopstand/rw1.png"),
+              caption: "Real World Picture"
+            },
+            {
+              pic: require("./assets/images/laptopstand/rw2.png"),
+              caption: "Real World Picture"
+            }
+          ]
         }
         //  you can add extra buttons here.
       ],
@@ -896,7 +916,12 @@ const mechProjects = {
       footerLink: [
         {
           name: "Gallery", // TODO
-          url: ""
+          pics: [
+            {
+              pic: require("./assets/images/watch/rw.png"),
+              caption: "Real World Picture"
+            }
+          ]
         }
         //  you can add extra buttons here.
       ],
