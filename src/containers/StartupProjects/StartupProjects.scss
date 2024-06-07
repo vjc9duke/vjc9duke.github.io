@@ -127,7 +127,7 @@
   padding-top: 20px; /* Adds space at the top */
   padding-left: 20px; /* Adds space on the left */
   padding-right: 20px; /* Adds space on the right */
-  padding-bottom: 5px; /* Adds space at the bottom */
+  padding-bottom: 10px; /* Adds space at the bottom */
   z-index: 999; // Ensure it's on top of other elements
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 80%; // Adjust according to your design
@@ -138,11 +138,11 @@
 }
 
 .dark {
-  background-color: #2f2f2f;
+  background-color: $galleryBGDark;
 }
 
 .light {
-  background-color: #ccc;
+  background-color: $galleryBGLight;
 }
 
 .popup.visible {
@@ -155,7 +155,7 @@
   white-space: nowrap; /* Prevent wrapping */
 }
 
-.horizontal-scroll a {
+.horizontal-scroll .gallery-item:not(:last-child) a {
   margin-right: 20px; /* Add some space between images */
 }
 
@@ -172,57 +172,13 @@
 
 .vertical-scroll a {
   height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
-/* Media query to switch to vertical scrolling on small screens */
-@media (max-width: 768px) {
-  #gallery {
-    width: 100%;
-  }
-
-  .gallery-item {
-    padding: 0;
-    margin: 0;
-    max-width: calc(100% - 10px);
-  }
-
-  .gallery-img {
-    max-height: auto;
-    height: auto;
-    max-width: 100%;
-  }
-
-  .popup {
-    padding: 0px;
-    // padding-bottom: 0px;
-    // padding-right: 10px;
-    // border-top-right-radius: 0px;
-    // border-bottom-right-radius: 0px;
-    // border-radius: 0px;
-    box-sizing: border-box
-  }
-
-  .dark {
-    border-top: 20px solid #2f2f2f; /* Adjust the color as needed */
-    border-left: 20px solid #2f2f2f; /* Adjust the color as needed */
-    border-right: 10px solid #2f2f2f; /* Adjust the color as needed */
-    border-bottom: 20px solid #2f2f2f; /* Adjust the color as needed */
-
-  }
-
-  .light {
-    border-top: 20px solid #ccc; /* Adjust the color as needed */
-    border-left: 20px solid #ccc; /* Adjust the color as needed */
-    border-right: 10px solid #ccc; /* Adjust the color as needed */
-    border-bottom: 20px solid #ccc; /* Adjust the color as needed */
-  }
-
-  .tip-dark {
-    top: 10px;
-  }
-  .tip-light {
-    top: 10px;
-  }
+.gallery-item {
+  padding-bottom: 15px;
+  user-select: none;
 }
 
 .gallery-img {
@@ -281,6 +237,7 @@
 
 .caption {
   margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 20px;
   color: #fff;
   user-select: none;
@@ -292,11 +249,6 @@
 
 .lightc {
   color: #000;
-}
-
-.gallery-item {
-  padding-bottom: 15px;
-  user-select: none;
 }
 
 .tip-light {
@@ -340,4 +292,63 @@
 .arrow-icon {
   position: relative;
   top: 1px; /* Adjust this value as needed to align the icon */
+}
+
+/* Media query to switch to vertical scrolling on small screens */
+@media (max-width: 768px) {
+  #gallery {
+    width: 100%;
+  }
+
+  .gallery-item {
+    max-width: 100%;
+  }
+  .gallery-item:last-child {
+    padding-bottom: 0px;
+    // margin-bottom: -10px;
+    // max-width: 100%;
+  }
+
+  .gallery-img {
+    max-height: auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .popup {
+    padding: 0px;
+    // padding-bottom: 0px;
+    // padding-right: 10px;
+    // border-top-right-radius: 0px;
+    // border-bottom-right-radius: 0px;
+    // border-radius: 0px;
+    box-sizing: border-box;
+    // -ms-overflow-style: none;
+    // scrollbar-width: none;
+  }
+
+  .dark {
+    border-top: 10px solid $galleryBGDark; /* Adjust the color as needed */
+    border-left: 10px solid $galleryBGDark; /* Adjust the color as needed */
+    border-right: 10px solid $galleryBGDark; /* Adjust the color as needed */
+    border-bottom: 10px solid $galleryBGDark; /* Adjust the color as needed */
+  }
+
+  .light {
+    border-top: 10px solid $galleryBGLight; /* Adjust the color as needed */
+    border-left: 10px solid $galleryBGLight; /* Adjust the color as needed */
+    border-right: 10px solid $galleryBGLight; /* Adjust the color as needed */
+    border-bottom: 10px solid $galleryBGLight; /* Adjust the color as needed */
+  }
+
+  .tip-dark {
+    top: 10px;
+  }
+  .tip-light {
+    top: 10px;
+  }
+
+  .caption {
+    margin-bottom: 0px;
+  }
 }

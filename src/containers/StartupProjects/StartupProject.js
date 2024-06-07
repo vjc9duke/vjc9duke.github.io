@@ -153,9 +153,9 @@ function openGallery(images, isDark) {
   galleryPopup.classList.add("popup");
   galleryPopup.classList.add(isDark ? "dark" : "light");
   galleryPopup.id = "galleryPopup";
-  if(window.innerWidth <= 768) galleryPopup.classList.add("vertical-scroll");
+  if (window.innerWidth <= 768) galleryPopup.classList.add("vertical-scroll");
 
-    const gallery = `
+  const gallery = `
     <div id="gallery" ${
       window.innerWidth > 768 ? 'class="horizontal-scroll"' : "vertical-scroll"
     }>
@@ -166,14 +166,16 @@ function openGallery(images, isDark) {
         <a>
           <img class="gallery-img" alt="test" src="${image.pic}" />
         </a>
-        <div class="caption ${isDark ? "darkc" : "lightc"}">${image.caption}</div>
+        <div class="caption ${isDark ? "darkc" : "lightc"}">${
+          image.caption
+        }</div>
       </div>
     `
       )
       .join("")}
   </div>
   `;
-   galleryPopup.innerHTML = gallery;
+  galleryPopup.innerHTML = gallery;
 
   document.body.appendChild(overlay);
   document.body.appendChild(galleryPopup);
