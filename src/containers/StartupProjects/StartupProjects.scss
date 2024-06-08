@@ -302,6 +302,7 @@
 
   .gallery-item {
     max-width: 100%;
+    padding-bottom: 30px;
   }
   .gallery-item:last-child {
     padding-bottom: 0px;
@@ -349,6 +350,7 @@
   }
 
   .caption {
+    font-size: medium;
     margin-bottom: 0px;
   }
 }

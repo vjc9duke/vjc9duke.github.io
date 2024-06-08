@@ -544,8 +544,61 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "Gallery" // TODO
-          // pics: ["./assets/images/lpc/"]
+          name: "Gallery",
+          pics: [
+            {
+              pic: require("./assets/images/lpc/rw1.png"),
+              caption: "Finished product"
+            },
+            {
+              pic: require("./assets/images/lpc/rw2.png"),
+              caption: "Finished product (close up)"
+            },
+            {
+              pic: require("./assets/images/lpc/rw3.png"),
+              caption: "Finished product (powered on)"
+            },
+            {
+              pic: require("./assets/images/lpc/PCB.png"),
+              caption: "PCB (model)"
+            },
+            {
+              pic: require("./assets/images/lpc/rwc3.png"),
+              caption: "PCB (product)"
+            },
+            {
+              pic: require("./assets/images/lpc/chassis.png"),
+              caption: "IR sensor chassis (model)"
+            },
+            {
+              pic: require("./assets/images/lpc/rwc6.png"),
+              caption: "IR sensor chassis (product)"
+            },
+            {
+              pic: require("./assets/images/lpc/sensorholder.png"),
+              caption: "IR sensor wall mount (model)"
+            },
+            {
+              pic: require("./assets/images/lpc/rwc4.png"),
+              caption: "IR sensor wall mount (product)"
+            },
+            {
+              pic: require("./assets/images/lpc/rwc5.png"),
+              caption: "IR sensor wall mount (product)"
+            },
+            {
+              pic: require("./assets/images/lpc/arduinoenclosure.png"),
+              caption: "Microcontroller enclosure (model)"
+            },
+            {
+              pic: require("./assets/images/lpc/rwc1.png"),
+              caption: "Microcontroller power case (product)"
+            },
+            {
+              pic: require("./assets/images/lpc/rwc2.png"),
+              caption: "Microcontroller enclosure (product)"
+            }
+          ]
         },
         {
           name: "Code Repository",
