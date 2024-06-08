@@ -238,11 +238,13 @@ function openGallery(images, isDark) {
   });
 
   // Add tip popup
-  var popup = document.getElementById("tip");
-  popup.classList.add("show");
-  setTimeout(function () {
-    popup.classList.remove("show");
-  }, 5000);
+  if (images.length > 1) {
+    var popup = document.getElementById("tip");
+    popup.classList.add("show");
+    setTimeout(function () {
+      popup.classList.remove("show");
+    }, 5000);
+  }
 }
 
 function closeGallery() {

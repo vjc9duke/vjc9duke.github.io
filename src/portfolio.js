@@ -636,11 +636,11 @@ const multiDiscProjects = {
           pics: [
             {
               pic: require("./assets/images/autoturn/rw1.png"),
-              caption: "Real World Picture"
+              caption: "Finished product"
             },
             {
               pic: require("./assets/images/autoturn/rw2.png"),
-              caption: "Real World Picture"
+              caption: "Finished product (powered on)"
             }
           ]
         },
@@ -668,15 +668,15 @@ const multiDiscProjects = {
           pics: [
             {
               pic: require("./assets/images/minilaptop/rw1.png"),
-              caption: "Real World Picture"
+              caption: "Finished product"
             },
             {
               pic: require("./assets/images/minilaptop/rw2.png"),
-              caption: "Real World Picture"
+              caption: "Finished product (alternate angle)"
             },
             {
               pic: require("./assets/images/minilaptop/rw3.png"),
-              caption: "Real World Picture"
+              caption: "Lid closed"
             }
           ]
         },
@@ -826,11 +826,11 @@ const mechProjects = {
           pics: [
             {
               pic: require("./assets/images/cube/rw1.png"),
-              caption: "Real World Picture"
+              caption: "Final product"
             },
             {
               pic: require("./assets/images/cube/rw2.png"),
-              caption: "Real World Picture"
+              caption: "Final product (alternate angle)"
             }
           ]
         }
@@ -870,7 +870,7 @@ const mechProjects = {
           pics: [
             {
               pic: require("./assets/images/ghome/rw.png"),
-              caption: "Real World Picture"
+              caption: "Final product"
             }
           ]
         }
@@ -892,11 +892,11 @@ const mechProjects = {
           pics: [
             {
               pic: require("./assets/images/laptopstand/rw1.png"),
-              caption: "Real World Picture"
+              caption: "Final product"
             },
             {
               pic: require("./assets/images/laptopstand/rw2.png"),
-              caption: "Real World Picture"
+              caption: "Final product (being used)"
             }
           ]
         }
@@ -919,7 +919,7 @@ const mechProjects = {
           pics: [
             {
               pic: require("./assets/images/watch/rw.png"),
-              caption: "Real World Picture"
+              caption: "Final product"
             }
           ]
         }
