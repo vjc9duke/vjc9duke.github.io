@@ -559,6 +559,10 @@ const bigProjects = {
               caption: "Finished product (powered on)"
             },
             {
+              pic: require("./assets/images/lpc/dashboard.png"),
+              caption: "Dashboard"
+            },
+            {
               pic: require("./assets/images/lpc/PCB.png"),
               caption: "PCB (model)"
             },
