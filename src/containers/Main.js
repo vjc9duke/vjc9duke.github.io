@@ -23,6 +23,7 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import {GetSkillButton} from "../components/softwareSkills/SoftwareSkill";
+import LoadIcon from "../components/loadIcon/LoadIcon";
 import "./Main.scss";
 
 const Main = () => {
@@ -72,6 +73,7 @@ const Main = () => {
             <GetSkillButton />
             <ScrollToTopButton />
             <CloseGalleryButton />
+            <LoadIcon />
           </>
         )}
       </StyleProvider>

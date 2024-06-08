@@ -143,6 +143,19 @@ const GetProjectsDiv = ({projects}) => {
   );
 };
 
+function preloadImages(imageUrls) {
+  const loadPromises = imageUrls.map(url => {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.src = url;
+      img.onload = () => resolve(img); // Resolve with the image element
+      img.onerror = () => reject(new Error(`Failed to load image: ${url}`));
+    });
+  });
+
+  return Promise.all(loadPromises);
+}
+
 function openGallery(images, isDark) {
   // Create the overlay for the blur effect
   const overlay = document.createElement("div");
@@ -155,47 +168,69 @@ function openGallery(images, isDark) {
   galleryPopup.id = "galleryPopup";
   if (window.innerWidth <= 768) galleryPopup.classList.add("vertical-scroll");
 
-  const gallery = `
-    <div id="gallery" ${
-      window.innerWidth > 768 ? 'class="horizontal-scroll"' : "vertical-scroll"
-    }>
-    ${images
-      .map(
-        image => `
-      <div class="gallery-item">
-        <a>
-          <img class="gallery-img" alt="test" src="${image.pic}" />
-        </a>
-        <div class="caption ${isDark ? "darkc" : "lightc"}">${
-          image.caption
-        }</div>
-      </div>
-    `
-      )
-      .join("")}
-  </div>
-  `;
-  galleryPopup.innerHTML = gallery;
-
-  document.body.appendChild(overlay);
-  document.body.appendChild(galleryPopup);
-
-  // Prevent scrolling on the body
+  // Add overlay
+  const loadIcon = document.getElementById("loadicon");
   document.body.style.overflow = "hidden";
+  document.body.appendChild(overlay);
+  requestAnimationFrame(() => {
+    overlay.classList.add("visible");
+    loadIcon.classList.add("show");
+  });
 
+  // Add event listener to overlay to close the gallery when clicked
+  overlay.addEventListener("click", closeGallery);
+
+  preloadImages(images.map(image => image.pic))
+    .then(loadedImages => {
+      const galleryHTML = `
+      <div id="gallery" ${
+        window.innerWidth > 768
+          ? 'class="horizontal-scroll"'
+          : "vertical-scroll"
+      }>
+      ${images
+        .map(
+          (image, index) => `
+        <div class="gallery-item">
+          <a>
+            <img class="gallery-img" alt="${image.caption}" src="${
+            loadedImages[index].src
+          }" />
+          </a>
+          <div class="caption ${isDark ? "darkc" : "lightc"}">${
+            image.caption
+          }</div>
+        </div>
+      `
+        )
+        .join("")}
+      </div>
+    `;
+
+      // Inject the gallery into the DOM
+      galleryPopup.innerHTML = galleryHTML;
+      document.body.appendChild(galleryPopup);
+
+      applyGalleryScripts(galleryPopup, images);
+    })
+    .catch(error => {
+      console.error("Error preloading images:", error);
+    });
+}
+
+function applyGalleryScripts(galleryPopup, images) {
   const closeButton = document.getElementById("closeGalleryButton");
+  const loadIcon = document.getElementById("loadicon");
   // var popup = document.getElementById("close-btn");
   // popup.classList.add("show");
 
   // Trigger fade-in effect
   requestAnimationFrame(() => {
-    overlay.classList.add("visible");
-    galleryPopup.classList.add("visible");
     closeButton.classList.add("visible");
+    loadIcon.classList.remove("show");
   });
-
-  // Add event listener to overlay to close the gallery when clicked
-  overlay.addEventListener("click", closeGallery);
+  galleryPopup.classList.remove("fade-out");
+  galleryPopup.classList.add("fade-in");
 
   // Prevent clicks inside the galleryPopup from closing the gallery
   galleryPopup.addEventListener("click", function (event) {
@@ -261,8 +296,9 @@ function closeGallery() {
   }
 
   if (galleryPopup) {
-    galleryPopup.classList.remove("visible");
-    galleryPopup.addEventListener("transitionend", () => {
+    galleryPopup.classList.remove("fade-in");
+    galleryPopup.classList.add("fade-out");
+    galleryPopup.addEventListener("animationend", () => {
       if (galleryPopup.parentElement)
         galleryPopup.parentElement.removeChild(galleryPopup);
     });

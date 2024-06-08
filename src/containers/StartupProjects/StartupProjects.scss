@@ -117,6 +117,32 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.popup.fade-in {
+  animation: fadeIn 1s forwards; /* Fade-in effect over 1s */
+}
+
+.popup.fade-out {
+  animation: fadeOut 0.5s forwards; /* Fade-out effect over 0.5s */
+}
+
 .popup {
   position: fixed;
   top: 50%;
@@ -134,7 +160,6 @@
   max-height: 80%; // Adjust according to your design
   overflow-y: hidden;
   opacity: 0; /* Start hidden */
-  transition: opacity 0.5s; /* Fade effect */
 }
 
 .dark {
