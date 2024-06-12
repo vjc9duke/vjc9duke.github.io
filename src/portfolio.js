@@ -873,7 +873,7 @@ const mechProjects = {
   subtitle: "Projects focused on CAD and fabrication",
   projects: [
     {
-      image: require("./assets/images/thumbnails/cube.png"),
+      image: require("./assets/images/cube/render1.png"),
       projectName: "Fidget Cube",
       projectDesc:
         "3D printed cube with inserts for low profile mechanical switches",
@@ -888,6 +888,18 @@ const mechProjects = {
             {
               pic: require("./assets/images/cube/rw2.png"),
               caption: "Final product (alternate angle)"
+            },
+            {
+              pic: require("./assets/images/cube/render2.png"),
+              caption: "Stylized render"
+            },
+            {
+              pic: require("./assets/images/cube/render3.png"),
+              caption: "Cube render"
+            },
+            {
+              pic: require("./assets/images/cube/render4.png"),
+              caption: "Stylized base render"
             }
           ]
         }
@@ -899,14 +911,31 @@ const mechProjects = {
       ]
     },
     {
-      image: require("./assets/images/thumbnails/hook.png"),
+      image: require("./assets/images/deskhook/render1.png"),
       projectName: "Desk Hook",
       projectDesc:
         "Bespoke hook fitted to my desk; holes headphones, hats, etc. and can be modified to support different use cases",
       footerLink: [
         {
           name: "Gallery", // TODO
-          url: ""
+          pics: [
+            {
+              pic: require("./assets/images/deskhook/render2.png"),
+              caption: "Desk hook render"
+            },
+            {
+              pic: require("./assets/images/deskhook/render15.png"),
+              caption: "Desk hook assembly"
+            },
+            {
+              pic: require("./assets/images/deskhook/render3.png"),
+              caption: "Wrist rest render"
+            },
+            {
+              pic: require("./assets/images/deskhook/render4.png"),
+              caption: "Wrist rest assembly"
+            }
+          ]
         }
         //  you can add extra buttons here.
       ],
@@ -917,7 +946,7 @@ const mechProjects = {
       ]
     },
     {
-      image: require("./assets/images/thumbnails/home.png"),
+      image: require("./assets/images/ghome/render1.png"),
       projectName: "Google Home Mount",
       projectDesc:
         "Custom mounting bracket for speaker system in my garage gym",
@@ -928,6 +957,14 @@ const mechProjects = {
             {
               pic: require("./assets/images/ghome/rw.png"),
               caption: "Final product"
+            },
+            {
+              pic: require("./assets/images/ghome/render2.png"),
+              caption: "Model render"
+            },
+            {
+              pic: require("./assets/images/ghome/render3.png"),
+              caption: "Model render"
             }
           ]
         }
@@ -939,7 +976,7 @@ const mechProjects = {
       ]
     },
     {
-      image: require("./assets/images/thumbnails/laptopstand.png"),
+      image: require("./assets/images/laptopstand/render1.png"),
       projectName: "CNC'd Laptop Stand",
       projectDesc:
         "Wooden, angled laptop stand fabricated using a CNC router. Also sanded, painted, and polished.",
@@ -954,6 +991,14 @@ const mechProjects = {
             {
               pic: require("./assets/images/laptopstand/rw2.png"),
               caption: "Final product (being used)"
+            },
+            {
+              pic: require("./assets/images/laptopstand/render2.png"),
+              caption: "Model render"
+            },
+            {
+              pic: require("./assets/images/laptopstand/render3.png"),
+              caption: "Model render"
             }
           ]
         }
@@ -966,7 +1011,7 @@ const mechProjects = {
       ]
     },
     {
-      image: require("./assets/images/thumbnails/rook.png"),
+      image: require("./assets/images/watch/render1.png"),
       projectName: "Watch Charging Station",
       projectDesc:
         "3D printed casing for my Galaxy Watch charger in the shape of a rook. Comes with an attachment on top for an Apple Watch charger.",
@@ -977,6 +1022,14 @@ const mechProjects = {
             {
               pic: require("./assets/images/watch/rw.png"),
               caption: "Final product"
+            },
+            {
+              pic: require("./assets/images/watch/render2.png"),
+              caption: "Model render"
+            },
+            {
+              pic: require("./assets/images/watch/render3.png"),
+              caption: "Model render"
             }
           ]
         }
