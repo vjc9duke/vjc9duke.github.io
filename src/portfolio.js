@@ -670,7 +670,6 @@ const bigProjects = {
               pic: require("./assets/images/laser/code.png"),
               caption: "Defuse game mode"
             }
-            
           ]
         },
         {
