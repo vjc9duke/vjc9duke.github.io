@@ -14,6 +14,8 @@ import lightGallery from "lightgallery";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 
+let gallerySessionId = 0;
+
 const GetDescBullets = ({descBullets, isDark}) => {
   return descBullets
     ? descBullets.map((item, i) => {
@@ -157,6 +159,7 @@ function preloadImages(imageUrls) {
 }
 
 function openGallery(images, isDark) {
+  const currentSessionId = ++gallerySessionId;
   // Create the overlay for the blur effect
   const overlay = document.createElement("div");
   overlay.classList.add("blur-overlay");
@@ -207,11 +210,13 @@ function openGallery(images, isDark) {
       </div>
     `;
 
-      // Inject the gallery into the DOM
-      galleryPopup.innerHTML = galleryHTML;
-      document.body.appendChild(galleryPopup);
+      if (currentSessionId == gallerySessionId) {
+        // Inject the gallery into the DOM
+        galleryPopup.innerHTML = galleryHTML;
+        document.body.appendChild(galleryPopup);
 
-      applyGalleryScripts(galleryPopup, images);
+        applyGalleryScripts(galleryPopup, images);
+      }
     })
     .catch(error => {
       console.error("Error preloading images:", error);
@@ -283,10 +288,15 @@ function applyGalleryScripts(galleryPopup, images) {
 }
 
 function closeGallery() {
+  gallerySessionId++;
   // FIXME: duplicated with close button code
   const overlay = document.getElementById("blurOverlay");
   const galleryPopup = document.getElementById("galleryPopup");
   const closeButton = document.getElementById("closeGalleryButton");
+  const loadIcon = document.getElementById("loadicon");
+
+  loadIcon.classList.remove("show");
+
   if (overlay) {
     overlay.classList.remove("visible");
     overlay.addEventListener("transitionend", () => {
