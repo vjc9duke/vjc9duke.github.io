@@ -529,7 +529,7 @@ const bigProjects = {
   subtitle: "Recent projects that showcase a diverse range of skills",
   projects: [
     {
-      image: require("./assets/images/thumbnails/library.png"),
+      image: require("./assets/images/lpc/render1.png"),
       projectName: "Library Patron Counter",
       projectDesc:
         "I designed, fabricated, and programmed a patron counter for the Duke Libraries, containing low-power sensing components and an edge server.",
@@ -615,7 +615,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/thumbnails/laser.png"),
+      image: require("./assets/images/laser/thumbnail.png"),
       projectName: "Laser Tag Kit",
       projectDesc:
         "Working with a team of engineers, I led the PCB design and software development of an at-home laser tag kit.",
@@ -629,7 +629,49 @@ const bigProjects = {
       footerLink: [
         {
           name: "Gallery", // TODO
-          url: ""
+          pics: [
+            {
+              pic: require("./assets/images/laser/finished.png"),
+              caption: "Finished glove prototype"
+            },
+            {
+              pic: require("./assets/images/laser/vestfinal.png"),
+              caption: "Finished vest prototype"
+            },
+            {
+              pic: require("./assets/images/laser/pcbs.png"),
+              caption: "Milled PCBs"
+            },
+            {
+              pic: require("./assets/images/laser/pcbproto.png"),
+              caption: "Soldered PCB prototype"
+            },
+            {
+              pic: require("./assets/images/laser/POC.png"),
+              caption: "PCB schematic (proof of concept)"
+            },
+            {
+              pic: require("./assets/images/laser/vest.png"),
+              caption: "PCB schematic (vest)"
+            },
+            {
+              pic: require("./assets/images/laser/attiny.png"),
+              caption: "PCB schematic (ATTINY-based)"
+            },
+            {
+              pic: require("./assets/images/laser/hub.png"),
+              caption: "Smart hub"
+            },
+            {
+              pic: require("./assets/images/laser/main.png"),
+              caption: "Main screen"
+            },
+            {
+              pic: require("./assets/images/laser/code.png"),
+              caption: "Defuse game mode"
+            }
+            
+          ]
         },
         {
           name: "Control Hub Repository",
@@ -638,6 +680,10 @@ const bigProjects = {
         {
           name: "Microcontroller Repository",
           url: "https://drive.google.com/drive/folders/11wB_0B5jFPhh-wsaUemmA5tbX7PcPUwa?usp=sharing"
+        },
+        {
+          name: "Project Site",
+          url: "https://sites.google.com/view/quantum-quest/"
         }
       ]
     },
@@ -653,7 +699,28 @@ const bigProjects = {
       footerLink: [
         {
           name: "Gallery", // TODO
-          url: ""
+          pics: [
+            {
+              pic: require("./assets/images/robot/rw1.png"),
+              caption: "At competition"
+            },
+            {
+              pic: require("./assets/images/robot/rw2.png"),
+              caption: "In the pool"
+            },
+            {
+              pic: require("./assets/images/robot/render1.png"),
+              caption: "Full assembly render"
+            },
+            {
+              pic: require("./assets/images/robot/stack.png"),
+              caption: "Electrical stack render"
+            },
+            {
+              pic: require("./assets/images/robot/camera.png"),
+              caption: "Camera mount render"
+            }
+          ]
         },
         {
           name: "Team Website",
@@ -675,7 +742,7 @@ const multiDiscProjects = {
   subtitle: "Projects that span mechanical, electrical, and software work",
   projects: [
     {
-      image: require("./assets/images/thumbnails/turn.png"),
+      image: require("./assets/images/autoturn/render1.png"),
       projectName: "Auto Turntable",
       projectDesc:
         "I modeled, built, and programmed a small turntable with a stepper motor, LEDs, and surface mount resistors.",
@@ -698,6 +765,22 @@ const multiDiscProjects = {
             {
               pic: require("./assets/images/autoturn/rw2.png"),
               caption: "Finished product (powered on)"
+            },
+            {
+              pic: require("./assets/images/autoturn/render2.png"),
+              caption: "Model render"
+            },
+            {
+              pic: require("./assets/images/autoturn/render3.png"),
+              caption: "Model render (internals)"
+            },
+            {
+              pic: require("./assets/images/autoturn/render4.png"),
+              caption: "Model render (enclosure)"
+            },
+            {
+              pic: require("./assets/images/autoturn/pcb.png"),
+              caption: "Custom PCB"
             }
           ]
         },
@@ -709,7 +792,7 @@ const multiDiscProjects = {
       ]
     },
     {
-      image: require("./assets/images/thumbnails/laptop.png"),
+      image: require("./assets/images/minilaptop/render4.png"),
       projectName: "Mini Laptop",
       projectDesc:
         "I created and programmed a custom Arduino-based laptop with a working display and keyboard.",
@@ -734,6 +817,18 @@ const multiDiscProjects = {
             {
               pic: require("./assets/images/minilaptop/rw3.png"),
               caption: "Lid closed"
+            },
+            {
+              pic: require("./assets/images/minilaptop/render1.png"),
+              caption: "Model render (battery tray out)"
+            },
+            {
+              pic: require("./assets/images/minilaptop/render2.png"),
+              caption: "Model render (closed)"
+            },
+            {
+              pic: require("./assets/images/minilaptop/render3.png"),
+              caption: "Model render (chassis)"
             }
           ]
         },
@@ -745,7 +840,7 @@ const multiDiscProjects = {
       ]
     },
     {
-      image: require("./assets/images/thumbnails/350.png"),
+      image: require("./assets/images/tank/render1.png"),
       projectName: "Candy Tank",
       projectDesc:
         "In a team of two, I interfaced my five-stage pipelined Verilog processor with various I/O devices (stepper motors, PWM servos, gyroscope, joystick) to create a controllable tank.",
@@ -761,8 +856,53 @@ const multiDiscProjects = {
       ],
       footerLink: [
         {
-          name: "Gallery", // TODO
-          url: ""
+          name: "Gallery",
+          pics: [
+            {
+              pic: require("./assets/images/tank/rw1.png"),
+              caption: "Physical build (tank)"
+            },
+            {
+              pic: require("./assets/images/tank/rw2.png"),
+              caption: "Physical build (tank)"
+            },
+            {
+              pic: require("./assets/images/tank/rw3.png"),
+              caption: "Physical build (joysticks)"
+            },
+            {
+              pic: require("./assets/images/tank/render2.png"),
+              caption: "Model render (front)"
+            },
+            {
+              pic: require("./assets/images/tank/render3.png"),
+              caption: "Model render (side)"
+            },
+            {
+              pic: require("./assets/images/tank/render4.png"),
+              caption: "Model render (back)"
+            },
+            {
+              pic: require("./assets/images/tank/render5.png"),
+              caption: "Model render (firing)"
+            },
+            {
+              pic: require("./assets/images/tank/render6.png"),
+              caption: "Model render (firing)"
+            },
+            {
+              pic: require("./assets/images/tank/render7.png"),
+              caption: "Model render (chassis)"
+            },
+            {
+              pic: require("./assets/images/tank/render8.png"),
+              caption: "Model render (joysticks)"
+            },
+            {
+              pic: require("./assets/images/tank/render9.png"),
+              caption: "Model render (joysticks)"
+            }
+          ]
         },
         {
           name: "Final Report",
