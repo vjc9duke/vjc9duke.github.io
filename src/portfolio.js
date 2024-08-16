@@ -697,7 +697,7 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "Gallery", // TODO
+          name: "Gallery", 
           pics: [
             {
               pic: require("./assets/images/robot/rw1.png"),
@@ -705,7 +705,11 @@ const bigProjects = {
             },
             {
               pic: require("./assets/images/robot/rw2.png"),
-              caption: "In the pool"
+              caption: "At the pool"
+            },
+            {
+              pic: require("./assets/images/robot/rw3.png"),
+              caption: "Underside"
             },
             {
               pic: require("./assets/images/robot/render1.png"),
