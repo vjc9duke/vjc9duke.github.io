@@ -697,7 +697,7 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "Gallery", 
+          name: "Gallery",
           pics: [
             {
               pic: require("./assets/images/robot/rw1.png"),

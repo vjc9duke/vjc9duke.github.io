@@ -182,6 +182,12 @@ function openGallery(images, isDark) {
 
   // Add event listener to overlay to close the gallery when clicked
   overlay.addEventListener("click", closeGallery);
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      // Check if the pressed key is Escape
+      closeGallery();
+    }
+  });
 
   preloadImages(images.map(image => image.pic))
     .then(loadedImages => {
