@@ -1063,12 +1063,28 @@ const mechProjects = {
           name: "Gallery", // TODO
           pics: [
             {
+              pic: require("./assets/images/deskhook/rw1.png"),
+              caption: "Final product"
+            },
+            {
+              pic: require("./assets/images/deskhook/rw2.png"),
+              caption: "Final product (in use)"
+            },
+            {
               pic: require("./assets/images/deskhook/render2.png"),
               caption: "Desk hook render"
             },
             {
               pic: require("./assets/images/deskhook/render15.png"),
               caption: "Desk hook assembly"
+            },
+            {
+              pic: require("./assets/images/deskhook/rw3.png"),
+              caption: "Final product (wrist rest)"
+            },
+            {
+              pic: require("./assets/images/deskhook/rw4.png"),
+              caption: "Final product (wrist rest in use)"
             },
             {
               pic: require("./assets/images/deskhook/render3.png"),
@@ -1133,7 +1149,7 @@ const mechProjects = {
             },
             {
               pic: require("./assets/images/laptopstand/rw2.png"),
-              caption: "Final product (being used)"
+              caption: "Final product (in use)"
             },
             {
               pic: require("./assets/images/laptopstand/render2.png"),
