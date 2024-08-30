@@ -350,8 +350,8 @@ const educationInfo = {
       descBullets: [
         "GPA: 4.0/4.0",
         "Dean's List with Distinction",
-        "🏅🏅 2x Outstanding Undergraduate TA (Computer Science)",
-        "🏅 Outstanding Undergraduate TA (Electrical and Computer Engineering)"
+        "🏅🏅 2x Outstanding Undergraduate TA Award (Computer Science)",
+        "🏅🏅 2x Outstanding Undergraduate TA Award (Electrical and Computer Engineering)"
       ],
       id: "duke-undergrad"
     }
