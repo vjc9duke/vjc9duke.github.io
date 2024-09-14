@@ -202,6 +202,11 @@ https://fontawesome.com/icons?d=gallery */
       ]
     },
     {
+      skillName: "React",
+      fontAwesomeClassname: "fab fa-react",
+      targetID: ["UChat Anonymous Chatting App"]
+    },
+    {
       skillName: "PyTorch",
       fontAwesomeClassname: "fas fa-fire",
       targetID: ["duke-undergrad"],

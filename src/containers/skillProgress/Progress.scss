@@ -79,6 +79,7 @@
   display: inline-block; /* Inline-block to fit the content */
   flex-wrap: wrap;
   color: $textColor;
+  align-items: center;
 }
 
 .info-box-dark {
@@ -88,6 +89,7 @@
   display: inline-flex; /* Inline-block to fit the content */
   color: $textColorDark;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 pre {
@@ -102,16 +104,38 @@ pre {
   white-space: inherit;
 }
 
-.info-icon {
-  flex: 0 0 auto; /* This keeps the first column thin */
-  margin-right: 25px; /* Add some space between icon and content */
-  margin-left: 2px;
-  margin-bottom: -15px;
-  margin-top: -2px;
+@media (max-width: 1456px) {
+  .info-icon {
+    flex: 0 0 auto; /* This keeps the first column thin */
+    margin-right: 25px; /* Add some space between icon and content */
+    margin-left: 2px;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width: 1456px) {
+  .info-icon {
+    flex: 0 0 auto; /* This keeps the first column thin */
+    margin-right: 25px; /* Add some space between icon and content */
+    margin-left: 2px;
+    margin-bottom: 1px;
+  }
 }
 
 .info-content {
   flex: 1 1 auto; /* This makes the second column take remaining space */
   margin-bottom: -5px;
   margin-top: -5px;
+}
+
+@media (max-width: 1456px) {
+  .spacing {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 1456px) {
+  .spacing {
+    margin: 10px;
+  }
 }

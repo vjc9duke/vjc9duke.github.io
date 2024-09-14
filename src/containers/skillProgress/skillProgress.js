@@ -38,7 +38,7 @@ export default function StackProgress() {
                 </div>
               );
             })}
-            <p style={{margin: "-10px"}}>&nbsp;</p>
+            <p className={"spacing"}>&nbsp;</p>
             <div className={isDark ? "info-box-dark" : "info-box-light"}>
               <div className="info-icon">
                 <i className="fa-solid fa-lightbulb"></i>
