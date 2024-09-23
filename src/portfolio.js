@@ -229,6 +229,18 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-calculator",
       targetID: ["duke-undergrad"],
       targetBlock: "center"
+    },
+    {
+      skillName: "SimpleScalar",
+      fontAwesomeClassname: "fas fa-microchip",
+      targetID: ["duke-undergrad"],
+      targetBlock: "center"
+    },
+    {
+      skillName: "Gem5",
+      fontAwesomeClassname: "fas fa-microchip",
+      targetID: ["duke-undergrad"],
+      targetBlock: "center"
     }
   ],
   software: [
@@ -325,6 +337,46 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Soldering",
       fontAwesomeClassname: "fas fa-pen",
       targetID: ["Library Patron Counter", "Laser Tag Kit", "Auto Turntable"]
+    },
+    {
+      skillName: "Oscilloscope",
+      fontAwesomeClassname: "fas fa-microscope",
+      targetID: [
+        "duke-undergrad",
+        "Electrical and Computer Engineering Teaching Assistant",
+        "Candy Tank"
+      ],
+      targetBlock: "center"
+    },
+    {
+      skillName: "Waveform Generator",
+      fontAwesomeClassname: "fas fa-wave-square",
+      targetID: [
+        "duke-undergrad",
+        "Electrical and Computer Engineering Teaching Assistant",
+        "Candy Tank"
+      ],
+      targetBlock: "center"
+    },
+    {
+      skillName: "Power Supply",
+      fontAwesomeClassname: "fas fa-plug",
+      targetID: [
+        "duke-undergrad",
+        "Electrical and Computer Engineering Teaching Assistant",
+        "Candy Tank"
+      ],
+      targetBlock: "center"
+    },
+    {
+      skillName: "LCR Meter",
+      fontAwesomeClassname: "fas fa-spinner",
+      targetID: [
+        "duke-undergrad",
+        "Electrical and Computer Engineering Teaching Assistant",
+        "Candy Tank"
+      ],
+      targetBlock: "center"
     }
   ],
 
@@ -481,7 +533,7 @@ const otherExperiences = {
       date: "August 2023 - Present",
       descBullets: [
         "I lead a lab section for Duke's Digital Systems course, covering concepts such as Verilog, FPGA programming, and electromechanical integration ",
-        "🏅 Outstanding Undergraduate TA Award"
+        "🏅🏅 2x Outstanding Undergraduate TA Award"
       ],
       mainSkills: [
         "Lab instruction: guidance on computer architecture concepts and FPGA programming",
