@@ -213,7 +213,7 @@ https://fontawesome.com/icons?d=gallery */
       targetBlock: "center"
     },
     {
-      skillName: "Pandas",
+      skillName: "pandas",
       fontAwesomeClassname: "fas fa-table",
       targetID: ["duke-undergrad"],
       targetBlock: "center"
@@ -225,7 +225,7 @@ https://fontawesome.com/icons?d=gallery */
       targetBlock: "center"
     },
     {
-      skillName: "Numpy",
+      skillName: "NumPy",
       fontAwesomeClassname: "fas fa-calculator",
       targetID: ["duke-undergrad"],
       targetBlock: "center"
