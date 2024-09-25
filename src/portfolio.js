@@ -298,6 +298,11 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Figma",
       fontAwesomeClassname: "fab fa-figma",
       targetID: ["Picasso Intelligence", "E-Sentience"]
+    },
+    {
+      skillName: "Unreal Engine 5",
+      fontAwesomeClassname: "fas fa-gears",
+      targetID: ["duke-undergrad"]
     }
   ],
   handson: [
