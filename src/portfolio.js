@@ -302,7 +302,14 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Unreal Engine 5",
       fontAwesomeClassname: "fas fa-gears",
-      targetID: ["duke-undergrad"]
+      targetID: ["duke-undergrad"],
+      targetBlock: "center"
+    },
+    {
+      skillName: "PSpice",
+      fontAwesomeClassname: "fas fa-pepper-hot",
+      targetID: ["duke-undergrad"],
+      targetBlock: "center"
     }
   ],
   handson: [
