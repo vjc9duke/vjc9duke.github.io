@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Vincent Chen",
-  title: "Hi all, I'm Vincent",
+  title: "Hello, I'm Vincent",
   subTitle: emoji(
     "I am a senior at Duke University majoring in Electrical and Computer Engineering and Computer Science. In addition to my interest in software and hardware development, I also enjoy CAD and working across disciplines."
   ),
@@ -433,24 +433,28 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Backend Development",
+      Stack: "General Software Engineering",
       progressPercentage: "95%"
+    },
+    {
+      Stack: "Computer Hardware Design",
+      progressPercentage: "92%"
     },
     {
       Stack: "3D Modeling and Building",
       progressPercentage: "87%"
     },
     {
-      Stack: "Computer Hardware Design",
-      progressPercentage: "83%"
+      Stack: "Backend/Cloud Development",
+      progressPercentage: "82%"
     },
     {
       Stack: "Frontend/App Development",
-      progressPercentage: "72%"
+      progressPercentage: "71%"
     },
     {
       Stack: "Machine Learning",
-      progressPercentage: "59%"
+      progressPercentage: "62%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -1336,25 +1340,26 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  title: "Papers",
+  subtitle: "Here are some papers I have contributed to at Duke University.",
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://arxiv.org/abs/2410.09684",
+      title:
+        "Technical Design Review of Duke Robotics Club's Oogway: An AUV for RoboSub 2024",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "The technical design details of Oogway, Duke Robotics Club's autonomous underwater vehicle (AUV) for the 2024 RoboSub competition."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://arxiv.org/abs/2410.10900",
+      title:
+        "Oogway: Designing, Implementing, and Testing an AUV for RoboSub 2023",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "The technical design details of Oogway, Duke Robotics Club's autonomous underwater vehicle (AUV) for the 2023 RoboSub competition."
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -1399,8 +1404,8 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  number: "+1 (440) 318-4013",
+  title: emoji("Contact Me 📫"),
+  // number: "+1 (440) 318-4013",
   email_address: "vzchen12@gmail.com",
   location: "Seattle, WA"
 };

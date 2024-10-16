@@ -22,8 +22,12 @@
   font-weight: 400;
 }
 
+.blog-header {
+  padding-bottom: 10px;
+}
+
 .blog-subtitle {
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 .blog-main-div > * {
   flex: 1;

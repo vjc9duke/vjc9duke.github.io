@@ -73,7 +73,11 @@ const mapSkills = (title, skills, isDark) => {
             return (
               <li
                 key={i}
-                className="software-skill-inline"
+                className={
+                  isDark
+                    ? "software-skill-inline"
+                    : "software-skill-inline light-mode"
+                }
                 name={skills.skillName}
                 onClick={() =>
                   scrollToTarget(

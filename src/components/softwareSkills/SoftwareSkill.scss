@@ -23,12 +23,22 @@
 .software-skill-inline > i:hover {
   color: $skillsColor;
 }
+
+.software-skill-inline.light-mode > i:hover {
+  color: $skillsColorLight;
+}
+
 .software-skill-inline > p {
   color: $subTitle;
   font-size: 10px;
 }
+
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
+}
+
+.software-skill-inline.light-mode > i:hover ~ p {
+  color: $skillsColorLight;
 }
 
 #skillButton {
