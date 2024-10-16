@@ -1341,7 +1341,7 @@ const achievementSection = {
 
 const blogSection = {
   title: "Papers",
-  subtitle: "Here are some papers I have contributed to at Duke University.",
+  subtitle: "Reports I have contributed to at Duke University",
   displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {

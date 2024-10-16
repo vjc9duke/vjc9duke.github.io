@@ -31,13 +31,13 @@
 
 @keyframes glow-dark {
   0% {
-    box-shadow: 0 0 0 $skillColor; /* Start with no glow */
+    box-shadow: 0 0 0 $skillsColor; /* Start with no glow */
   }
   7% {
-    box-shadow: 0 0 20px $skillColor; /* Fade out glow within last 2 seconds */
+    box-shadow: 0 0 20px $skillsColor; /* Fade out glow within last 2 seconds */
   }
   83% {
-    box-shadow: 0 0 20px $skillColor; /* Start with no glow */
+    box-shadow: 0 0 20px $skillsColor; /* Start with no glow */
   }
   90% {
     box-shadow: 0px 10px 30px -15px $darkBoxShadow; /* End with no glow */
