@@ -63,7 +63,7 @@ export default function Greeting() {
             )} */}
             <img
               alt="me smiling :)"
-              src={require("../../assets/images/profilepicture2.JPG")}
+              src={require("../../assets/images/profilepicture2.png")}
             ></img>
           </div>
         </div>
