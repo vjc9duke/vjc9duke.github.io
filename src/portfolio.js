@@ -1251,6 +1251,67 @@ const mechProjects = {
       ]
     },
     {
+      image: require("./assets/images/key/render.png"),
+      projectName: "Magnetic Keychain Holder",
+      projectDesc:
+        "3D printed magnetic keychain attachment. Self-aligns to a magnetic base. Can be used to hold keys, USB drives, etc.",
+      footerLink: [
+        {
+          name: "Gallery",
+          pics: [
+            {
+              pic: require("./assets/images/key/rw1.png"),
+              caption: "Final product"
+            },
+            {
+              pic: require("./assets/images/key/render9.png"),
+              caption: "Model render (exploded)"
+            },
+            {
+              pic: require("./assets/images/key/rw2.png"),
+              caption: "Magnetic base"
+            },
+            {
+              pic: require("./assets/images/key/render1.png"),
+              caption: "Magnetic base (exploded)"
+            },
+            {
+              pic: require("./assets/images/key/render4.png"),
+              caption: "Magnetic base (exploded)"
+            },
+            {
+              pic: require("./assets/images/key/render3.png"),
+              caption: "Magnetic base (compressed)"
+            },
+            {
+              pic: require("./assets/images/key/rw3.png"),
+              caption: "Keychain attachment"
+            },
+            {
+              pic: require("./assets/images/key/rw4.png"),
+              caption: "Keychain attachment (separated)"
+            },
+            {
+              pic: require("./assets/images/key/render6.png"),
+              caption: "Keychain attachment (exploded)"
+            },
+            {
+              pic: require("./assets/images/key/render7.png"),
+              caption: "Keychain attachment (exploded)"
+            },
+            {
+              pic: require("./assets/images/key/render8.png"),
+              caption: "Keychain attachment (exploded)"
+            }
+          ]
+        }
+      ],
+      mainSkills: [
+        "Fusion 360: 3D modeling",
+        "3D printing: custom part fabrication"
+      ]
+    },
+    {
       image: require("./assets/images/watch/render1.png"),
       projectName: "Watch Charging Station",
       projectDesc:
