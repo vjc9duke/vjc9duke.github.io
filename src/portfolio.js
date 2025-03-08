@@ -51,10 +51,10 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "Passionate about mechanical, electrical, and software development and everything in between | Experienced across CAD, low-level languages, high-level languages, and cloud technologies",
+    "Passionate about mechanical, electrical, software development, and everything in between | Experienced across CAD, low-level languages, high-level languages, and cloud technologies",
   skills: [
     emoji(
-      "🖥 Develop apps and scripts in high level languages like Java, Python, and MATLAB among others"
+      "🖥 Develop apps and scripts in high level languages like Java, Python, MATLAB, etc."
     ),
     emoji(
       "📟 Program for microcontrollers and FPGAs in C, Assembly, and Verilog"
@@ -62,11 +62,13 @@ const skillsSection = {
     emoji(
       "📱 Develop web and mobile apps using Flutter, Swift, TypeScript, JavaScript, and others"
     ),
-    emoji("☁️ Utilize Cloud Technologies like AWS, Salesforce, and Azure"),
+    emoji("☁️ Leverage cloud technologies like AWS, Salesforce, and Azure"),
     emoji(
-      "💽 Configure and Ran Databases using Firebase, PostgreSQL, MonogDB, and XQuery"
+      "💽 Configure and run databases using PostgreSQL, MongoDB, and XQuery"
     ),
-    emoji("🔩 Design parts and products in SolidWorks, Fusion 360, and AutoCAD")
+    emoji(
+      "🔩 Design and manufacture parts using SolidWorks, Fusion 360, and AutoCAD"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -106,7 +108,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Assembly",
       fontAwesomeClassname: "fas fa-robot",
       targetID: [
-        "Electrical and Computer Engineering Teaching Assistant",
+        "Head Electrical and Computer Engineering Teaching Assistant",
         "Candy Tank",
         "Assembly Autotester"
       ]
@@ -115,7 +117,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Verilog",
       fontAwesomeClassname: "fas fa-v",
       targetID: [
-        "Electrical and Computer Engineering Teaching Assistant",
+        "Head Electrical and Computer Engineering Teaching Assistant",
         "Candy Tank",
         "Assembly Autotester"
       ]
@@ -355,7 +357,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-microscope",
       targetID: [
         "duke-undergrad",
-        "Electrical and Computer Engineering Teaching Assistant",
+        "Head Electrical and Computer Engineering Teaching Assistant",
         "Candy Tank"
       ],
       targetBlock: "center"
@@ -365,7 +367,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-wave-square",
       targetID: [
         "duke-undergrad",
-        "Electrical and Computer Engineering Teaching Assistant",
+        "Head Electrical and Computer Engineering Teaching Assistant",
         "Candy Tank"
       ],
       targetBlock: "center"
@@ -375,7 +377,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-plug",
       targetID: [
         "duke-undergrad",
-        "Electrical and Computer Engineering Teaching Assistant",
+        "Head Electrical and Computer Engineering Teaching Assistant",
         "Candy Tank"
       ],
       targetBlock: "center"
@@ -385,7 +387,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-spinner",
       targetID: [
         "duke-undergrad",
-        "Electrical and Computer Engineering Teaching Assistant",
+        "Head Electrical and Computer Engineering Teaching Assistant",
         "Candy Tank"
       ],
       targetBlock: "center"
@@ -406,7 +408,6 @@ const educationInfo = {
       subHeader:
         "Master of Engineering in Electrical and Computer Engineering (Upcoming)",
       duration: "May 2025 - December 2025",
-      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
       id: "duke-grad"
     },
     {
@@ -417,7 +418,7 @@ const educationInfo = {
       duration: "August 2021 - May 2025",
       // desc: "Description of what I did here",
       descBullets: [
-        "GPA: 4.0/4.0",
+        "GPA: 3.99/4.0",
         "Dean's List with Distinction",
         "🏅🏅 2x Outstanding Undergraduate TA Award (Computer Science)",
         "🏅🏅 2x Outstanding Undergraduate TA Award (Electrical and Computer Engineering)"
@@ -448,12 +449,13 @@ const techStack = {
       Stack: "Backend/Cloud Development",
       progressPercentage: "82%"
     },
+    ,
     {
-      Stack: "Frontend/App Development",
+      Stack: "Machine Learning",
       progressPercentage: "71%"
     },
     {
-      Stack: "Machine Learning",
+      Stack: "Frontend/App Development",
       progressPercentage: "62%"
     }
   ],
@@ -470,7 +472,7 @@ const workExperiences = {
       company: "Ecolab",
       companylogo: require("./assets/images/ecolabLogo.png"),
       date: "May 2024 – August 2024",
-      desc: "I first designed, built, and wired a custom control panel to emulate a polymer activation system. Then, I developed simulation software to enable remote analysis of customer equipment.",
+      desc: "I designed, built, and wired a custom control panel to emulate four PLC-based water treatment systems. I also developed software that supports mocking of inputs and outputs, allowing IT to more effectively assist customers. ",
       mainSkills: [
         "C: PLC programming",
         "B&R Studio: PLC development and deployment",
@@ -483,7 +485,7 @@ const workExperiences = {
       company: "Picasso Intelligence",
       companylogo: require("./assets/images/piLogo.png"),
       date: "August 2023 - May 2024",
-      desc: "I developed actuator control software, worked on cooling vest hardware, and refactored the company website. I also aided in team development activities like interviewing candidates and creating a product catalog.",
+      desc: "I developed actuator control software, worked on cooling vest hardware, and refactored the company website, reducing the overhead of adding new products by 80%. I also aided in team development activities such as interviewing candidates and creating a product catalog.",
       mainSkills: [
         "C: actuator app development",
         "Python: actuator app development",
@@ -500,7 +502,7 @@ const workExperiences = {
       company: "Onto Innovation",
       companylogo: require("./assets/images/ontoLogo.png"),
       date: "May 2023 - August 2023",
-      desc: "I developed a solution to eliminate a distributed computing error for AI Diffract, a refraction simulation software, and added a couple QOL UI features. I also helped refactor some legacy C++ code to improve maintainability and decrease the possibility of memory leaks.",
+      desc: "I developed a solution to eliminate a distributed computing error for AI Diffract, a 3D modeling software for semiconductor optics. In addition, I helped refactor some legacy C++ code to improve maintainability and increase memory safety.",
       mainSkills: [
         "C++: software development",
         "Git: version control and collaboration"
@@ -511,7 +513,7 @@ const workExperiences = {
       company: "nCino",
       companylogo: require("./assets/images/ncinoLogo.png"),
       date: "May 2022 – January 2023",
-      desc: "I leveraged AWS services such as Lambda, DynamoDB, and API Gateway to build a data-sharing system integrated with nCino's core MTRANS data mapping service. I also composed documentation for future developers and developed comprehensive testing suites.",
+      desc: "I leveraged AWS services such as Lambda, DynamoDB, and API Gateway to build a data-sharing system integrated with nCino's core MTRANS data mapping service, supporting thousands of times more records than the existing system. I also composed detailed documentation and developed comprehensive testing suites to support future development.",
       mainSkills: [
         "AWS: cloud development and management",
         "Salesforce: core app integration",
@@ -528,7 +530,7 @@ const workExperiences = {
       company: "E-Sentience",
       companylogo: require("./assets/images/esentLogo.png"),
       date: "May 2022 – August 2022",
-      desc: "I first developed a UI mockup for a cross-platform fitness app in Figma. Then, I developed the core part of the app in Flutter, using Git to manage version control and track tasks.",
+      desc: "I used Figma to create a UI mockup for a cross-platform fitness app. I also developed the core part of the app in Flutter, using Git for task management and version control.",
       mainSkills: [
         "Flutter/Dart: app development",
         "Git: version control and collaboration",
@@ -543,12 +545,13 @@ const otherExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Electrical and Computer Engineering Teaching Assistant",
+      role: "Head Electrical and Computer Engineering Teaching Assistant",
       company: "Duke University",
       companylogo: require("./assets/images/dukeLogo.png"),
       date: "August 2023 - Present",
       descBullets: [
-        "I lead a lab section for Duke's Digital Systems course, covering concepts such as Verilog, FPGA programming, and electromechanical integration ",
+        "I lead a lab section of 12 studentsfor Duke's Digital Systems course, covering concepts such as Verilog, FPGA programming, and electromechanical integration.",
+        "I develop new course materials, such as lab exercises and a toolchain that automates manual test setup for students.",
         "🏅🏅 2x Outstanding Undergraduate TA Award"
       ],
       mainSkills: [
@@ -560,9 +563,9 @@ const otherExperiences = {
       role: "Computer Science Teaching Assistant",
       company: "Duke University",
       companylogo: require("./assets/images/dukeLogo.png"),
-      date: "August 2022 – May 2024",
+      date: "August 2022 – Present",
       descBullets: [
-        "I individually mentored students for Duke's Advanced Software Design course, covering topics such as OOP design principles, design patterns, and best Git practices",
+        "I individually mentor 3-5 students per semester for Duke's Advanced Software Design course, covering topics such as OOP design principles, design patterns, and best Git practices",
         "🏅🏅 2x Outstanding Undergraduate TA Award"
       ],
       mainSkills: [
@@ -575,7 +578,7 @@ const otherExperiences = {
       company: "ACkER Lab",
       companylogo: require("./assets/images/ackerLogo.png"),
       date: "January 2023 – May 2024",
-      desc: "I built an iPadOS app that administers and automatically scores cognitive tests and led the first round of validation trials for.  I also worked on a MATLAB preprocessing script that filters out noisy heart rate data and an automatic data import script that eliminated hours of manual input.",
+      desc: "I built an iPadOS app that administers and automatically scores cognitive tests, streamlining the test scoring process. I also developed a MATLAB preprocessing script that filters out noisy heart rate data, as well as an automatic data import script that eliminated hours of manual input.",
       mainSkills: [
         "MATLAB: data preprocessing",
         "Python: script development",
@@ -691,7 +694,7 @@ const bigProjects = {
       image: require("./assets/images/laser/thumbnail.png"),
       projectName: "Laser Tag Kit",
       projectDesc:
-        "Working with a team of engineers, I led the PCB design and software development of an at-home laser tag kit.",
+        "Working in a team of four engineers, I led the PCB design and software development of an at-home laser tag kit.",
       mainSkills: [
         "Python: control hub programming",
         "C: microcontroller programming",
@@ -763,7 +766,7 @@ const bigProjects = {
       image: require("./assets/images/thumbnails/robot.png"),
       projectName: "Duke Robotics",
       projectDesc:
-        "As the mechanical lead, I manage overarching decisions regarding the physical assembly of the robot, delegation of tasks, and the onboarding of new mechanical members.",
+        "As the mechanical lead, I manage overarching decisions regarding the physical assembly of the robot, delegation of tasks, and the onboarding of new mechanical members (around 10-20 per year).",
       mainSkills: [
         "Leadership: onboarding, training, and task delegation",
         "SolidWorks: 3D modeling"
@@ -1007,7 +1010,7 @@ const softwareProjects = {
       image: require("./assets/images/thumbnails/proctoolchain.png"),
       projectName: "Verilog Processor Testing Toolchain",
       projectDesc:
-        "As a Digital Systems teaching assistant, I wrote a Python that allows students to view and debug their Verilog code through an autogenerated webpage. This automates 100% of the test setup process. This toolchain is also coupled with a laboratory exercise I developed that teaches students debugging strategies.",
+        "As the head Digital Systems teaching assistant, I wrote a Python app that allows students to view and debug their Verilog code through an autogenerated webpage, automating 100% of the test setup process. This toolchain is also coupled with a laboratory exercise I developed that teaches students debugging strategies.",
       mainSkills: [
         "Python: software development",
         "HTML/CSS: software development",
@@ -1034,7 +1037,7 @@ const softwareProjects = {
       image: require("./assets/images/thumbnails/chess.png"),
       projectName: "Java Chess Application",
       projectDesc:
-        "I, along with seven other team members, developed a Java chess app with a focus on using OOP design principles. I led the implementation of chess variation and user-defined variation support.",
+        "I, along with seven other team members, developed a Java chess app with a focus on using OOP design principles. I spearheaded backend development, focusing on support for chess variations, taking a data-driven design approach, and developing a clear API.",
       mainSkills: [
         "Java: software development",
         "Git: version control and collaboration",
@@ -1052,7 +1055,7 @@ const softwareProjects = {
       image: require("./assets/images/thumbnails/pi.png"),
       projectName: "Picasso Intelligence Website",
       projectDesc:
-        "I refactored and documented the codebase for Picasso Intelligence's product website, drastically reducing duplicated code and providing a no-code way to add new products via JSON files.",
+        "I refactored and documented the codebase for Picasso Intelligence's product website, drastically reducing duplicated code and providing a no-code way to add new products via JSON files. This reduced the overhead of adding new products by 80%.",
       mainSkills: [
         // eslint-disable-next-line
         "JavaScript: custom functionality",
