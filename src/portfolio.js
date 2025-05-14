@@ -407,7 +407,7 @@ const educationInfo = {
       logo: require("./assets/images/dukeLogo.png"),
       subHeader:
         "Master of Engineering in Electrical and Computer Engineering (Upcoming)",
-      duration: "May 2025 - December 2025",
+      duration: "January 2026 - May 2026",
       id: "duke-grad"
     },
     {
@@ -419,9 +419,11 @@ const educationInfo = {
       // desc: "Description of what I did here",
       descBullets: [
         "GPA: 3.99/4.0",
-        "Dean's List with Distinction",
-        "🏅🏅 2x Outstanding Undergraduate TA Award (Computer Science)",
-        "🏅🏅 2x Outstanding Undergraduate TA Award (Electrical and Computer Engineering)"
+        "Summa Cum Laude",
+        "Rebecca DeNardis Memorial Award (excellence as a CS TA)",
+        "Charles Rowe Vail Memorial Outstanding Undergraduate Teaching Award (excellence as an ECE TA)",
+        "🏅🏅 2x Outstanding Undergraduate TA Award (Electrical and Computer Engineering)",
+        "🏅🏅🏅 3x Outstanding Undergraduate TA Award (Computer Science)"
       ],
       id: "duke-undergrad"
     }
@@ -548,11 +550,12 @@ const otherExperiences = {
       role: "Head Electrical and Computer Engineering Teaching Assistant",
       company: "Duke University",
       companylogo: require("./assets/images/dukeLogo.png"),
-      date: "August 2023 - Present",
+      date: "August 2023 - May 2025",
       descBullets: [
-        "I lead a lab section of 12 studentsfor Duke's Digital Systems course, covering concepts such as Verilog, FPGA programming, and electromechanical integration.",
-        "I develop new course materials, such as lab exercises and a toolchain that automates manual test setup for students.",
-        "🏅🏅 2x Outstanding Undergraduate TA Award"
+        "I led a lab section of 12 students for Duke's Digital Systems course, covering concepts such as Verilog, FPGA programming, and electromechanical integration.",
+        "I developed new course materials, such as lab exercises and a toolchain that automates manual test setup for students.",
+        "🏅🏅 2x Outstanding Undergraduate TA Award",
+        "🏅 Charles Rowe Vail Memorial Outstanding Undergraduate Teaching Award"
       ],
       mainSkills: [
         "Lab instruction: guidance on computer architecture concepts and FPGA programming",
@@ -563,10 +566,12 @@ const otherExperiences = {
       role: "Computer Science Teaching Assistant",
       company: "Duke University",
       companylogo: require("./assets/images/dukeLogo.png"),
-      date: "August 2022 – Present",
+      date: "August 2022 – May 2025",
       descBullets: [
-        "I individually mentor 3-5 students per semester for Duke's Advanced Software Design course, covering topics such as OOP design principles, design patterns, and best Git practices",
-        "🏅🏅 2x Outstanding Undergraduate TA Award"
+        "I individually mentored 3-5 students per semester for Duke's Advanced Software Design course, covering topics such as OOP design principles, design patterns, and best Git practices.",
+        "I helped revamp the course curriculum, streamlining the grading rubric and introducing a redesigned team project.",
+        "🏅🏅🏅 3x Outstanding Undergraduate TA Award",
+        "🏅 Rebecca DeNardis Memorial Award"
       ],
       mainSkills: [
         "Mentorship: individual student guidance",
