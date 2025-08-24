@@ -131,7 +131,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js",
       targetID: [
-        "Amazon", 
+        "Amazon",
         "Picasso Intelligence",
         "nCino",
         "Picasso Intelligence Website"
@@ -188,7 +188,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git",
       targetID: [
-        "Amazon", 
+        "Amazon",
         "Ecolab",
         "Picasso Intelligence",
         "Onto Innovation",
