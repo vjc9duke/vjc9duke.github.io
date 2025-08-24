@@ -78,7 +78,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java",
-      targetID: ["Java Chess Application"]
+      targetID: ["Amazon", "Java Chess Application"]
     },
     {
       skillName: "Python",
@@ -125,12 +125,13 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "TypeScript",
       fontAwesomeClassname: "fas fa-scroll",
-      targetID: ["nCino", "UChat Anonymous Chatting App"]
+      targetID: ["Amazon", "nCino", "UChat Anonymous Chatting App"]
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js",
       targetID: [
+        "Amazon", 
         "Picasso Intelligence",
         "nCino",
         "Picasso Intelligence Website"
@@ -166,7 +167,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws",
-      targetID: ["nCino"]
+      targetID: ["Amazon", "nCino"]
     },
     {
       skillName: "Salesforce",
@@ -176,7 +177,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "DynamoDB",
       fontAwesomeClassname: "fas fa-database",
-      targetID: ["nCino"]
+      targetID: ["Amazon", "nCino"]
     },
     {
       skillName: "MongoDB",
@@ -187,6 +188,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git",
       targetID: [
+        "Amazon", 
         "Ecolab",
         "Picasso Intelligence",
         "Onto Innovation",
@@ -469,6 +471,20 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Intern - Software Engineering",
+      company: "Amazon",
+      companylogo: require("./assets/images/amazonLogo.png"),
+      date: "May 2025 – August 2025",
+      desc: "I designed and implemented cross-domain passkey support for twenty Amazon retail domains. In addition, I led operational readiness for the feature, including metrics, alarms, dashboards, and A/B experiments. ",
+      mainSkills: [
+        "UML: system design",
+        "Java: backend development",
+        "JavaScript: frontend development",
+        "TypeScript: AWS CDK development",
+        "Git: version control and collaboration"
+      ]
+    },
     {
       role: "Intern - Global Engineering",
       company: "Ecolab",
