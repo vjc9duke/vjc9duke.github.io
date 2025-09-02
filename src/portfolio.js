@@ -476,7 +476,7 @@ const workExperiences = {
       company: "Amazon",
       companylogo: require("./assets/images/amazonLogo.png"),
       date: "May 2025 – August 2025",
-      desc: "I designed and implemented cross-domain passkey support for twenty Amazon retail domains. In addition, I led operational readiness for the feature, including metrics, alarms, dashboards, and A/B experiments. ",
+      desc: "I designed and implemented cross-domain passkey support for twenty Amazon retail domains, expanding passkey sign-in to an additional 20% of eligible customers. In addition, I led operational readiness for the feature, including metrics, alarms, dashboards, and A/B experiments. ",
       mainSkills: [
         "UML: system design",
         "Java: backend development",
