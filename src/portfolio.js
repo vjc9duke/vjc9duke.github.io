@@ -125,7 +125,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "TypeScript",
       fontAwesomeClassname: "fas fa-scroll",
-      targetID: ["Amazon", "nCino", "UChat Anonymous Chatting App"]
+      targetID: ["Aven", "Amazon", "nCino", "UChat Anonymous Chatting App"]
     },
     {
       skillName: "JavaScript",
@@ -160,14 +160,14 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "PostgreSQL",
       fontAwesomeClassname: "fas fa-database",
-      targetID: ["UChat Anonymous Chatting App"]
+      targetID: ["Aven", "UChat Anonymous Chatting App"]
     }
   ],
   technologies: [
     {
       skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws",
-      targetID: ["Amazon", "nCino"]
+      targetID: ["Aven", "Amazon", "nCino"]
     },
     {
       skillName: "Salesforce",
@@ -185,9 +185,20 @@ https://fontawesome.com/icons?d=gallery */
       targetID: ["UChat Anonymous Chatting App"]
     },
     {
+      skillName: "Snowflake",
+      fontAwesomeClassname: "fas fa-snowflake",
+      targetID: ["Aven"]
+    },
+    {
+      skillName: "Grafana",
+      fontAwesomeClassname: "fas fa-chart-simple",
+      targetID: ["Aven"]
+    },
+    {
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git",
       targetID: [
+        "Aven",
         "Amazon",
         "Ecolab",
         "Picasso Intelligence",
@@ -209,6 +220,16 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "React",
       fontAwesomeClassname: "fab fa-react",
       targetID: ["UChat Anonymous Chatting App"]
+    },
+    {
+      skillName: "Vue.js",
+      fontAwesomeClassname: "fab fa-vuejs",
+      targetID: ["Aven"]
+    },
+    {
+      skillName: "Node.js",
+      fontAwesomeClassname: "fab fa-node",
+      targetID: ["Aven"]
     },
     {
       skillName: "PyTorch",
@@ -473,15 +494,33 @@ const workExperiences = {
   experience: [
     {
       role: "Intern - Software Engineering",
+      company: "Aven",
+      companylogo: require("./assets/images/avenLogo.png"),
+      date: "August 2025 - Present",
+      desc: "As a member of the cardholder team, I build features for existing Aven customers and improve system reliability. I own end-to-end development for all my projects, including cross-team collaboration, metrics tracking, and production monitoring.",
+      mainSkills: [
+        "TypeScript: frontend and backend development",
+        "Vue.js: frontend development",
+        "Node.js: backend development",
+        "PostgreSQL/Snowflake: data queries",
+        "Grafana: log queries",
+        "Playwright: e2e testing",
+        "AWS: cloud infrastructure",
+        "Git: version control and collaboration"
+      ]
+    },
+    {
+      role: "Intern - Software Engineering",
       company: "Amazon",
       companylogo: require("./assets/images/amazonLogo.png"),
       date: "May 2025 – August 2025",
-      desc: "I designed and implemented cross-domain passkey support for twenty Amazon retail domains, expanding passkey sign-in to an additional 20% of eligible customers. In addition, I led operational readiness for the feature, including metrics, alarms, dashboards, and A/B experiments. ",
+      desc: "I designed and implemented cross-domain passkey support, expanding passkey sign-in to 20% more eligible customers. I developed across the full stack, from backend services to frontend web functionality and cloud infrastructure. In addition, I led operational readiness for the feature, including metrics, alarms, dashboards, and A/B experiments.",
       mainSkills: [
         "UML: system design",
         "Java: backend development",
         "JavaScript: frontend development",
         "TypeScript: AWS CDK development",
+        "AWS: cloud services development",
         "Git: version control and collaboration"
       ]
     },
