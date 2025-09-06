@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7c47bcef.css",
-    "main.js": "/static/js/main.8843266e.js",
+    "main.js": "/static/js/main.97ddd1b7.js",
     "static/css/64.a6e6d109.chunk.css": "/static/css/64.a6e6d109.chunk.css",
     "static/js/64.471de529.chunk.js": "/static/js/64.471de529.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
@@ -60,6 +60,7 @@
     "static/media/piLogo.png": "/static/media/piLogo.c68ddfb79f79e3db5bb7.png",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/dukeLogo.png": "/static/media/dukeLogo.6f4afe30e3deebeb9e24.png",
+    "static/media/avenLogo.png": "/static/media/avenLogo.bb624bb989fd80c7cbc6.png",
     "static/media/ontoLogo.png": "/static/media/ontoLogo.4a5ecb1485b60ebcb3f4.png",
     "static/media/ackerLogo.png": "/static/media/ackerLogo.4a4681ce5d49ba4df34a.png",
     "static/media/contactMailDark.svg": "/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
@@ -72,7 +73,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.7c47bcef.css.map": "/static/css/main.7c47bcef.css.map",
-    "main.8843266e.js.map": "/static/js/main.8843266e.js.map",
+    "main.97ddd1b7.js.map": "/static/js/main.97ddd1b7.js.map",
     "64.a6e6d109.chunk.css.map": "/static/css/64.a6e6d109.chunk.css.map",
     "64.471de529.chunk.js.map": "/static/js/64.471de529.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -80,6 +81,6 @@
   },
   "entrypoints": [
     "static/css/main.7c47bcef.css",
-    "static/js/main.8843266e.js"
+    "static/js/main.97ddd1b7.js"
   ]
 }
