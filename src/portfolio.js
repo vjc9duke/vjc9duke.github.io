@@ -126,6 +126,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "TypeScript",
       fontAwesomeClassname: "fas fa-scroll",
+<<<<<<< HEAD
       targetID: [
         "Aven SWE",
         "Aven Intern",
@@ -133,6 +134,9 @@ https://fontawesome.com/icons?d=gallery */
         "nCino",
         "UChat Anonymous Chatting App"
       ]
+=======
+      targetID: ["Aven SWE", "Aven Intern", "Amazon", "nCino", "UChat Anonymous Chatting App"]
+>>>>>>> origin/master
     },
     {
       skillName: "JavaScript",
