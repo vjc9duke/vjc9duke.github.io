@@ -23,7 +23,7 @@ const greeting = {
   username: "Vincent Chen",
   title: "Hello, I'm Vincent",
   subTitle: emoji(
-    "I am a senior at Duke University majoring in Electrical and Computer Engineering and Computer Science. In addition to my interest in software and hardware development, I also enjoy CAD and working across disciplines."
+    "I'm a recent graduate from Duke University, where I majored in Electrical & Computer Engineering and Computer Science. Now, I'm building software at Aven to lower the cost of capital."
   ),
   resumeLink:
     "https://drive.google.com/drive/folders/1HiTrKVw_JnTEp43E7gvRgV-PF-PPQtx2?usp=sharing", // Set to empty to hide the button
@@ -84,6 +84,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python",
       targetID: [
+        "Aven SWE",
         "Picasso Intelligence",
         "Library Patron Counter",
         "ACkER Lab",
@@ -125,7 +126,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "TypeScript",
       fontAwesomeClassname: "fas fa-scroll",
-      targetID: ["Aven", "Amazon", "nCino", "UChat Anonymous Chatting App"]
+      targetID: ["Aven SWE", "Aven Intern", "Amazon", "nCino", "UChat Anonymous Chatting App"]
     },
     {
       skillName: "JavaScript",
@@ -160,14 +161,14 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "PostgreSQL",
       fontAwesomeClassname: "fas fa-database",
-      targetID: ["Aven", "UChat Anonymous Chatting App"]
+      targetID: ["Aven SWE", "Aven Intern", "UChat Anonymous Chatting App"]
     }
   ],
   technologies: [
     {
       skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws",
-      targetID: ["Aven", "Amazon", "nCino"]
+      targetID: ["Aven Intern", "Amazon", "nCino"]
     },
     {
       skillName: "Salesforce",
@@ -187,18 +188,19 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Snowflake",
       fontAwesomeClassname: "fas fa-snowflake",
-      targetID: ["Aven"]
+      targetID: ["Aven SWE", "Aven Intern"]
     },
     {
       skillName: "Grafana",
       fontAwesomeClassname: "fas fa-chart-simple",
-      targetID: ["Aven"]
+      targetID: ["Aven Intern"]
     },
     {
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git",
       targetID: [
-        "Aven",
+        "Aven SWE",
+        "Aven Intern",
         "Amazon",
         "Ecolab",
         "Picasso Intelligence",
@@ -224,12 +226,12 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Vue.js",
       fontAwesomeClassname: "fab fa-vuejs",
-      targetID: ["Aven"]
+      targetID: ["Aven Intern"]
     },
     {
       skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node",
-      targetID: ["Aven"]
+      targetID: ["Aven Intern"]
     },
     {
       skillName: "PyTorch",
@@ -493,16 +495,34 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Software Engineer",
+      company: "Aven",
+      id: "aven-swe",
+      companylogo: require("./assets/images/avenLogo.png"),
+      date: "September 2025 - Present",
+      desc: "I build an agentic framework with domain-specific context retrieval, intent classification guardrails, RAG over procedures and documentation, and automated evaluation pipelines using GEval and DSPy. I apply this framework to automate response generation for origination and cardholder customer support workflows.",
+      mainSkills: [
+        "Python: ML development",
+        "DSPy: ML framework",
+        "TypeScript: full-stack development",
+        "PostgreSQL/Snowflake: data engineering",
+        "Grafana: log queries",
+        "AWS: cloud infrastructure",
+        "Git: version control and collaboration"
+      ]
+    },
+    {
       role: "Intern - Software Engineering",
       company: "Aven",
+      id: "aven-intern",
       companylogo: require("./assets/images/avenLogo.png"),
-      date: "August 2025 - Present",
-      desc: "As a member of the cardholder team, I build features for existing Aven customers and improve system reliability. I own end-to-end development for all my projects, including cross-team collaboration, metrics tracking, and production monitoring.",
+      date: "August 2025 - September 2025",
+      desc: "As a member of the cardholder team, I built features for existing Aven customers and improved system reliability. I owned end-to-end development for all my projects, including cross-team collaboration, metrics tracking, and production monitoring.",
       mainSkills: [
         "TypeScript: frontend and backend development",
         "Vue.js: frontend development",
         "Node.js: backend development",
-        "PostgreSQL/Snowflake: data queries",
+        "PostgreSQL/Snowflake: data engineering",
         "Grafana: log queries",
         "Playwright: e2e testing",
         "AWS: cloud infrastructure",

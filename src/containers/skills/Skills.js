@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useState, useEffect} from "react";
 import "./Skills.scss";
 import {
   ProgLang,
@@ -14,6 +14,14 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
+  const [showClickMe, setShowClickMe] = useState(true);
+
+  useEffect(() => {
+    if (!showClickMe) return;
+    const timer = setTimeout(() => setShowClickMe(false), 30000);
+    return () => clearTimeout(timer);
+  }, [showClickMe]);
+
   if (!skillsSection.display) {
     return null;
   }
@@ -61,14 +69,20 @@ export default function Skills() {
           </div>
         </Fade>
         <Fade right duration={1000} fraction="0.1">
-          <div className="skills-text-div">
+          {/* eslint-disable-next-line */}
+          <div className="skills-text-div" onClick={() => setShowClickMe(false)}>
             <p
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
               id="skills-languages"
             >
               {"Languages"}
             </p>
-            <ProgLang />
+            <ProgLang tooltip={showClickMe ? (
+              <div className={isDark ? "click-me-tooltip dark" : "click-me-tooltip"}>
+                Click me!
+                <div className="click-me-arrow" />
+              </div>
+            ) : null} />
             <p
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
               id="skills-technologies"

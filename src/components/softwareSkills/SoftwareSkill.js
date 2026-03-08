@@ -64,7 +64,7 @@ const scrollToTarget = (title, targetID, blockTarget, isDark) => {
   configSkillButton("skills-" + title);
 };
 
-const mapSkills = (title, skills, isDark) => {
+const mapSkills = (title, skills, isDark, tooltip) => {
   return (
     <div>
       <div className="software-skills-main-div">
@@ -89,8 +89,9 @@ const mapSkills = (title, skills, isDark) => {
                     isDark
                   )
                 }
-                style={{cursor: "pointer"}}
+                style={{cursor: "pointer", position: i === 0 && tooltip ? "relative" : undefined}}
               >
+                {i === 0 && tooltip}
                 <i className={skills.fontAwesomeClassname}></i>
                 <p>{skills.skillName}</p>
               </li>
@@ -102,9 +103,9 @@ const mapSkills = (title, skills, isDark) => {
   );
 };
 
-export function ProgLang() {
+export function ProgLang({tooltip}) {
   const {isDark} = useContext(StyleContext);
-  return mapSkills("languages", skillsSection.programmingLanguages, isDark);
+  return mapSkills("languages", skillsSection.programmingLanguages, isDark, tooltip);
 }
 
 export function Technology() {

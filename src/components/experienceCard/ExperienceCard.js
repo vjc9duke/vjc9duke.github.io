@@ -53,9 +53,11 @@ export default function ExperienceCard({cardInfo, isDark}) {
     <div
       className={isDark ? "experience-card-dark" : "experience-card"}
       id={
-        cardInfo.company.toLowerCase() === "duke university"
-          ? cardInfo.role.toLowerCase().replace(/\s+/g, "-")
-          : cardInfo.company.toLowerCase().replace(/\s+/g, "-")
+        cardInfo.id
+          ? cardInfo.id
+          : cardInfo.company.toLowerCase() === "duke university"
+            ? cardInfo.role.toLowerCase().replace(/\s+/g, "-")
+            : cardInfo.company.toLowerCase().replace(/\s+/g, "-")
       }
     >
       <div style={{background: rgb(colorArrays)}} className="experience-banner">
