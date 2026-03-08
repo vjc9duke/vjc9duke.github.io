@@ -89,7 +89,10 @@ const mapSkills = (title, skills, isDark, tooltip) => {
                     isDark
                   )
                 }
-                style={{cursor: "pointer", position: i === 0 && tooltip ? "relative" : undefined}}
+                style={{
+                  cursor: "pointer",
+                  position: i === 0 && tooltip ? "relative" : undefined
+                }}
               >
                 {i === 0 && tooltip}
                 <i className={skills.fontAwesomeClassname}></i>
@@ -105,7 +108,12 @@ const mapSkills = (title, skills, isDark, tooltip) => {
 
 export function ProgLang({tooltip}) {
   const {isDark} = useContext(StyleContext);
-  return mapSkills("languages", skillsSection.programmingLanguages, isDark, tooltip);
+  return mapSkills(
+    "languages",
+    skillsSection.programmingLanguages,
+    isDark,
+    tooltip
+  );
 }
 
 export function Technology() {

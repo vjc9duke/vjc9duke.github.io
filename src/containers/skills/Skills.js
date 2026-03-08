@@ -70,19 +70,30 @@ export default function Skills() {
         </Fade>
         <Fade right duration={1000} fraction="0.1">
           {/* eslint-disable-next-line */}
-          <div className="skills-text-div" onClick={() => setShowClickMe(false)}>
+          <div
+            className="skills-text-div"
+            onClick={() => setShowClickMe(false)}
+          >
             <p
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
               id="skills-languages"
             >
               {"Languages"}
             </p>
-            <ProgLang tooltip={showClickMe ? (
-              <div className={isDark ? "click-me-tooltip dark" : "click-me-tooltip"}>
-                Click me!
-                <div className="click-me-arrow" />
-              </div>
-            ) : null} />
+            <ProgLang
+              tooltip={
+                showClickMe ? (
+                  <div
+                    className={
+                      isDark ? "click-me-tooltip dark" : "click-me-tooltip"
+                    }
+                  >
+                    Click me!
+                    <div className="click-me-arrow" />
+                  </div>
+                ) : null
+              }
+            />
             <p
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
               id="skills-technologies"
