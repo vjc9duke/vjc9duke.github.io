@@ -22,6 +22,7 @@ export function WorkExperience() {
                         key={i}
                         isDark={isDark}
                         cardInfo={{
+                          id: card.id,
                           company: card.company,
                           desc: card.desc,
                           date: card.date,
@@ -50,6 +51,7 @@ export function WorkExperience() {
                         key={i}
                         isDark={isDark}
                         cardInfo={{
+                          id: card.id,
                           company: card.company,
                           desc: card.desc,
                           date: card.date,
